@@ -3,293 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>О клинике | Клиника Колибри</title>
+    <title>О клинике | Медицинский центр Колибри</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <!-- Хедер -->
+    <!-- Вставляем header из partials/header.html -->
     <header class="main-header">
-        <div class="container header-container">
-            <div class="logo">
-                <i class="fas fa-heartbeat"></i>
-                <span>Клиника <strong>Колибри</strong></span>
-            </div>
-            <nav class="main-nav">
-                <a href="index.html"><i class="fas fa-home"></i> Главная</a>
-                <a href="about.html" class="active"><i class="fas fa-info-circle"></i> О нас</a>
-                <a href="services.html"><i class="fas fa-stethoscope"></i> Услуги</a>
-                <a href="contact.html"><i class="fas fa-address-book"></i> Контакты</a>
-            </nav>
-            <div class="header-actions">
-                <a href="contact.html#form" class="btn btn-primary">
-                    <i class="fas fa-calendar-check"></i> Записаться
-                </a>
-                <button class="menu-toggle" id="menuToggle">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-        </div>
+        <!-- ... содержимое header ... -->
     </header>
 
-    <!-- Баннер страницы -->
-    <section class="page-banner">
+    <!-- Хлебные крошки -->
+    <section class="breadcrumbs">
         <div class="container">
-            <h1 class="page-title">О нашей клинике</h1>
-            <p class="page-subtitle">Забота о здоровье — наша миссия с 2010 года</p>
-            <nav class="breadcrumb">
+            <nav class="breadcrumb-nav">
                 <a href="index.html">Главная</a>
                 <span class="separator">/</span>
-                <span>О нас</span>
+                <span class="current">О клинике</span>
             </nav>
         </div>
     </section>
 
-    <!-- О клинике -->
-    <section class="about-intro">
+    <!-- Герой секция -->
+    <section class="page-hero">
         <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>Добро пожаловать в Клинику Колибри</h2>
-                    <p>
-                        Мы — современная многопрофильная клиника, созданная командой единомышленников, 
-                        которые верят, что качественная медицинская помощь должна быть доступна каждому.
-                    </p>
-                    <p>
-                        С 2010 года мы помогаем пациентам восстановить и сохранить здоровье, 
-                        используя передовые технологии и индивидуальный подход.
-                    </p>
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <div class="stat-number">5000+</div>
-                            <div class="stat-label">Довольных пациентов</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">50+</div>
-                            <div class="stat-label">Высококвалифицированных врачей</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">12</div>
-                            <div class="stat-label">Лет успешной работы</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">24/7</div>
-                            <div class="stat-label">Работаем для вас</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&h=400&fit=crop" alt="Наша клиника">
-                    <div class="experience-badge">
-                        <div class="badge-years">12</div>
-                        <div class="badge-text">лет опыта</div>
-                    </div>
-                </div>
+            <div class="page-hero-content">
+                <h1>О медицинском центре Колибри</h1>
+                <p>Современная медицина с заботой о каждом пациенте</p>
             </div>
         </div>
     </section>
 
-    <!-- Наши ценности -->
-    <section class="values">
+    <!-- История центра -->
+    <section class="page-section" id="history">
         <div class="container">
-            <h2 class="section-title">
-                <span class="title-line">Наши</span>
-                ценности
-            </h2>
-            <div class="values-grid">
-                <div class="value-card">
-                    <div class="value-icon">
-                        <i class="fas fa-user-md"></i>
-                    </div>
-                    <h3>Профессионализм</h3>
-                    <p>Все наши врачи имеют высшую категорию и регулярно проходят повышение квалификации</p>
-                </div>
-                <div class="value-card">
-                    <div class="value-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h3>Забота о пациентах</h3>
-                    <p>Индивидуальный подход к каждому пациенту, внимание к деталям и комфортная атмосфера</p>
-                </div>
-                <div class="value-card">
-                    <div class="value-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Безопасность</h3>
-                    <p>Строгое соблюдение медицинских стандартов и протоколов лечения</p>
-                </div>
-                <div class="value-card">
-                    <div class="value-icon">
-                        <i class="fas fa-lightbulb"></i>
-                    </div>
-                    <h3>Инновации</h3>
-                    <p>Постоянное внедрение новейших методик лечения и диагностики</p>
-                </div>
+            <div class="section-header">
+                <h2>Наша история</h2>
+                <p class="section-subtitle">От маленькой клиники к современному медицинскому центру</p>
             </div>
-        </div>
-    </section>
-
-    <!-- История -->
-    <section class="history">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-line">Наша</span>
-                история
-            </h2>
-            <div class="timeline">
+            
+            <div class="history-timeline">
                 <div class="timeline-item">
-                    <div class="timeline-year">2010</div>
+                    <div class="timeline-year">2021</div>
                     <div class="timeline-content">
-                        <h3>Открытие клиники</h3>
-                        <p>Начали работу как небольшой диагностический центр с тремя специалистами</p>
+                        <h3>Основание клиники</h3>
+                        <p>Открытие первой клиники «Здоровая семья» всего на три кабинета в центре города</p>
                     </div>
                 </div>
+                
                 <div class="timeline-item">
-                    <div class="timeline-year">2014</div>
+                    <div class="timeline-year">2022</div>
                     <div class="timeline-content">
                         <h3>Расширение возможностей</h3>
-                        <p>Открыли отделение хирургии и добавили 10 новых специалистов</p>
+                        <p>Добавление новых специалистов и диагностического оборудования</p>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-year">2018</div>
-                    <div class="timeline-content">
-                        <h3>Модернизация</h3>
-                        <p>Полностью обновили оборудование и переехали в новое современное здание</p>
-                    </div>
-                </div>
+                
                 <div class="timeline-item">
                     <div class="timeline-year">2023</div>
                     <div class="timeline-content">
-                        <h3>Лидерство</h3>
-                        <p>Стали одной из ведущих частных клиник города с более чем 50 специалистами</p>
+                        <h3>Рост и развитие</h3>
+                        <p>Увеличение команды до 20 специалистов, внедрение электронной медицинской карты</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2024</div>
+                    <div class="timeline-content">
+                        <h3>Новый медицинский центр</h3>
+                        <p>Открытие современного центра «Колибри» площадью 500 кв.м. в два этажа</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Команда -->
-    <section class="team-preview">
+    <!-- Наша миссия -->
+    <section class="page-section bg-light" id="mission">
         <div class="container">
-            <div class="team-preview-header">
-                <h2>Наша команда специалистов</h2>
-                <p>Встречайте врачей, которые каждый день помогают людям быть здоровыми</p>
-                <a href="index.html#team" class="btn btn-outline">
-                    <i class="fas fa-users"></i> Вся команда
+            <div class="section-header">
+                <h2>Наша миссия и ценности</h2>
+            </div>
+            
+            <div class="mission-content">
+                <div class="mission-text">
+                    <p>Колибри — это команда увлеченных специалистов, которые не только обладают высокой квалификацией, но и искренне любят свое дело. Мы стремимся к тому, чтобы каждый пациент чувствовал себя важным и услышанным.</p>
+                    
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3>Забота о пациентах</h3>
+                            <p>Индивидуальный подход к каждому пациенту</p>
+                        </div>
+                        
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h3>Профессионализм</h3>
+                            <p>Врачи высшей категории с многолетним опытом</p>
+                        </div>
+                        
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Безопасность</h3>
+                            <p>Соблюдение всех медицинских стандартов и протоколов</p>
+                        </div>
+                        
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h3>Инновации</h3>
+                            <p>Использование современного оборудования и методик</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mission-image">
+                    <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Интерьер центра Колибри">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Лицензии -->
+    <section class="page-section" id="licenses">
+        <div class="container">
+            <div class="section-header">
+                <h2>Лицензии и сертификаты</h2>
+            </div>
+            
+            <div class="licenses-grid">
+                <div class="license-card">
+                    <div class="license-icon">
+                        <i class="fas fa-file-medical"></i>
+                    </div>
+                    <h3>Лицензия на медицинскую деятельность</h3>
+                    <p>№ ЛО-02-01-123456 от 12.01.2023</p>
+                </div>
+                
+                <div class="license-card">
+                    <div class="license-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Сертификаты специалистов</h3>
+                    <p>Все врачи имеют действующие сертификаты</p>
+                </div>
+                
+                <div class="license-card">
+                    <div class="license-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Соответствие стандартам</h3>
+                    <p>Соблюдение всех требований Росздравнадзора</p>
+                </div>
+            </div>
+            
+            <div class="documents-link">
+                <a href="documents.html" class="btn btn-secondary">
+                    <i class="fas fa-folder-open"></i> Все документы центра
                 </a>
             </div>
-            <div class="team-grid-small">
-                <div class="team-member-small">
-                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w-200&h=200&fit=crop" alt="Ольга Иванова">
-                    <h4>Др. Ольга Иванова</h4>
-                    <p>Главный терапевт</p>
-                </div>
-                <div class="team-member-small">
-                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=200&h=200&fit=crop" alt="Алексей Петров">
-                    <h4>Др. Алексей Петров</h4>
-                    <p>Главный хирург</p>
-                </div>
-                <div class="team-member-small">
-                    <img src="https://images.unsplash.com/photo-1594824434340-7e7dfc37cabb?w=200&h=200&fit=crop" alt="Мария Сидорова">
-                    <h4>Др. Мария Сидорова</h4>
-                    <p>Главный педиатр</p>
-                </div>
-            </div>
         </div>
     </section>
 
-    <!-- CTA -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Готовы позаботиться о вашем здоровье?</h2>
-                <p>Запишитесь на прием к нашим специалистам прямо сейчас</p>
-                <div class="cta-buttons">
-                    <a href="contact.html#form" class="btn btn-primary btn-large">
-                        <i class="fas fa-calendar-alt"></i> Записаться на прием
-                    </a>
-                    <a href="contact.html" class="btn btn-outline btn-large">
-                        <i class="fas fa-phone"></i> Позвонить нам
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Футер -->
+    <!-- Вставляем футер -->
     <footer class="main-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <div class="logo">
-                        <i class="fas fa-heartbeat"></i>
-                        <span>Клиника <strong>Колибри</strong></span>
-                    </div>
-                    <p class="footer-text">
-                        Современная медицинская помощь с заботой о каждом пациенте.
-                    </p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-vk"></i></a>
-                        <a href="#"><i class="fab fa-telegram"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h4>Контакты</h4>
-                    <ul class="footer-links">
-                        <li><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Здоровья, 12</li>
-                        <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
-                        <li><i class="fas fa-envelope"></i> info@kolibri-clinic.ru</li>
-                        <li><i class="fas fa-clock"></i> Пн-Пт: 8:00-20:00, Сб: 9:00-15:00</li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Навигация</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Главная</a></li>
-                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> О нас</a></li>
-                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Услуги</a></li>
-                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Контакты</a></li>
-                        <li><a href="privacy.html"><i class="fas fa-chevron-right"></i> Политика</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Быстрая запись</h4>
-                    <a href="contact.html#form" class="btn btn-primary btn-block">
-                        <i class="fas fa-calendar-check"></i> Онлайн запись
-                    </a>
-                    <p class="footer-note">
-                        Запишитесь прямо сейчас без ожидания
-                    </p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; <span id="currentYear"></span> Клиника Колибри. Все права защищены.</p>
-                <p>Лицензия № ЛО-77-01-012345 от 12.01.2023</p>
-            </div>
-        </div>
+        <!-- ... содержимое футера ... -->
     </footer>
 
-    <!-- Скрипты -->
-    <script>
-        // Текущий год в футере
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-        
-        // Мобильное меню
-        const menuToggle = document.getElementById('menuToggle');
-        const mainNav = document.querySelector('.main-nav');
-        
-        menuToggle.addEventListener('click', () => {
-            mainNav.classList.toggle('active');
-            menuToggle.innerHTML = mainNav.classList.contains('active') 
-                ? '<i class="fas fa-times"></i>' 
-                : '<i class="fas fa-bars"></i>';
-        });
-    </script>
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
 </body>
 </html>
