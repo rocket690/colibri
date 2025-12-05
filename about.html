@@ -4,106 +4,235 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О клинике | Медицинский центр Колибри</title>
+    <meta name="description" content="О медицинском центре Колибри. Наша история, миссия, ценности и лицензии. Современная медицина с 2021 года.">
     
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/pages.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <meta name="description" content="О медицинском центре Колибри. Наша история, миссия, ценности и лицензии. Современная медицина с 2021 года.">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
-
 <body>
-    <!-- Header (такой же как в index.html) -->
-    <header class="main-header">
-        <!-- Вставьте header из index.html -->
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-wrapper">
+                <!-- Логотип -->
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <div class="logo-icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M20 5C25 5 30 10 30 15C30 25 20 35 20 35C20 35 10 25 10 15C10 10 15 5 20 5Z" 
+                                      fill="#2563EB"/>
+                                <path d="M25 15C25 17.5 22.5 20 20 20C17.5 20 15 17.5 15 15C15 12.5 17.5 10 20 10C22.5 10 25 12.5 25 15Z" 
+                                      fill="#FFFFFF"/>
+                            </svg>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">Колибри</span>
+                            <span class="logo-subtitle">Медицинский центр</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Навигация -->
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <span class="nav-icon">🏠</span>
+                                <span class="nav-text">Главная</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item has-dropdown">
+                            <a href="about.html" class="nav-link active">
+                                <span class="nav-icon">🏥</span>
+                                <span class="nav-text">О клинике</span>
+                                <span class="dropdown-arrow">▼</span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="#history" class="dropdown-item">
+                                    <span class="dropdown-icon">📜</span>
+                                    Наша история
+                                </a>
+                                <a href="#mission" class="dropdown-item">
+                                    <span class="dropdown-icon">🎯</span>
+                                    Наша миссия
+                                </a>
+                                <a href="#equipment" class="dropdown-item">
+                                    <span class="dropdown-icon">🔬</span>
+                                    Оборудование
+                                </a>
+                                <a href="#licenses" class="dropdown-item">
+                                    <span class="dropdown-icon">📋</span>
+                                    Лицензии
+                                </a>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item has-megamenu">
+                            <a href="services/index.html" class="nav-link">
+                                <span class="nav-icon">🩺</span>
+                                <span class="nav-text">Услуги</span>
+                                <span class="dropdown-arrow">▼</span>
+                            </a>
+                            <!-- Mega menu -->
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="doctors/index.html" class="nav-link">
+                                <span class="nav-icon">👨‍⚕️</span>
+                                <span class="nav-text">Врачи</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="prices.html" class="nav-link">
+                                <span class="nav-icon">💰</span>
+                                <span class="nav-text">Цены</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="contacts.html" class="nav-link">
+                                <span class="nav-icon">📍</span>
+                                <span class="nav-text">Контакты</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Контакты и CTA -->
+                <div class="header-actions">
+                    <div class="contact-info">
+                        <a href="tel:+78001234567" class="phone-link">
+                            <span class="phone-icon">📞</span>
+                            <span class="phone-number">8 (800) 123-45-67</span>
+                        </a>
+                        <div class="work-hours">
+                            Пн-Пт: 8:00-20:00
+                        </div>
+                    </div>
+                    
+                    <a href="contacts.html#appointment" class="btn btn-primary">
+                        <span class="btn-icon">📅</span>
+                        Запись онлайн
+                    </a>
+                </div>
+
+                <!-- Мобильное меню -->
+                <button class="mobile-menu-toggle" aria-label="Открыть меню">
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                </button>
+            </div>
+        </div>
     </header>
 
-    <!-- Хлебные крошки -->
-    <section class="breadcrumbs">
-        <div class="container">
-            <nav class="breadcrumb-nav">
-                <a href="index.html">Главная</a>
-                <span class="separator">/</span>
-                <span class="current">О клинике</span>
-            </nav>
-        </div>
-    </section>
-
-    <!-- Герой секция -->
+    <!-- Hero Section -->
     <section class="page-hero">
         <div class="container">
-            <div class="page-hero-content">
-                <h1>О медицинском центре Колибри</h1>
-                <p>Современная медицина с заботой о каждом пациенте</p>
+            <div class="hero-content">
+                <h1 class="hero-title fade-in">О медицинском центре Колибри</h1>
+                <p class="hero-subtitle fade-in" style="animation-delay: 0.2s">
+                    Современная медицина с заботой о каждом пациенте
+                </p>
             </div>
         </div>
     </section>
 
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumb-list">
+                <li><a href="index.html">Главная</a></li>
+                <li>О клинике</li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- История -->
-    <section class="page-section" id="history">
+    <section id="history" class="section">
         <div class="container">
             <div class="section-header">
-                <h2>Наша история</h2>
-                <p class="section-subtitle">От маленькой клиники к современному медицинскому центру</p>
+                <h2 class="section-title">Наша история</h2>
+                <p class="section-subtitle">
+                    От маленькой клиники к современному медицинскому центру
+                </p>
             </div>
             
             <div class="history-content">
                 <div class="history-text">
-                    <p>Колибри — это команда увлеченных специалистов, которые не только обладают высокой квалификацией, но и искренне любят свое дело. Наша история началась в 2021 году с открытия первой клиники «Здоровая семья» всего на три кабинета.</p>
+                    <p>
+                        <strong>Медицинский центр «Колибри»</strong> — это команда увлеченных специалистов, 
+                        которые не только обладают высокой квалификацией, но и искренне любят свое дело.
+                    </p>
                     
-                    <p>Благодаря усилиям нашей команды и доверию пациентов, мы постоянно развивались. В 2024 году мы открыли новый современный Медицинский центр «Колибри». Сегодня мы работаем в центре площадью более 500 кв.м., оснащенном современным оборудованием.</p>
+                    <p>
+                        Наша история началась в <strong>2021 году</strong> с открытия первой клиники 
+                        «Здоровая семья» всего на три кабинета. Благодаря усилиям нашей команды и доверию 
+                        пациентов, мы постоянно развивались.
+                    </p>
                     
-                    <p>На протяжении нескольких лет мы с любовью развиваем педиатрию и терапию, привлекая опытных врачей и формируя уютную, дружелюбную атмосферу. Мы стремимся к тому, чтобы каждый пациент чувствовал себя важным и услышанным.</p>
+                    <p>
+                        В <strong>2024 году</strong> мы открыли новый современный Медицинский центр «Колибри». 
+                        Сегодня мы работаем в центре площадью более <strong>500 кв.м.</strong>, оснащенном 
+                        современным оборудованием.
+                    </p>
+                    
+                    <p>
+                        На протяжении нескольких лет мы с любовью развиваем педиатрию и терапию, 
+                        привлекая опытных врачей и формируя уютную, дружелюбную атмосферу.
+                    </p>
                 </div>
                 
                 <div class="history-stats">
-                    <div class="stat-item">
+                    <div class="stat-card fade-in">
                         <div class="stat-number">3+</div>
                         <div class="stat-label">года работы</div>
                     </div>
-                    <div class="stat-item">
+                    <div class="stat-card fade-in-delay-1">
                         <div class="stat-number">25+</div>
                         <div class="stat-label">врачей</div>
                     </div>
-                    <div class="stat-item">
+                    <div class="stat-card fade-in-delay-1">
                         <div class="stat-number">500+</div>
                         <div class="stat-label">кв.м. площадь</div>
                     </div>
-                    <div class="stat-item">
+                    <div class="stat-card fade-in-delay-2">
                         <div class="stat-number">5000+</div>
                         <div class="stat-label">пациентов</div>
                     </div>
                 </div>
             </div>
             
-            <div class="history-timeline">
-                <div class="timeline-item">
+            <!-- Timeline -->
+            <div class="timeline">
+                <div class="timeline-item fade-in">
                     <div class="timeline-year">2021</div>
                     <div class="timeline-content">
                         <h3>Основание</h3>
                         <p>Открытие клиники «Здоровая семья» на три кабинета</p>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item fade-in-delay-1">
                     <div class="timeline-year">2022</div>
                     <div class="timeline-content">
                         <h3>Развитие</h3>
                         <p>Расширение команды до 10 специалистов</p>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item fade-in-delay-1">
                     <div class="timeline-year">2023</div>
                     <div class="timeline-content">
                         <h3>Рост</h3>
                         <p>Внедрение электронной медицинской карты</p>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item fade-in-delay-2">
                     <div class="timeline-year">2024</div>
                     <div class="timeline-content">
                         <h3>Новый центр</h3>
@@ -114,50 +243,56 @@
         </div>
     </section>
 
-    <!-- Миссия -->
-    <section class="page-section bg-light" id="mission">
+    <!-- Миссия и ценности -->
+    <section id="mission" class="section bg-gray-50">
         <div class="container">
             <div class="section-header">
-                <h2>Наша миссия и ценности</h2>
-                <p class="section-subtitle">Принципы, которые определяют нашу работу</p>
+                <h2 class="section-title">Наша миссия и ценности</h2>
+                <p class="section-subtitle">
+                    Принципы, которые определяют нашу работу
+                </p>
             </div>
             
             <div class="mission-content">
                 <div class="mission-text">
-                    <p>В Колибри вы найдете не только профессиональную помощь, но и искреннюю поддержку на каждом этапе вашего лечения. Наша миссия — создать удобную, доступную и теплую атмосферу, где каждая семья ощущает заботу и внимание.</p>
+                    <p>
+                        В Колибри вы найдете не только профессиональную помощь, но и искреннюю 
+                        поддержку на каждом этапе вашего лечения. 
+                    </p>
                     
-                    <p>Особое внимание мы уделяем профилактике заболеваний и просвещению, проводя мероприятия и школы для наших пациентов, чтобы каждый мог получить полезные знания о здоровье.</p>
+                    <p>
+                        <strong>Наша миссия</strong> — создать удобную, доступную и теплую атмосферу, 
+                        где каждая семья ощущает заботу и внимание.
+                    </p>
+                    
+                    <p>
+                        Особое внимание мы уделяем профилактике заболеваний и просвещению, 
+                        проводя мероприятия и школы для наших пациентов, чтобы каждый мог получить 
+                        полезные знания о здоровье.
+                    </p>
                 </div>
                 
                 <div class="values-grid">
-                    <div class="value-card">
-                        <div class="value-icon">
-                            <i class="fas fa-heart"></i>
-                        </div>
+                    <div class="value-card fade-in">
+                        <div class="value-icon">❤️</div>
                         <h3>Забота о пациентах</h3>
                         <p>Индивидуальный подход к каждому пациенту, внимание к деталям</p>
                     </div>
                     
-                    <div class="value-card">
-                        <div class="value-icon">
-                            <i class="fas fa-award"></i>
-                        </div>
+                    <div class="value-card fade-in-delay-1">
+                        <div class="value-icon">🏆</div>
                         <h3>Профессионализм</h3>
                         <p>Врачи высшей категории с многолетним опытом работы</p>
                     </div>
                     
-                    <div class="value-card">
-                        <div class="value-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
+                    <div class="value-card fade-in-delay-1">
+                        <div class="value-icon">🛡️</div>
                         <h3>Безопасность</h3>
                         <p>Строгое соблюдение медицинских стандартов и протоколов</p>
                     </div>
                     
-                    <div class="value-card">
-                        <div class="value-icon">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
+                    <div class="value-card fade-in-delay-2">
+                        <div class="value-icon">💡</div>
                         <h3>Инновации</h3>
                         <p>Использование современного оборудования и методик лечения</p>
                     </div>
@@ -167,41 +302,61 @@
     </section>
 
     <!-- Оборудование -->
-    <section class="page-section" id="equipment">
+    <section id="equipment" class="section">
         <div class="container">
             <div class="section-header">
-                <h2>Оборудование центра</h2>
-                <p class="section-subtitle">Современные технологии для точной диагностики и лечения</p>
+                <h2 class="section-title">Оборудование центра</h2>
+                <p class="section-subtitle">
+                    Современные технологии для точной диагностики и лечения
+                </p>
             </div>
             
             <div class="equipment-grid">
-                <div class="equipment-card">
+                <div class="equipment-card fade-in">
                     <div class="equipment-image">
-                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="УЗИ аппарат">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="УЗИ аппарат">
                     </div>
-                    <div class="equipment-info">
+                    <div class="equipment-content">
                         <h3>УЗИ аппараты экспертного класса</h3>
                         <p>Современные ультразвуковые системы для диагностики всех органов</p>
+                        <ul class="equipment-features">
+                            <li>Высокое разрешение изображения</li>
+                            <li>3D/4D визуализация</li>
+                            <li>Допплерография</li>
+                        </ul>
                     </div>
                 </div>
                 
-                <div class="equipment-card">
+                <div class="equipment-card fade-in-delay-1">
                     <div class="equipment-image">
-                        <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Лаборатория">
+                        <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Лаборатория">
                     </div>
-                    <div class="equipment-info">
+                    <div class="equipment-content">
                         <h3>Клиническая лаборатория</h3>
                         <p>Автоматизированная система для точных анализов</p>
+                        <ul class="equipment-features">
+                            <li>Анализ крови, мочи, биохимия</li>
+                            <li>Гормональные исследования</li>
+                            <li>Онкомаркеры</li>
+                        </ul>
                     </div>
                 </div>
                 
-                <div class="equipment-card">
+                <div class="equipment-card fade-in-delay-2">
                     <div class="equipment-image">
-                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="ЭКГ">
+                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="ЭКГ">
                     </div>
-                    <div class="equipment-info">
+                    <div class="equipment-content">
                         <h3>Кардиологическое оборудование</h3>
                         <p>ЭКГ, Холтер-мониторирование, Эхо-КГ</p>
+                        <ul class="equipment-features">
+                            <li>12-канальная ЭКГ</li>
+                            <li>Суточный мониторинг</li>
+                            <li>Эхокардиография</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -209,77 +364,102 @@
     </section>
 
     <!-- Лицензии -->
-    <section class="page-section bg-light" id="licenses">
+    <section id="licenses" class="section bg-gray-50">
         <div class="container">
             <div class="section-header">
-                <h2>Лицензии и сертификаты</h2>
-                <p class="section-subtitle">Мы работаем в соответствии со всеми требованиями законодательства</p>
+                <h2 class="section-title">Лицензии и сертификаты</h2>
+                <p class="section-subtitle">
+                    Мы работаем в соответствии со всеми требованиями законодательства
+                </p>
             </div>
             
             <div class="licenses-content">
-                <div class="license-cards">
-                    <div class="license-card">
-                        <div class="license-icon">
-                            <i class="fas fa-file-medical"></i>
-                        </div>
+                <div class="licenses-grid">
+                    <div class="license-card fade-in">
+                        <div class="license-icon">📄</div>
                         <h3>Лицензия на медицинскую деятельность</h3>
                         <p>№ ЛО-77-01-012345 от 12.01.2023</p>
                     </div>
                     
-                    <div class="license-card">
-                        <div class="license-icon">
-                            <i class="fas fa-certificate"></i>
-                        </div>
+                    <div class="license-card fade-in-delay-1">
+                        <div class="license-icon">🏅</div>
                         <h3>Сертификаты специалистов</h3>
                         <p>Все врачи имеют действующие сертификаты</p>
                     </div>
                     
-                    <div class="license-card">
-                        <div class="license-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
+                    <div class="license-card fade-in-delay-2">
+                        <div class="license-icon">🛡️</div>
                         <h3>Соответствие стандартам</h3>
                         <p>Соблюдение требований Росздравнадзора</p>
                     </div>
                 </div>
                 
-                <div class="license-documents">
+                <div class="documents-section">
                     <h3>Документы центра</h3>
                     <ul class="documents-list">
-                        <li><a href="documents.html#license"><i class="fas fa-file-pdf"></i> Лицензия на медицинскую деятельность</a></li>
-                        <li><a href="documents.html#ogrn"><i class="fas fa-file-pdf"></i> Свидетельство ОГРН</a></li>
-                        <li><a href="documents.html#inn"><i class="fas fa-file-pdf"></i> Свидетельство ИНН</a></li>
-                        <li><a href="documents.html#charter"><i class="fas fa-file-pdf"></i> Устав организации</a></li>
-                        <li><a href="documents.html#pricelist"><i class="fas fa-file-pdf"></i> Прейскурант цен</a></li>
+                        <li>
+                            <a href="documents/license.pdf" class="document-link">
+                                <span class="document-icon">📋</span>
+                                Лицензия на медицинскую деятельность
+                            </a>
+                        </li>
+                        <li>
+                            <a href="documents/ogrn.pdf" class="document-link">
+                                <span class="document-icon">📋</span>
+                                Свидетельство ОГРН
+                            </a>
+                        </li>
+                        <li>
+                            <a href="documents/inn.pdf" class="document-link">
+                                <span class="document-icon">📋</span>
+                                Свидетельство ИНН
+                            </a>
+                        </li>
+                        <li>
+                            <a href="documents/charter.pdf" class="document-link">
+                                <span class="document-icon">📋</span>
+                                Устав организации
+                            </a>
+                        </li>
+                        <li>
+                            <a href="documents/pricelist.pdf" class="document-link">
+                                <span class="document-icon">📋</span>
+                                Прейскурант цен
+                            </a>
+                        </li>
                     </ul>
                     
-                    <a href="documents.html" class="btn btn-secondary">
-                        <i class="fas fa-folder-open"></i> Все документы
-                    </a>
+                    <div class="text-center mt-4">
+                        <a href="documents.html" class="btn btn-primary">
+                            <span class="btn-icon">📁</span>
+                            Все документы
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA -->
-    <section class="cta-section">
+    <section class="cta-section bg-primary">
         <div class="container">
-            <div class="cta-content">
-                <h2>Запишитесь на прием прямо сейчас</h2>
-                <p>Наш администратор свяжется с вами для подтверждения записи</p>
-                <a href="contacts.html#appointment" class="btn btn-primary btn-large">
-                    <i class="fas fa-calendar-alt"></i> Записаться на прием
+            <div class="cta-content text-center">
+                <h2 class="text-white">Запишитесь на прием прямо сейчас</h2>
+                <p class="text-white opacity-80">Наш администратор свяжется с вами для подтверждения записи</p>
+                <a href="contacts.html#appointment" class="btn btn-secondary btn-large mt-4">
+                    <span class="btn-icon">📅</span>
+                    Записаться на прием
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Footer (такой же как в index.html) -->
-    <footer class="main-footer">
-        <!-- Вставьте footer из index.html -->
+    <!-- Footer -->
+    <footer class="site-footer">
+        <!-- Footer content from index.html -->
     </footer>
 
+    <!-- JavaScript -->
     <script src="js/main.js"></script>
-    <script src="js/navigation.js"></script>
 </body>
 </html>
