@@ -3,369 +3,687 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Клиника Колибри | Главная</title>
+    <title>Медицинский центр Колибри | Современная медицина для детей и взрослых</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 
 <body>
-    <!-- Хедер -->
+    <!-- Шапка сайта -->
     <header class="main-header">
         <div class="container header-container">
             <div class="logo">
-                <i class="fas fa-heartbeat"></i>
-                <span>Клиника <strong>Колибри</strong></span>
+                <div class="logo-icon">
+                    <i class="fas fa-feather-alt"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Колибри</span>
+                    <span class="logo-sub">Медицинский центр</span>
+                </div>
             </div>
+            
             <nav class="main-nav">
-                <a href="index.html" class="active"><i class="fas fa-home"></i> Главная</a>
-                <a href="about.html"><i class="fas fa-info-circle"></i> О нас</a>
-                <a href="services.html"><i class="fas fa-stethoscope"></i> Услуги</a>
-                <a href="contact.html"><i class="fas fa-address-book"></i> Контакты</a>
+                <ul>
+                    <li><a href="#about" class="nav-link"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="#services" class="nav-link"><i class="fas fa-stethoscope"></i> Услуги</a></li>
+                    <li><a href="#specialists" class="nav-link"><i class="fas fa-user-md"></i> Специалисты</a></li>
+                    <li><a href="#diagnostics" class="nav-link"><i class="fas fa-heartbeat"></i> Диагностика</a></li>
+                    <li><a href="#prevention" class="nav-link"><i class="fas fa-shield-alt"></i> Профилактика</a></li>
+                    <li><a href="#contacts" class="nav-link"><i class="fas fa-map-marker-alt"></i> Контакты</a></li>
+                </ul>
             </nav>
-            <div class="header-actions">
-                <a href="contact.html#form" class="btn btn-primary">
-                    <i class="fas fa-calendar-check"></i> Записаться онлайн
+            
+            <div class="header-contacts">
+                <div class="phone-number">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:+78001234567">8 (800) 123-45-67</a>
+                </div>
+                <a href="#appointment" class="btn btn-primary btn-small">
+                    <i class="fas fa-calendar-check"></i> Запись онлайн
                 </a>
-                <button class="menu-toggle" id="menuToggle">
-                    <i class="fas fa-bars"></i>
-                </button>
             </div>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </header>
 
     <!-- Герой-секция -->
-    <section class="hero">
-        <div class="hero-overlay"></div>
+    <section class="hero" id="about">
+        <div class="hero-background"></div>
         <div class="container hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    <span class="highlight">Качественная</span> медицинская помощь<br>
-                    в сердце города
+                    <span class="highlight">Современный</span> медицинский центр 
+                    <span class="highlight">для детей и взрослых</span>
                 </h1>
-                <p class="hero-subtitle">
-                    Клиника «Колибри» — современная многопрофильная клиника с командой 
-                    высококлассных специалистов и персональным подходом к каждому пациенту.
-                </p>
-                <div class="hero-buttons">
-                    <a href="contact.html#form" class="btn btn-primary btn-large">
+                
+                <div class="hero-description">
+                    <p>Колибри — это команда увлеченных специалистов, которые не только обладают высокой квалификацией, но и искренне любят свое дело.</p>
+                    
+                    <div class="hero-features">
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <span>Врачи высшей категории</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-child"></i>
+                            <span>Детская и взрослая медицина</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-microscope"></i>
+                            <span>Современная диагностика</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="#appointment" class="btn btn-primary btn-large">
                         <i class="fas fa-calendar-alt"></i> Записаться на прием
                     </a>
-                    <a href="services.html" class="btn btn-outline btn-large">
+                    <a href="#services" class="btn btn-secondary btn-large">
                         <i class="fas fa-list"></i> Наши услуги
                     </a>
                 </div>
             </div>
+            
             <div class="hero-image">
-                <div class="floating-card">
-                    <i class="fas fa-clock"></i>
-                    <h4>Работаем 24/7</h4>
-                    <p>Круглосуточная помощь</p>
+                <div class="image-frame">
+                    <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Врач в медицинском центре Колибри">
+                </div>
+                <div class="stats-overlay">
+                    <div class="stat">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-text">года успешной работы</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-text">кв.м. площадь центра</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-text">врачей-специалистов</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Преимущества -->
-    <section class="benefits">
+    <!-- История центра -->
+    <section class="history-section">
         <div class="container">
-            <h2 class="section-title">
-                <span class="title-line">Почему</span>
-                выбирают нас
-            </h2>
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-microscope"></i>
-                    </div>
-                    <h3>Современное оборудование</h3>
-                    <p>Используем новейшее диагностическое и лечебное оборудование</p>
+            <div class="section-header">
+                <h2 class="section-title">Наша история</h2>
+                <p class="section-subtitle">От маленькой клиники к современному медицинскому центру</p>
+            </div>
+            
+            <div class="history-content">
+                <div class="history-text">
+                    <p>Наша история началась в 2021 году с открытия первой клиники «Здоровая семья» всего на три кабинета. Благодаря усилиям нашей команды в 2024 году мы открыли новый Медицинский центр «Колибри».</p>
+                    <p>На сегодняшний день мы работаем в новом центре в два этажа, общей площадью более 500 кв.м. На протяжении нескольких лет с любовью развиваем педиатрию и терапию, привлекая опытных врачей и формируя уютную, дружелюбную атмосферу.</p>
+                    <p>Мы стремимся к тому, чтобы каждый пациент чувствовал себя важным и услышанным. Особое внимание уделяем профилактике заболеваний и просвещению, проводя мероприятия и школы для наших пациентов, чтобы каждый мог получить полезные знания о здоровье.</p>
+                    <p>В Колибри вы найдете не только профессиональную помощь, но и искреннюю поддержку на каждом этапе вашего лечения. Наша миссия — создать удобную, доступную и теплую атмосферу, где каждая семья ощущает заботу и внимание.</p>
                 </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-user-md"></i>
-                    </div>
-                    <h3>Опытные специалисты</h3>
-                    <p>Врачи высшей категории с многолетним опытом работы</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <h3>Удобная запись</h3>
-                    <p>Онлайн запись 24/7 без очередей и ожидания</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-hand-holding-heart"></i>
-                    </div>
-                    <h3>Индивидуальный подход</h3>
-                    <p>Персональное сопровождение каждого пациента</p>
+                
+                <div class="history-image">
+                    <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Интерьер медицинского центра Колибри">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Услуги -->
-    <section class="services">
+    <!-- Ключевые услуги -->
+    <section class="services-section" id="services">
         <div class="container">
-            <h2 class="section-title">
-                <span class="title-line">Популярные</span>
-                услуги
-            </h2>
+            <div class="section-header center">
+                <h2 class="section-title">КОМПЛЕКСНЫЕ МЕТОДЫ ДИАГНОСТИКИ И ЛЕЧЕНИЯ</h2>
+                <p class="section-subtitle">— передовые технологии для эффективного лечения заболеваний</p>
+            </div>
+            
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-heartbeat"></i>
+                <!-- Для детей -->
+                <div class="service-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <h3>Для детей</h3>
                     </div>
-                    <h3>Диагностика</h3>
-                    <p>Комплексные обследования: УЗИ, ЭКГ, лабораторная диагностика, МРТ, КТ</p>
-                    <div class="service-features">
-                        <span><i class="fas fa-check"></i> Точные результаты</span>
-                        <span><i class="fas fa-check"></i> Быстро</span>
-                        <span><i class="fas fa-check"></i> Без очередей</span>
+                    <div class="service-list">
+                        <div class="service-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Педиатрия</span>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Детская хирургия</span>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Детская неврология</span>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Детская кардиология</span>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Вакцинация</span>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Профилактические осмотры</span>
+                        </div>
                     </div>
-                    <a href="services.html#diagnostics" class="btn-service">
-                        Подробнее <i class="fas fa-arrow-right"></i>
-                    </a>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-syringe"></i>
+                
+                <!-- Для взрослых -->
+                <div class="service-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-user-injured"></i>
+                        </div>
+                        <h3>Для взрослых</h3>
                     </div>
-                    <h3>Хирургия</h3>
-                    <p>Современные малоинвазивные методики для быстрого восстановления</p>
-                    <div class="service-features">
-                        <span><i class="fas fa-check"></i> Безопасно</span>
-                        <span><i class="fas fa-check"></i> Малоинвазивно</span>
-                        <span><i class="fas fa-check"></i> Комфортно</span>
+                    <div class="service-list">
+                        <div class="service-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Терапия</span>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Кардиология</span>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Неврология</span>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Гастроэнтерология</span>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Консультации специалистов</span>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Профилактические программы</span>
+                        </div>
                     </div>
-                    <a href="services.html#surgery" class="btn-service">
-                        Подробнее <i class="fas fa-arrow-right"></i>
-                    </a>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-stethoscope"></i>
+                
+                <!-- Общие услуги -->
+                <div class="service-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-hospital-alt"></i>
+                        </div>
+                        <h3>Общие услуги</h3>
                     </div>
-                    <h3>Консультации</h3>
-                    <p>Прием терапевта, хирурга, педиатра, эндокринолога и других специалистов</p>
-                    <div class="service-features">
-                        <span><i class="fas fa-check"></i> Очно/Онлайн</span>
-                        <span><i class="fas fa-check"></i> Экспертный уровень</span>
-                        <span><i class="fas fa-check"></i> Подробный разбор</span>
+                    <div class="service-list">
+                        <div class="service-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Консультации</span>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Вакцинация</span>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Справки</span>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Больничные листы</span>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Диагностика</span>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Лабораторные исследования</span>
+                        </div>
                     </div>
-                    <a href="services.html#consult" class="btn-service">
-                        Подробнее <i class="fas fa-arrow-right"></i>
-                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Команда -->
-    <section class="team">
+    <!-- Диагностика -->
+    <section class="diagnostics-section" id="diagnostics">
         <div class="container">
-            <h2 class="section-title">
-                <span class="title-line">Наша</span>
-                команда
-            </h2>
-            <div class="team-grid">
-                <div class="team-card">
-                    <div class="team-photo">
-                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop" alt="Др. Ольга Иванова">
-                        <div class="photo-overlay">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <div class="section-header">
+                <h2 class="section-title">ДИАГНОСТИКА</h2>
+                <p class="section-subtitle">Современное оборудование для точной постановки диагноза</p>
+            </div>
+            
+            <div class="diagnostics-content">
+                <div class="diagnostics-list">
+                    <div class="diagnostic-item">
+                        <div class="diagnostic-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <div class="diagnostic-text">
+                            <h4>Собственная клиническая лаборатория</h4>
+                            <p>Биохимические анализы, общеклинические исследования</p>
                         </div>
                     </div>
-                    <h3>Др. Ольга Иванова</h3>
-                    <p class="team-specialty">Терапевт высшей категории</p>
-                    <p class="team-experience">Опыт: 15 лет</p>
-                    <div class="team-contact">
-                        <a href="contact.html#form" class="btn-small">
-                            <i class="fas fa-calendar"></i> Запись
-                        </a>
+                    
+                    <div class="diagnostic-item">
+                        <div class="diagnostic-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="diagnostic-text">
+                            <h4>ЭЭГ, ЭЭГ сна</h4>
+                            <p>Исследование электрической активности головного мозга</p>
+                        </div>
+                    </div>
+                    
+                    <div class="diagnostic-item">
+                        <div class="diagnostic-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="diagnostic-text">
+                            <h4>Эхо-КГ, ЭКГ с расшифровкой</h4>
+                            <p>Ультразвуковое исследование сердца и электрокардиография</p>
+                        </div>
+                    </div>
+                    
+                    <div class="diagnostic-item">
+                        <div class="diagnostic-icon">
+                            <i class="fas fa-wave-square"></i>
+                        </div>
+                        <div class="diagnostic-text">
+                            <h4>УЗИ всех органов</h4>
+                            <p>На аппарате экспертного класса</p>
+                        </div>
+                    </div>
+                    
+                    <div class="diagnostic-item">
+                        <div class="diagnostic-icon">
+                            <i class="fas fa-lungs"></i>
+                        </div>
+                        <div class="diagnostic-text">
+                            <h4>Спирометрия (с бронхолитиком)</h4>
+                            <p>Исследование функции внешнего дыхания</p>
+                        </div>
                     </div>
                 </div>
-                <div class="team-card">
-                    <div class="team-photo">
-                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w-400&h=400&fit=crop" alt="Др. Алексей Петров">
-                        <div class="photo-overlay">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                
+                <div class="diagnostics-image">
+                    <div class="image-card">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Диагностическое оборудование">
+                        <div class="image-overlay">
+                            <h4>Современное оборудование</h4>
+                            <p>Аппараты экспертного класса для точной диагностики</p>
                         </div>
-                    </div>
-                    <h3>Др. Алексей Петров</h3>
-                    <p class="team-specialty">Хирург, кандидат наук</p>
-                    <p class="team-experience">Опыт: 12 лет</p>
-                    <div class="team-contact">
-                        <a href="contact.html#form" class="btn-small">
-                            <i class="fas fa-calendar"></i> Запись
-                        </a>
-                    </div>
-                </div>
-                <div class="team-card">
-                    <div class="team-photo">
-                        <img src="https://images.unsplash.com/photo-1594824434340-7e7dfc37cabb?w=400&h=400&fit=crop" alt="Др. Мария Сидорова">
-                        <div class="photo-overlay">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                    <h3>Др. Мария Сидорова</h3>
-                    <p class="team-specialty">Педиатр высшей категории</p>
-                    <p class="team-experience">Опыт: 10 лет</p>
-                    <div class="team-contact">
-                        <a href="contact.html#form" class="btn-small">
-                            <i class="fas fa-calendar"></i> Запись
-                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Отзывы -->
-    <section class="reviews">
+    <!-- Специалисты -->
+    <section class="specialists-section" id="specialists">
         <div class="container">
-            <h2 class="section-title">
-                <span class="title-line">Отзывы</span>
-                пациентов
-            </h2>
-            <div class="reviews-slider">
-                <div class="review-card">
-                    <div class="review-header">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Иван Петров">
-                        <div>
-                            <h4>Иван Петров</h4>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="review-text">
-                        «Отличная клиника, внимательные врачи и короткое ожидание. 
-                        Записался онлайн — все удобно! Особенно понравился персональный подход.»
-                    </p>
-                    <span class="review-date">2 недели назад</span>
+            <div class="section-header center">
+                <h2 class="section-title">КВАЛИФИЦИРОВАННАЯ КОМАНДА</h2>
+                <p class="section-subtitle">Врачи из Нефтекамска, Ижевска и Уфы, обладающие высокой профессиональной компетенцией</p>
+            </div>
+            
+            <div class="specialists-grid">
+                <div class="specialist-category">
+                    <h3>Терапевтические специальности</h3>
+                    <ul class="specialist-list">
+                        <li><i class="fas fa-user-md"></i> Терапевт</li>
+                        <li><i class="fas fa-heart"></i> Кардиолог</li>
+                        <li><i class="fas fa-brain"></i> Невролог</li>
+                        <li><i class="fas fa-brain"></i> Невролог-эпилептолог</li>
+                        <li><i class="fas fa-lungs"></i> Пульмонолог</li>
+                        <li><i class="fas fa-allergies"></i> Аллерголог-иммунолог</li>
+                        <li><i class="fas fa-stomach"></i> Гастроэнтеролог</li>
+                        <li><i class="fas fa-kidneys"></i> Нефролог</li>
+                    </ul>
                 </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop" alt="Марина Смирнова">
-                        <div>
-                            <h4>Марина Смирнова</h4>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="review-text">
-                        «Проходила комплексное обследование — очень профессионально и быстро. 
-                        Все объяснили, успокоили. Рекомендую!»
-                    </p>
-                    <span class="review-date">месяц назад</span>
+                
+                <div class="specialist-category">
+                    <h3>Хирургические специальности</h3>
+                    <ul class="specialist-list">
+                        <li><i class="fas fa-bone"></i> Травматолог-ортопед</li>
+                        <li><i class="fas fa-ear"></i> Оториноларинголог</li>
+                        <li><i class="fas fa-eye"></i> Офтальмолог</li>
+                        <li><i class="fas fa-female"></i> Гинеколог</li>
+                        <li><i class="fas fa-cut"></i> Гинеколог-хирург</li>
+                    </ul>
                 </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=100&h=100&fit=crop" alt="Ольга Кузнецова">
-                        <div>
-                            <h4>Ольга Кузнецова</h4>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="review-text">
-                        «Доброжелательный персонал и комфортные условия. 
-                        Водила ребенка к педиатру — врач нашла подход к малышу сразу же.»
-                    </p>
-                    <span class="review-date">3 недели назад</span>
+                
+                <div class="specialist-category">
+                    <h3>Детские специалисты</h3>
+                    <ul class="specialist-list">
+                        <li><i class="fas fa-baby"></i> Педиатр</li>
+                        <li><i class="fas fa-user-md"></i> Детский уролог-андролог</li>
+                        <li><i class="fas fa-cut"></i> Детский хирург</li>
+                        <li><i class="fas fa-bone"></i> Детский травматолог-ортопед</li>
+                        <li><i class="fas fa-gland"></i> Детский эндокринолог</li>
+                        <li><i class="fas fa-heart"></i> Детский кардиолог</li>
+                        <li><i class="fas fa-heartbeat"></i> Детский кардиоревматолог</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Футер -->
-    <footer class="main-footer">
+    <!-- Профилактика и лечение -->
+    <section class="prevention-section" id="prevention">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <div class="logo">
-                        <i class="fas fa-heartbeat"></i>
-                        <span>Клиника <strong>Колибри</strong></span>
+            <div class="section-header">
+                <h2 class="section-title">ПРОФИЛАКТИКА И ЛЕЧЕНИЕ</h2>
+                <p class="section-subtitle">Комплексный подход к сохранению здоровья</p>
+            </div>
+            
+            <div class="prevention-content">
+                <div class="prevention-cards">
+                    <div class="prevention-card">
+                        <div class="card-icon">
+                            <i class="fas fa-syringe"></i>
+                        </div>
+                        <h4>Вакцинация</h4>
+                        <p>Профилактика инфекционных заболеваний</p>
                     </div>
-                    <p class="footer-text">
-                        Современная медицинская помощь с заботой о каждом пациенте.
-                    </p>
+                    
+                    <div class="prevention-card">
+                        <div class="card-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h4>Инъекции</h4>
+                        <p>Внутривенные и внутримышечные инъекции</p>
+                    </div>
+                    
+                    <div class="prevention-card">
+                        <div class="card-icon">
+                            <i class="fas fa-hands"></i>
+                        </div>
+                        <h4>Медицинский массаж</h4>
+                        <p>Лечебный и профилактический массаж</p>
+                    </div>
+                    
+                    <div class="prevention-card">
+                        <div class="card-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <h4>Физкабинет</h4>
+                        <p>Физиотерапевтические процедуры</p>
+                    </div>
+                    
+                    <div class="prevention-card">
+                        <div class="card-icon">
+                            <i class="fas fa-hand-sparkles"></i>
+                        </div>
+                        <h4>Биоэнергетический массаж</h4>
+                        <p>Энергетические практики для восстановления</p>
+                    </div>
+                    
+                    <div class="prevention-card">
+                        <div class="card-icon">
+                            <i class="fas fa-ear"></i>
+                        </div>
+                        <h4>Прокол ушей</h4>
+                        <p>По американской системе SYSTEM 75</p>
+                    </div>
+                </div>
+                
+                <div class="prevention-highlight">
+                    <div class="highlight-content">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Fohow</h3>
+                        <p>Инновационные методы восстановления здоровья</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Медико-социальные услуги -->
+    <section class="social-services-section">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title">МЕДИКО-СОЦИАЛЬНЫЕ УСЛУГИ</h2>
+                <p class="section-subtitle">Комплексная помощь для реабилитации и адаптации</p>
+            </div>
+            
+            <div class="social-services-grid">
+                <div class="social-service-item">
+                    <i class="fas fa-running"></i>
+                    <h4>Адаптивная физическая культура</h4>
+                </div>
+                
+                <div class="social-service-item">
+                    <i class="fas fa-comments"></i>
+                    <h4>Логопед (детский и взрослый)</h4>
+                </div>
+                
+                <div class="social-service-item">
+                    <i class="fas fa-heart-circle-plus"></i>
+                    <h4>Реабилитация</h4>
+                </div>
+                
+                <div class="social-service-item">
+                    <i class="fas fa-head-side-virus"></i>
+                    <h4>Психолог (детский и взрослый)</h4>
+                </div>
+                
+                <div class="social-service-item">
+                    <i class="fas fa-baby"></i>
+                    <h4>Грудничковый массаж</h4>
+                </div>
+                
+                <div class="social-service-item">
+                    <i class="fas fa-user-graduate"></i>
+                    <h4>Логопед-дефектолог</h4>
+                </div>
+                
+                <div class="social-service-item">
+                    <i class="fas fa-hands"></i>
+                    <h4>Детский и взрослый массаж</h4>
+                </div>
+                
+                <div class="social-service-item">
+                    <i class="fas fa-brain"></i>
+                    <h4>Нейропсихолог</h4>
+                </div>
+            </div>
+            
+            <div class="certificate-notice">
+                <i class="fas fa-file-certificate"></i>
+                <p>Работаем по сертификатам реабилитации</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Запись на прием -->
+    <section class="appointment-section" id="appointment">
+        <div class="container">
+            <div class="appointment-container">
+                <div class="appointment-form">
+                    <h3>Записаться на прием</h3>
+                    <p>Оставьте заявку и мы свяжемся с вами для подтверждения записи</p>
+                    
+                    <form id="appointmentForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Номер телефона" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="" disabled selected>Выберите специалиста</option>
+                                <option value="pediatrician">Педиатр</option>
+                                <option value="therapist">Терапевт</option>
+                                <option value="cardiologist">Кардиолог</option>
+                                <option value="neurologist">Невролог</option>
+                                <option value="other">Другой специалист</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Сообщение (необязательно)" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large btn-block">
+                            <i class="fas fa-paper-plane"></i> Отправить заявку
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="appointment-info">
+                    <h3>Контакты центра</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Адрес</h4>
+                                <p>г. Нефтекамск, ул. Медицинская, 12</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Телефон</h4>
+                                <p><a href="tel:+78001234567">8 (800) 123-45-67</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Часы работы</h4>
+                                <p>Пн-Пт: 8:00 - 20:00</p>
+                                <p>Сб: 9:00 - 17:00</p>
+                                <p>Вс: 9:00 - 15:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-vk"></i></a>
-                        <a href="#"><i class="fab fa-telegram"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="footer-col">
-                    <h4>Контакты</h4>
-                    <ul class="footer-links">
-                        <li><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Здоровья, 12</li>
-                        <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
-                        <li><i class="fas fa-envelope"></i> info@kolibri-clinic.ru</li>
-                        <li><i class="fas fa-clock"></i> Пн-Пт: 8:00-20:00, Сб: 9:00-15:00</li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Навигация</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Главная</a></li>
-                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> О нас</a></li>
-                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Услуги</a></li>
-                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Контакты</a></li>
-                        <li><a href="privacy.html"><i class="fas fa-chevron-right"></i> Политика</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Быстрая запись</h4>
-                    <a href="contact.html#form" class="btn btn-primary btn-block">
-                        <i class="fas fa-calendar-check"></i> Онлайн запись
-                    </a>
-                    <p class="footer-note">
-                        Запишитесь прямо сейчас без ожидания
-                    </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер с документами -->
+    <footer class="main-footer" id="contacts">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-feather-alt"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">Колибри</span>
+                            <span class="logo-sub">Медицинский центр</span>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-documents">
+                        <h4>Документы центра</h4>
+                        <div class="documents-grid">
+                            <div class="document-category">
+                                <h5>Федеральное законодательство</h5>
+                                <ul>
+                                    <li><a href="#">Федеральный закон № 323-ФЗ Об основах охраны здоровья граждан в Российской Федерации</a></li>
+                                    <li><a href="#">Постановление Правительства РФ от 28.12.2023 N 2353 «О Программе государственных гарантий бесплатного оказания гражданам медицинской помощи на 2025 год и на плановый период 2026 и 2027 годов»</a></li>
+                                    <li><a href="#">Федеральный закон от 29.11.2010 N 326-ФЗ «Об обязательном медицинском страховании в Российской Федерации»</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="document-category">
+                                <h5>Региональное законодательство</h5>
+                                <ul>
+                                    <li><a href="#">Программа государственных гарантий бесплатного оказания гражданам медицинской помощи в Республике Башкортостан на 2025 год и на плановый период 2026 и 2027 годов</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="document-category">
+                                <h5>Платные медицинские услуги</h5>
+                                <ul>
+                                    <li><a href="#">Постановление Правительства РФ от 11.05.2023 N 736 «Об утверждении Правил предоставления медицинскими организациями платных медицинских услуг»</a></li>
+                                    <li><a href="#">Перечень платных медицинских услуг ООО Колибри</a></li>
+                                    <li><a href="#">Прейскурант цен ООО Колибри</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="document-category">
+                                <h5>Учредительные документы</h5>
+                                <ul>
+                                    <li><a href="#">Выписка из ЕГРЮЛ ООО Колибри</a></li>
+                                    <li><a href="#">Свидетельство ОГРН ООО Колибри</a></li>
+                                    <li><a href="#">ИНН ООО Колибри</a></li>
+                                    <li><a href="#">Устав ООО Колибри</a></li>
+                                    <li><a href="#">Выписка из реестра лицензий</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="document-category">
+                                <h5>Доступность для инвалидов</h5>
+                                <ul>
+                                    <li><a href="#">Политика обеспечения доступности для инвалидов — ООО Колибри</a></li>
+                                    <li><a href="#">Инструкция по сопровождению инвалидов и лиц с ограниченными возможностями здоровья</a></li>
+                                    <li><a href="#">ГОСТ 52872-2012 «Интернет-ресурсы. Требования доступности для инвалидов по зрению»</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="document-category">
+                                <h5>Права пациентов</h5>
+                                <ul>
+                                    <li><a href="#">Права и обязанности граждан в сфере охраны здоровья</a></li>
+                                    <li><a href="#">Правила, порядки, условия и формы оказания медицинских услуг</a></li>
+                                    <li><a href="#">О защите прав потребителей</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="document-category">
+                                <h5>Лекарственное обеспечение</h5>
+                                <ul>
+                                    <li><a href="#">Приказ Минздрава РФ от 30.12.2014 №956н</a></li>
+                                    <li><a href="#">Перечень лекарственных препаратов для медицинского применения</a></li>
+                                    <li><a href="#">Перечень жизненно необходимых и важнейших лекарственных препаратов</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            
             <div class="footer-bottom">
-                <p>&copy; <span id="currentYear"></span> Клиника Колибри. Все права защищены.</p>
-                <p>Лицензия № ЛО-77-01-012345 от 12.01.2023</p>
+                <div class="footer-copyright">
+                    <p>&copy; <span id="currentYear"></span> ООО "Колибри". Все права защищены.</p>
+                    <p>Лицензия на осуществление медицинской деятельности: ЛО-02-01-123456 от 12.01.2023</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="privacy.html">Политика конфиденциальности</a>
+                    <a href="#appointment">Запись на прием</a>
+                    <a href="#contacts">Контакты</a>
+                </div>
             </div>
         </div>
     </footer>
 
     <!-- Скрипты -->
-    <script>
-        // Текущий год в футере
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-        
-        // Мобильное меню
-        const menuToggle = document.getElementById('menuToggle');
-        const mainNav = document.querySelector('.main-nav');
-        
-        menuToggle.addEventListener('click', () => {
-            mainNav.classList.toggle('active');
-            menuToggle.innerHTML = mainNav.classList.contains('active') 
-                ? '<i class="fas fa-times"></i>' 
-                : '<i class="fas fa-bars"></i>';
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
