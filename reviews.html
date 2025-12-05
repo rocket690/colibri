@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы | Медицинский центр Колибри</title>
+    <!-- подключения -->
+</head>
+
+<body>
+    <!-- Header -->
+
+    <!-- Хлебные крошки -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="index.html">Главная</a>
+                <span class="separator">/</span>
+                <span class="current">Отзывы</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Герой секция -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Отзывы пациентов</h1>
+                <p>Что говорят о нас наши пациенты</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="page-section">
+        <div class="container">
+            <div class="reviews-header">
+                <h2>Нам доверяют</h2>
+                <div class="rating-overview">
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="rating-score">4.8 из 5</span>
+                    <span class="rating-count">на основе 127 отзывов</span>
+                </div>
+                
+                <a href="#add-review" class="btn btn-primary">
+                    <i class="fas fa-pen"></i> Оставить отзыв
+                </a>
+            </div>
+            
+            <div class="reviews-grid">
+                <!-- Отзыв 1 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Иван П.">
+                            </div>
+                            <div class="reviewer-details">
+                                <h4>Иван Петров</h4>
+                                <span class="review-date">2 недели назад</span>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="review-content">
+                        <h3>Отличная клиника</h3>
+                        <p>Приводил ребенка на прием к педиатру. Врач очень внимательный, все подробно объяснила. 
+                        Записались онлайн без очереди, что очень удобно для работающих родителей.</p>
+                    </div>
+                    
+                    <div class="review-footer">
+                        <span class="review-doctor">
+                            <i class="fas fa-user-md"></i> Др. Ольга Иванова
+                        </span>
+                        <span class="review-service">
+                            <i class="fas fa-stethoscope"></i> Педиатрия
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- Добавить больше отзывов -->
+            </div>
+            
+            <!-- Форма добавления отзыва -->
+            <div class="add-review-section" id="add-review">
+                <h3>Оставить отзыв</h3>
+                <form class="review-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder
