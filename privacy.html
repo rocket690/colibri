@@ -3,110 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Политика конфиденциальности | Клиника Колибри</title>
+    <title>Политика конфиденциальности | Медицинский центр Колибри</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 
 <body>
-    <!-- Хедер -->
+    <!-- Шапка сайта -->
     <header class="main-header">
         <div class="container header-container">
             <div class="logo">
-                <i class="fas fa-heartbeat"></i>
-                <span>Клиника <strong>Колибри</strong></span>
+                <div class="logo-icon">
+                    <i class="fas fa-feather-alt"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Колибри</span>
+                    <span class="logo-sub">Медицинский центр</span>
+                </div>
             </div>
+            
             <nav class="main-nav">
-                <a href="index.html"><i class="fas fa-home"></i> Главная</a>
-                <a href="about.html"><i class="fas fa-info-circle"></i> О нас</a>
-                <a href="services.html"><i class="fas fa-stethoscope"></i> Услуги</a>
-                <a href="contact.html"><i class="fas fa-address-book"></i> Контакты</a>
+                <ul>
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="index.html#services" class="nav-link"><i class="fas fa-stethoscope"></i> Услуги</a></li>
+                    <li><a href="index.html#specialists" class="nav-link"><i class="fas fa-user-md"></i> Специалисты</a></li>
+                    <li><a href="index.html#diagnostics" class="nav-link"><i class="fas fa-heartbeat"></i> Диагностика</a></li>
+                    <li><a href="index.html#prevention" class="nav-link"><i class="fas fa-shield-alt"></i> Профилактика</a></li>
+                    <li><a href="index.html#contacts" class="nav-link"><i class="fas fa-map-marker-alt"></i> Контакты</a></li>
+                </ul>
             </nav>
-            <div class="header-actions">
-                <a href="contact.html#form" class="btn btn-primary">
-                    <i class="fas fa-calendar-check"></i> Записаться
+            
+            <div class="header-contacts">
+                <div class="phone-number">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:+78001234567">8 (800) 123-45-67</a>
+                </div>
+                <a href="index.html#appointment" class="btn btn-primary btn-small">
+                    <i class="fas fa-calendar-check"></i> Запись онлайн
                 </a>
-                <button class="menu-toggle" id="menuToggle">
-                    <i class="fas fa-bars"></i>
-                </button>
             </div>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </header>
 
-    <!-- Баннер страницы -->
-    <section class="page-banner">
+    <!-- Хлебные крошки -->
+    <section class="breadcrumbs">
         <div class="container">
-            <h1 class="page-title">Политика конфиденциальности</h1>
-            <p class="page-subtitle">Защита ваших персональных данных</p>
-            <nav class="breadcrumb">
+            <nav class="breadcrumb-nav">
                 <a href="index.html">Главная</a>
                 <span class="separator">/</span>
-                <span>Политика конфиденциальности</span>
+                <span class="current">Политика конфиденциальности</span>
             </nav>
         </div>
     </section>
 
-    <!-- Контент политики -->
-    <section class="privacy-content">
+    <!-- Основной контент -->
+    <main class="privacy-main">
         <div class="container">
             <div class="privacy-header">
                 <div class="privacy-icon">
                     <i class="fas fa-shield-alt"></i>
                 </div>
-                <h2>Общие положения</h2>
-                <p class="last-update">Последнее обновление: 15 января 2024 года</p>
+                <h1>Политика конфиденциальности</h1>
+                <p class="last-updated">Последнее обновление: 15 января 2024 года</p>
             </div>
             
-            <div class="privacy-sections">
-                <article class="privacy-section">
-                    <h3><i class="fas fa-user-lock"></i> 1. Основные понятия</h3>
-                    <p>Настоящая Политика конфиденциальности регулирует порядок обработки и защиты информации о физических лицах (далее — Пользователи), которая может быть получена Клиникой «Колибри» при использовании сайта и услуг клиники.</p>
+            <div class="privacy-content">
+                <section class="privacy-section">
+                    <h2><i class="fas fa-info-circle"></i> Общие положения</h2>
+                    <p>Настоящая Политика конфиденциальности (далее — Политика) действует в отношении всей информации, которую ООО "Колибри" (далее — Медицинский центр) может получить о Пользователе во время использования сайта, услуг и сервисов Медицинского центра.</p>
                     
-                    <div class="definition-list">
-                        <div class="definition-item">
-                            <strong>Персональные данные</strong>
-                            <p>Любая информация, относящаяся к прямо или косвенно определенному или определяемому физическому лицу.</p>
-                        </div>
-                        <div class="definition-item">
-                            <strong>Обработка персональных данных</strong>
-                            <p>Любое действие с персональными данными, включая сбор, запись, систематизацию, хранение, использование, передачу.</p>
-                        </div>
-                        <div class="definition-item">
-                            <strong>Конфиденциальность</strong>
-                            <p>Обязательное для соблюдения требование не разглашать персональные данные без согласия субъекта.</p>
-                        </div>
+                    <div class="notice-box">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <p>Использование услуг Медицинского центра означает безоговорочное согласие Пользователя с настоящей Политикой и указанными в ней условиями обработки его персональной информации.</p>
                     </div>
-                </article>
+                </section>
                 
-                <article class="privacy-section">
-                    <h3><i class="fas fa-database"></i> 2. Какие данные мы собираем</h3>
-                    <p>При использовании сайта и услуг клиники мы можем собирать следующую информацию:</p>
+                <section class="privacy-section">
+                    <h2><i class="fas fa-database"></i> Собираемые данные</h2>
+                    <p>Медицинский центр может собирать следующие виды информации:</p>
                     
                     <div class="data-categories">
                         <div class="data-category">
-                            <h4><i class="fas fa-user-circle"></i> Личные данные</h4>
+                            <h3><i class="fas fa-user"></i> Персональные данные</h3>
                             <ul>
-                                <li>ФИО</li>
+                                <li>Фамилия, имя, отчество</li>
                                 <li>Дата рождения</li>
                                 <li>Контактные данные (телефон, email)</li>
                                 <li>Адрес проживания</li>
+                                <li>Паспортные данные</li>
+                                <li>Данные полиса ОМС/ДМС</li>
                             </ul>
                         </div>
                         
                         <div class="data-category">
-                            <h4><i class="fas fa-file-medical"></i> Медицинские данные</h4>
+                            <h3><i class="fas fa-file-medical"></i> Медицинские данные</h3>
                             <ul>
                                 <li>Медицинская история</li>
                                 <li>Результаты обследований</li>
                                 <li>Диагнозы и назначения</li>
-                                <li>Информация о страховом полисе</li>
+                                <li>Информация о проведенных процедурах</li>
                             </ul>
                         </div>
                         
                         <div class="data-category">
-                            <h4><i class="fas fa-network-wired"></i> Технические данные</h4>
+                            <h3><i class="fas fa-network-wired"></i> Технические данные</h3>
                             <ul>
                                 <li>IP-адрес</li>
                                 <li>Тип браузера</li>
@@ -115,18 +123,18 @@
                             </ul>
                         </div>
                     </div>
-                </article>
+                </section>
                 
-                <article class="privacy-section">
-                    <h3><i class="fas fa-cogs"></i> 3. Цели обработки данных</h3>
-                    <p>Мы обрабатываем ваши персональные данные исключительно в законных целях:</p>
+                <section class="privacy-section">
+                    <h2><i class="fas fa-cogs"></i> Цели обработки данных</h2>
+                    <p>Медицинский центр обрабатывает персональные данные Пользователей в следующих целях:</p>
                     
                     <div class="purposes-grid">
                         <div class="purpose-card">
                             <div class="purpose-icon">
                                 <i class="fas fa-heartbeat"></i>
                             </div>
-                            <h4>Оказание медицинской помощи</h4>
+                            <h3>Оказание медицинской помощи</h3>
                             <p>Для диагностики, лечения и профилактики заболеваний</p>
                         </div>
                         
@@ -134,45 +142,45 @@
                             <div class="purpose-icon">
                                 <i class="fas fa-calendar-check"></i>
                             </div>
-                            <h4>Запись на прием</h4>
-                            <p>Организация и подтверждение записи к специалистам</p>
+                            <h3>Организация приема</h3>
+                            <p>Запись на прием и напоминание о визитах</p>
                         </div>
                         
                         <div class="purpose-card">
                             <div class="purpose-icon">
                                 <i class="fas fa-comments"></i>
                             </div>
-                            <h4>Обратная связь</h4>
-                            <p>Ответы на ваши вопросы и обращение</p>
+                            <h3>Обратная связь</h3>
+                            <p>Ответы на вопросы и информирование пациентов</p>
                         </div>
                         
                         <div class="purpose-card">
                             <div class="purpose-icon">
                                 <i class="fas fa-chart-line"></i>
                             </div>
-                            <h4>Улучшение сервиса</h4>
+                            <h3>Улучшение сервиса</h3>
                             <p>Анализ работы сайта и качества услуг</p>
                         </div>
                     </div>
-                </article>
+                </section>
                 
-                <article class="privacy-section">
-                    <h3><i class="fas fa-user-shield"></i> 4. Защита данных</h3>
-                    <p>Мы предпринимаем все необходимые меры для защиты ваших персональных данных:</p>
+                <section class="privacy-section">
+                    <h2><i class="fas fa-user-shield"></i> Защита данных</h2>
+                    <p>Медицинский центр принимает необходимые организационные и технические меры для защиты персональных данных от неправомерного или случайного доступа, уничтожения, изменения, блокирования, копирования, распространения, а также от иных неправомерных действий.</p>
                     
                     <div class="protection-measures">
                         <div class="protection-item">
                             <i class="fas fa-lock"></i>
                             <div>
-                                <h4>Техническая защита</h4>
-                                <p>Используем современные системы шифрования и защиты от несанкционированного доступа</p>
+                                <h3>Техническая защита</h3>
+                                <p>Использование современных систем шифрования и защиты от несанкционированного доступа</p>
                             </div>
                         </div>
                         
                         <div class="protection-item">
                             <i class="fas fa-user-check"></i>
                             <div>
-                                <h4>Ограничение доступа</h4>
+                                <h3>Ограничение доступа</h3>
                                 <p>Доступ к медицинским данным имеют только уполномоченные медицинские работники</p>
                             </div>
                         </div>
@@ -180,7 +188,7 @@
                         <div class="protection-item">
                             <i class="fas fa-file-contract"></i>
                             <div>
-                                <h4>Соглашения о конфиденциальности</h4>
+                                <h3>Соглашения о конфиденциальности</h3>
                                 <p>Все сотрудники подписывают соглашение о неразглашении персональных данных пациентов</p>
                             </div>
                         </div>
@@ -188,124 +196,136 @@
                         <div class="protection-item">
                             <i class="fas fa-server"></i>
                             <div>
-                                <h4>Безопасное хранение</h4>
+                                <h3>Безопасное хранение</h3>
                                 <p>Данные хранятся на защищенных серверах с регулярным резервным копированием</p>
                             </div>
                         </div>
                     </div>
-                </article>
+                </section>
                 
-                <article class="privacy-section">
-                    <h3><i class="fas fa-share-alt"></i> 5. Передача данных третьим лицам</h3>
-                    <p>Мы не передаем ваши персональные данные третьим лицам, за исключением случаев:</p>
+                <section class="privacy-section">
+                    <h2><i class="fas fa-share-alt"></i> Передача данных третьим лицам</h2>
+                    <p>Медицинский центр не передает персональные данные третьим лицам, за исключением следующих случаев:</p>
                     
                     <div class="exceptions-list">
                         <div class="exception-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>При наличии вашего явного согласия</span>
+                            <i class="fas fa-check"></i>
+                            <span>При наличии явного согласия Пользователя</span>
                         </div>
                         <div class="exception-item">
-                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-check"></i>
                             <span>По запросу уполномоченных государственных органов</span>
                         </div>
                         <div class="exception-item">
-                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-check"></i>
                             <span>Для организации медицинской эвакуации</span>
                         </div>
                         <div class="exception-item">
-                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-check"></i>
                             <span>При оказании неотложной медицинской помощи</span>
                         </div>
                         <div class="exception-item">
-                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-check"></i>
                             <span>По договорам с партнерами, обеспечивающими обработку данных</span>
                         </div>
                     </div>
                     
-                    <div class="notice-box important">
+                    <div class="important-notice">
                         <i class="fas fa-exclamation-triangle"></i>
                         <div>
-                            <h4>Важно!</h4>
-                            <p>Медицинская тайна охраняется законом. Разглашение сведений, составляющих врачебную тайну, без согласия пациента влечет ответственность согласно законодательству РФ.</p>
+                            <h3>Медицинская тайна</h3>
+                            <p>Медицинская тайна охраняется в соответствии со статьей 13 Федерального закона от 21.11.2011 № 323-ФЗ "Об основах охраны здоровья граждан в Российской Федерации". Разглашение сведений, составляющих врачебную тайну, без согласия пациента влечет ответственность согласно законодательству РФ.</p>
                         </div>
                     </div>
-                </article>
+                </section>
                 
-                <article class="privacy-section">
-                    <h3><i class="fas fa-user-edit"></i> 6. Ваши права</h3>
-                    <p>В соответствии с Федеральным законом №152-ФЗ «О персональных данных» вы имеете право:</p>
+                <section class="privacy-section">
+                    <h2><i class="fas fa-user-edit"></i> Права субъектов персональных данных</h2>
+                    <p>В соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ "О персональных данных", Пользователь имеет право:</p>
                     
                     <div class="rights-grid">
                         <div class="right-card">
-                            <h4><i class="fas fa-eye"></i> Право на доступ</h4>
-                            <p>Получать информацию об обработке ваших персональных данных</p>
+                            <div class="right-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h3>Право на доступ</h3>
+                            <p>Получать информацию об обработке своих персональных данных</p>
                         </div>
                         
                         <div class="right-card">
-                            <h4><i class="fas fa-edit"></i> Право на исправление</h4>
+                            <div class="right-icon">
+                                <i class="fas fa-edit"></i>
+                            </div>
+                            <h3>Право на исправление</h3>
                             <p>Требовать уточнения или исправления неточных данных</p>
                         </div>
                         
                         <div class="right-card">
-                            <h4><i class="fas fa-ban"></i> Право на удаление</h4>
-                            <p>Требовать удаления ваших персональных данных</p>
+                            <div class="right-icon">
+                                <i class="fas fa-ban"></i>
+                            </div>
+                            <h3>Право на удаление</h3>
+                            <p>Требовать удаления своих персональных данных</p>
                         </div>
                         
                         <div class="right-card">
-                            <h4><i class="fas fa-times-circle"></i> Право на отзыв согласия</h4>
+                            <div class="right-icon">
+                                <i class="fas fa-times-circle"></i>
+                            </div>
+                            <h3>Право на отзыв согласия</h3>
                             <p>Отозвать согласие на обработку персональных данных</p>
                         </div>
                     </div>
                     
                     <div class="contact-rights">
-                        <h4>Как реализовать свои права?</h4>
+                        <h3>Как реализовать свои права?</h3>
                         <p>Для реализации своих прав вы можете:</p>
                         <ul>
-                            <li>Написать заявление в клинике лично</li>
+                            <li>Написать заявление в Медицинском центре лично</li>
                             <li>Отправить письмо на email: <a href="mailto:dpo@kolibri-clinic.ru">dpo@kolibri-clinic.ru</a></li>
-                            <li>Обратиться к уполномоченному по защите прав субъектов персональных данных по телефону: <a href="tel:+74957654321">+7 (495) 765-43-21</a></li>
+                            <li>Обратиться к уполномоченному по защите прав субъектов персональных данных по телефону: <a href="tel:+78001234567">8 (800) 123-45-67</a> (доб. 123)</li>
                         </ul>
                     </div>
-                </article>
+                </section>
                 
-                <article class="privacy-section">
-                    <h3><i class="fas fa-cookie-bite"></i> 7. Использование cookies</h3>
-                    <p>Наш сайт использует файлы cookies для улучшения работы сайта и анализа трафика.</p>
+                <section class="privacy-section">
+                    <h2><i class="fas fa-cookie-bite"></i> Использование файлов cookie</h2>
+                    <p>Сайт Медицинского центра использует файлы cookie для улучшения работы сайта и анализа трафика.</p>
                     
                     <div class="cookies-info">
                         <div class="cookie-type">
-                            <h4>Технические cookies</h4>
+                            <h3>Технические cookies</h3>
                             <p>Необходимы для корректной работы сайта (сохранение настроек, авторизация)</p>
                         </div>
                         
                         <div class="cookie-type">
-                            <h4>Аналитические cookies</h4>
+                            <h3>Аналитические cookies</h3>
                             <p>Помогают анализировать использование сайта (Google Analytics, Яндекс.Метрика)</p>
                         </div>
                         
                         <div class="cookie-type">
-                            <h4>Маркетинговые cookies</h4>
-                            <p>Используются для показа релевантной рекламы (при наличии согласия)</p>
+                            <h3>Функциональные cookies</h3>
+                            <p>Запоминают выбранные настройки и предпочтения</p>
                         </div>
                     </div>
                     
                     <div class="cookies-control">
                         <p>Вы можете отключить cookies в настройках вашего браузера, однако это может повлиять на работу некоторых функций сайта.</p>
-                        <button class="btn btn-outline" id="manageCookies">
+                        <button class="btn btn-secondary" id="manageCookies">
                             <i class="fas fa-sliders-h"></i> Управление cookies
                         </button>
                     </div>
-                </article>
+                </section>
                 
-                <article class="privacy-section">
-                    <h3><i class="fas fa-phone-alt"></i> 8. Контактная информация</h3>
+                <section class="privacy-section">
+                    <h2><i class="fas fa-phone-alt"></i> Контактная информация</h2>
                     <div class="contact-dpo">
                         <div class="dpo-info">
-                            <h4>Ответственный за обработку персональных данных</h4>
+                            <h3>Ответственный за обработку персональных данных</h3>
                             <p>Иванов Иван Иванович</p>
                             <div class="dpo-contact">
                                 <p><i class="fas fa-envelope"></i> <a href="mailto:dpo@kolibri-clinic.ru">dpo@kolibri-clinic.ru</a></p>
-                                <p><i class="fas fa-phone"></i> <a href="tel:+74957654321">+7 (495) 765-43-21</a> (доб. 123)</p>
+                                <p><i class="fas fa-phone"></i> <a href="tel:+78001234567">8 (800) 123-45-67</a> (доб. 123)</p>
                                 <p><i class="fas fa-clock"></i> Пн-Пт: 9:00-18:00</p>
                             </div>
                         </div>
@@ -314,7 +334,7 @@
                             <p>Если у вас есть вопросы или предложения по поводу нашей политики конфиденциальности, пожалуйста, свяжитесь с нами.</p>
                         </div>
                     </div>
-                </article>
+                </section>
             </div>
             
             <div class="privacy-footer">
@@ -326,7 +346,7 @@
                 </div>
                 
                 <div class="action-buttons">
-                    <a href="contact.html" class="btn btn-outline">
+                    <a href="index.html#contacts" class="btn btn-secondary">
                         <i class="fas fa-question-circle"></i> Задать вопрос
                     </a>
                     <a href="index.html" class="btn btn-primary">
@@ -335,98 +355,133 @@
                 </div>
             </div>
         </div>
-    </section>
+    </main>
 
     <!-- Футер -->
     <footer class="main-footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <div class="logo">
-                        <i class="fas fa-heartbeat"></i>
-                        <span>Клиника <strong>Колибри</strong></span>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-feather-alt"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">Колибри</span>
+                            <span class="logo-sub">Медицинский центр</span>
+                        </div>
                     </div>
-                    <p class="footer-text">
-                        Современная медицинская помощь с заботой о каждом пациенте.
-                    </p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-vk"></i></a>
-                        <a href="#"><i class="fab fa-telegram"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    
+                    <div class="footer-documents">
+                        <h4>Документы центра</h4>
+                        <div class="documents-grid">
+                            <div class="document-category">
+                                <h5>Федеральное законодательство</h5>
+                                <ul>
+                                    <li><a href="#">Федеральный закон № 323-ФЗ Об основах охраны здоровья граждан в Российской Федерации</a></li>
+                                    <li><a href="#">Постановление Правительства РФ от 28.12.2023 N 2353 «О Программе государственных гарантий бесплатного оказания гражданам медицинской помощи на 2025 год и на плановый период 2026 и 2027 годов»</a></li>
+                                    <li><a href="#">Федеральный закон от 29.11.2010 N 326-ФЗ «Об обязательном медицинском страховании в Российской Федерации»</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="document-category">
+                                <h5>Региональное законодательство</h5>
+                                <ul>
+                                    <li><a href="#">Программа государственных гарантий бесплатного оказания гражданам медицинской помощи в Республике Башкортостан на 2025 год и на плановый период 2026 и 2027 годов</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="document-category">
+                                <h5>Платные медицинские услуги</h5>
+                                <ul>
+                                    <li><a href="#">Постановление Правительства РФ от 11.05.2023 N 736 «Об утверждении Правил предоставления медицинскими организациями платных медицинских услуг»</a></li>
+                                    <li><a href="#">Перечень платных медицинских услуг ООО Колибри</a></li>
+                                    <li><a href="#">Прейскурант цен ООО Колибри</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="document-category">
+                                <h5>Учредительные документы</h5>
+                                <ul>
+                                    <li><a href="#">Выписка из ЕГРЮЛ ООО Колибри</a></li>
+                                    <li><a href="#">Свидетельство ОГРН ООО Колибри</a></li>
+                                    <li><a href="#">ИНН ООО Колибри</a></li>
+                                    <li><a href="#">Устав ООО Колибри</a></li>
+                                    <li><a href="#">Выписка из реестра лицензий</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="document-category">
+                                <h5>Доступность для инвалидов</h5>
+                                <ul>
+                                    <li><a href="#">Политика обеспечения доступности для инвалидов — ООО Колибри</a></li>
+                                    <li><a href="#">Инструкция по сопровождению инвалидов и лиц с ограниченными возможностями здоровья</a></li>
+                                    <li><a href="#">ГОСТ 52872-2012 «Интернет-ресурсы. Требования доступности для инвалидов по зрению»</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="document-category">
+                                <h5>Права пациентов</h5>
+                                <ul>
+                                    <li><a href="#">Права и обязанности граждан в сфере охраны здоровья</a></li>
+                                    <li><a href="#">Правила, порядки, условия и формы оказания медицинских услуг</a></li>
+                                    <li><a href="#">О защите прав потребителей</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="document-category">
+                                <h5>Лекарственное обеспечение</h5>
+                                <ul>
+                                    <li><a href="#">Приказ Минздрава РФ от 30.12.2014 №956н</a></li>
+                                    <li><a href="#">Перечень лекарственных препаратов для медицинского применения</a></li>
+                                    <li><a href="#">Перечень жизненно необходимых и важнейших лекарственных препаратов</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="footer-col">
-                    <h4>Контакты</h4>
-                    <ul class="footer-links">
-                        <li><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Здоровья, 12</li>
-                        <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
-                        <li><i class="fas fa-envelope"></i> info@kolibri-clinic.ru</li>
-                        <li><i class="fas fa-clock"></i> Пн-Пт: 8:00-20:00, Сб: 9:00-15:00</li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Навигация</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Главная</a></li>
-                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> О нас</a></li>
-                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Услуги</a></li>
-                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Контакты</a></li>
-                        <li><a href="privacy.html"><i class="fas fa-chevron-right"></i> Политика</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Быстрая запись</h4>
-                    <a href="contact.html#form" class="btn btn-primary btn-block">
-                        <i class="fas fa-calendar-check"></i> Онлайн запись
-                    </a>
-                    <p class="footer-note">
-                        Запишитесь прямо сейчас без ожидания
-                    </p>
                 </div>
             </div>
+            
             <div class="footer-bottom">
-                <p>&copy; <span id="currentYear"></span> Клиника Колибри. Все права защищены.</p>
-                <p>Лицензия № ЛО-77-01-012345 от 12.01.2023</p>
+                <div class="footer-copyright">
+                    <p>&copy; <span id="currentYear"></span> ООО "Колибри". Все права защищены.</p>
+                    <p>Лицензия на осуществление медицинской деятельности: ЛО-02-01-123456 от 12.01.2023</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="privacy.html">Политика конфиденциальности</a>
+                    <a href="index.html#appointment">Запись на прием</a>
+                    <a href="index.html#contacts">Контакты</a>
+                </div>
             </div>
         </div>
     </footer>
 
     <!-- Скрипты -->
+    <script src="js/main.js"></script>
     <script>
-        // Текущий год в футере
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-        
-        // Мобильное меню
-        const menuToggle = document.getElementById('menuToggle');
-        const mainNav = document.querySelector('.main-nav');
-        
-        menuToggle.addEventListener('click', () => {
-            mainNav.classList.toggle('active');
-            menuToggle.innerHTML = mainNav.classList.contains('active') 
-                ? '<i class="fas fa-times"></i>' 
-                : '<i class="fas fa-bars"></i>';
+        // Специфичные для страницы политики скрипты
+        document.addEventListener('DOMContentLoaded', function() {
+            // Управление cookies
+            const manageCookiesBtn = document.getElementById('manageCookies');
+            if (manageCookiesBtn) {
+                manageCookiesBtn.addEventListener('click', function() {
+                    alert('В этом окне можно настроить предпочтения cookies. В реальном проекте здесь будет сложный функционал управления cookies.');
+                });
+            }
+            
+            // Подсветка активного раздела при скролле
+            const sections = document.querySelectorAll('.privacy-section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('highlighted');
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            sections.forEach(section => observer.observe(section));
         });
-        
-        // Управление cookies
-        const manageCookiesBtn = document.getElementById('manageCookies');
-        if (manageCookiesBtn) {
-            manageCookiesBtn.addEventListener('click', () => {
-                alert('В этом окне можно настроить предпочтения cookies. В реальном проекте здесь будет сложный функционал управления cookies.');
-            });
-        }
-        
-        // Подсветка активного раздела при скролле
-        const sections = document.querySelectorAll('.privacy-section');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('highlighted');
-                }
-            });
-        }, { threshold: 0.1 });
-        
-        sections.forEach(section => observer.observe(section));
     </script>
 </body>
 </html>
