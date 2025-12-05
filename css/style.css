@@ -1218,3 +1218,144 @@ p {
         align-items: center;
     }
 }
+/* ===== ВЫПАДАЮЩЕЕ МЕНУ ===== */
+.nav-item-with-dropdown {
+    position: relative;
+}
+
+.nav-link-with-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-link-with-dropdown i.fa-chevron-down {
+    font-size: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+.nav-item-with-dropdown:hover .nav-link-with-dropdown i.fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+.nav-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 250px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    padding: 0.5rem 0;
+}
+
+.nav-item-with-dropdown:hover .nav-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-item {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+}
+
+.dropdown-item:hover {
+    background: var(--primary-extra-light);
+    color: var(--primary-color);
+    border-left-color: var(--primary-color);
+}
+
+.dropdown-item i {
+    width: 20px;
+    color: var(--primary-color);
+}
+
+/* Мега-меню для услуг */
+.mega-menu {
+    min-width: 600px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0;
+    padding: 1.5rem !important;
+}
+
+.mega-menu-column {
+    padding: 0 1rem;
+}
+
+.mega-menu-title {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border-light);
+    font-size: 1rem;
+}
+
+.mega-menu-list {
+    list-style: none;
+}
+
+.mega-menu-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-size: 0.9rem;
+}
+
+.mega-menu-link:hover {
+    color: var(--primary-color);
+}
+
+.mega-menu-link i {
+    font-size: 0.8rem;
+    color: var(--primary-light);
+}
+
+/* Хлебные крошки */
+.breadcrumbs {
+    background: var(--bg-light);
+    padding: 1rem 0;
+    margin-top: 80px;
+}
+
+.breadcrumb-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.breadcrumb-nav a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.breadcrumb-nav a:hover {
+    color: var(--primary-color);
+}
+
+.breadcrumb-nav .separator {
+    color: var(--text-light);
+}
+
+.breadcrumb-nav .current {
+    color: var(--primary-color);
+    font-weight: 500;
+}
