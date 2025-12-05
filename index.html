@@ -1,399 +1,619 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <!-- Метатеги подключены в header.html -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Медицинский центр Колибри | Современная медицина в Москве</title>
+    <meta name="description" content="Современный медицинский центр Колибри в Москве. Лечение, диагностика, консультации врачей для детей и взрослых. Запись онлайн.">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
-    <!-- Header загружается через JS -->
-    
-    <!-- Основной контент -->
-    <main class="main-content">
-        <!-- Hero секция -->
-        <section class="page-hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h1 class="fade-in">Медицинский центр Колибри</h1>
-                    <p class="hero-subtitle fade-in" style="animation-delay: 0.2s">
-                        Современная медицина с заботой о каждом пациенте
-                    </p>
-                    
-                    <div class="hero-stats fade-in" style="animation-delay: 0.4s">
-                        <div class="stat">
-                            <div class="stat-number">3+</div>
-                            <div class="stat-label">года работы</div>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-wrapper">
+                <!-- Логотип -->
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <div class="logo-icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M20 5C25 5 30 10 30 15C30 25 20 35 20 35C20 35 10 25 10 15C10 10 15 5 20 5Z" 
+                                      fill="#2563EB"/>
+                                <path d="M25 15C25 17.5 22.5 20 20 20C17.5 20 15 17.5 15 15C15 12.5 17.5 10 20 10C22.5 10 25 12.5 25 15Z" 
+                                      fill="#FFFFFF"/>
+                            </svg>
                         </div>
-                        <div class="stat">
-                            <div class="stat-number">25+</div>
-                            <div class="stat-label">врачей</div>
+                        <div class="logo-text">
+                            <span class="logo-title">Колибри</span>
+                            <span class="logo-subtitle">Медицинский центр</span>
                         </div>
-                        <div class="stat">
-                            <div class="stat-number">500+</div>
-                            <div class="stat-label">кв.м. площадь</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">5000+</div>
-                            <div class="stat-label">довольных пациентов</div>
-                        </div>
-                    </div>
-                    
-                    <div class="hero-actions fade-in" style="animation-delay: 0.6s">
-                        <a href="#appointment" class="btn btn-primary btn-large">
-                            <i class="fas fa-calendar-alt"></i> Записаться на прием
-                        </a>
-                        <a href="/services/" class="btn btn-secondary btn-large">
-                            <i class="fas fa-list"></i> Наши услуги
-                        </a>
-                    </div>
+                    </a>
                 </div>
-            </div>
-        </section>
 
-        <!-- Преимущества -->
-        <section class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Почему выбирают нас</h2>
-                    <p class="section-subtitle">
-                        Мы создали комфортные условия для получения качественной медицинской помощи
-                    </p>
-                </div>
-                
-                <div class="benefits-grid">
-                    <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <i class="fas fa-user-md"></i>
-                        </div>
-                        <h3>Опытные врачи</h3>
-                        <p>Специалисты высшей категории с многолетним опытом работы</p>
-                    </div>
-                    
-                    <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <i class="fas fa-microscope"></i>
-                        </div>
-                        <h3>Современное оборудование</h3>
-                        <p>Аппараты экспертного класса для точной диагностики</p>
-                    </div>
-                    
-                    <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <i class="fas fa-heart"></i>
-                        </div>
-                        <h3>Индивидуальный подход</h3>
-                        <p>Персональное внимание к каждому пациенту</p>
-                    </div>
-                    
-                    <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <h3>Удобное время</h3>
-                        <p>Работаем в удобное для вас время, включая выходные</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+                <!-- Навигация -->
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active">
+                                <span class="nav-icon">🏠</span>
+                                <span class="nav-text">Главная</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item has-dropdown">
+                            <a href="about.html" class="nav-link">
+                                <span class="nav-icon">🏥</span>
+                                <span class="nav-text">О клинике</span>
+                                <span class="dropdown-arrow">▼</span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="about.html#history" class="dropdown-item">
+                                    <span class="dropdown-icon">📜</span>
+                                    Наша история
+                                </a>
+                                <a href="about.html#mission" class="dropdown-item">
+                                    <span class="dropdown-icon">🎯</span>
+                                    Наша миссия
+                                </a>
+                                <a href="about.html#licenses" class="dropdown-item">
+                                    <span class="dropdown-icon">📋</span>
+                                    Лицензии
+                                </a>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item has-megamenu">
+                            <a href="services/index.html" class="nav-link">
+                                <span class="nav-icon">🩺</span>
+                                <span class="nav-text">Услуги</span>
+                                <span class="dropdown-arrow">▼</span>
+                            </a>
+                            <div class="megamenu">
+                                <div class="megamenu-grid">
+                                    <div class="megamenu-column">
+                                        <h3 class="megamenu-title">
+                                            <span class="megamenu-icon">👶</span>
+                                            Для детей
+                                        </h3>
+                                        <ul class="megamenu-list">
+                                            <li><a href="services/pediatrics.html">Педиатрия</a></li>
+                                            <li><a href="services/child-neurology.html">Детская неврология</a></li>
+                                            <li><a href="services/child-surgery.html">Детская хирургия</a></li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="megamenu-column">
+                                        <h3 class="megamenu-title">
+                                            <span class="megamenu-icon">👨‍🦰</span>
+                                            Для взрослых
+                                        </h3>
+                                        <ul class="megamenu-list">
+                                            <li><a href="services/therapy.html">Терапия</a></li>
+                                            <li><a href="services/cardiology.html">Кардиология</a></li>
+                                            <li><a href="services/neurology.html">Неврология</a></li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="megamenu-column">
+                                        <h3 class="megamenu-title">
+                                            <span class="megamenu-icon">🔍</span>
+                                            Диагностика
+                                        </h3>
+                                        <ul class="megamenu-list">
+                                            <li><a href="services/diagnostics.html">Лабораторная</a></li>
+                                            <li><a href="services/ultrasound.html">УЗИ</a></li>
+                                            <li><a href="services/ecg.html">ЭКГ/Эхо-КГ</a></li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="megamenu-column">
+                                        <h3 class="megamenu-title">
+                                            <span class="megamenu-icon">💊</span>
+                                            Лечение
+                                        </h3>
+                                        <ul class="megamenu-list">
+                                            <li><a href="services/surgery.html">Хирургия</a></li>
+                                            <li><a href="services/physical-therapy.html">Физиотерапия</a></li>
+                                            <li><a href="services/massage.html">Массаж</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="doctors/index.html" class="nav-link">
+                                <span class="nav-icon">👨‍⚕️</span>
+                                <span class="nav-text">Врачи</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="prices.html" class="nav-link">
+                                <span class="nav-icon">💰</span>
+                                <span class="nav-text">Цены</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="contacts.html" class="nav-link">
+                                <span class="nav-icon">📍</span>
+                                <span class="nav-text">Контакты</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
 
-        <!-- Услуги (превью) -->
-        <section class="section bg-light">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Наши услуги</h2>
-                    <p class="section-subtitle">
-                        Полный спектр медицинских услуг для детей и взрослых
-                    </p>
-                </div>
-                
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-card-header">
-                            <div class="service-icon">
-                                <i class="fas fa-baby"></i>
-                            </div>
-                            <h3>Педиатрия</h3>
-                        </div>
-                        <div class="service-card-body">
-                            <p>Профилактика, диагностика и лечение заболеваний у детей всех возрастов</p>
-                            <ul class="service-features">
-                                <li><i class="fas fa-check"></i> Профилактические осмотры</li>
-                                <li><i class="fas fa-check"></i> Вакцинация</li>
-                                <li><i class="fas fa-check"></i> Лечение заболеваний</li>
-                                <li><i class="fas fa-check"></i> Патронаж новорожденных</li>
-                            </ul>
-                        </div>
-                        <div class="service-card-footer">
-                            <a href="/services/pediatrics.html" class="btn btn-outline">
-                                Подробнее
-                            </a>
-                            <span class="service-price">от 1 200 ₽</span>
+                <!-- Контакты и CTA -->
+                <div class="header-actions">
+                    <div class="contact-info">
+                        <a href="tel:+78001234567" class="phone-link">
+                            <span class="phone-icon">📞</span>
+                            <span class="phone-number">8 (800) 123-45-67</span>
+                        </a>
+                        <div class="work-hours">
+                            Пн-Пт: 8:00-20:00
                         </div>
                     </div>
                     
-                    <div class="service-card">
-                        <div class="service-card-header">
-                            <div class="service-icon">
-                                <i class="fas fa-user-md"></i>
-                            </div>
-                            <h3>Терапия</h3>
-                        </div>
-                        <div class="service-card-body">
-                            <p>Диагностика и лечение заболеваний внутренних органов у взрослых</p>
-                            <ul class="service-features">
-                                <li><i class="fas fa-check"></i> Консультации терапевта</li>
-                                <li><i class="fas fa-check"></i> Лечение ОРВИ</li>
-                                <li><i class="fas fa-check"></i> Профилактические осмотры</li>
-                                <li><i class="fas fa-check"></i> Выдача больничных</li>
-                            </ul>
-                        </div>
-                        <div class="service-card-footer">
-                            <a href="/services/therapy.html" class="btn btn-outline">
-                                Подробнее
-                            </a>
-                            <span class="service-price">от 1 500 ₽</span>
-                        </div>
+                    <a href="#appointment" class="btn btn-primary">
+                        <span class="btn-icon">📅</span>
+                        Запись онлайн
+                    </a>
+                </div>
+
+                <!-- Мобильное меню -->
+                <button class="mobile-menu-toggle" aria-label="Открыть меню">
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1 class="hero-title">
+                    Современная медицина 
+                    <span>с заботой о каждом пациенте</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Медицинский центр «Колибри» — это команда опытных специалистов, 
+                    современное оборудование и индивидуальный подход к каждому пациенту.
+                </p>
+                
+                <div class="hero-features">
+                    <div class="hero-feature fade-in-delay-1">
+                        <div class="feature-icon">👨‍⚕️</div>
+                        <span class="feature-text">Врачи высшей категории</span>
                     </div>
-                    
-                    <div class="service-card">
-                        <div class="service-card-header">
-                            <div class="service-icon">
-                                <i class="fas fa-heartbeat"></i>
-                            </div>
-                            <h3>Диагностика</h3>
-                        </div>
-                        <div class="service-card-body">
-                            <p>Комплексные обследования на современном оборудовании</p>
-                            <ul class="service-features">
-                                <li><i class="fas fa-check"></i> Лабораторные анализы</li>
-                                <li><i class="fas fa-check"></i> УЗИ всех органов</li>
-                                <li><i class="fas fa-check"></i> ЭКГ и Эхо-КГ</li>
-                                <li><i class="fas fa-check"></i> Рентген и КТ</li>
-                            </ul>
-                        </div>
-                        <div class="service-card-footer">
-                            <a href="/services/diagnostics.html" class="btn btn-outline">
-                                Подробнее
-                            </a>
-                            <span class="service-price">от 900 ₽</span>
-                        </div>
+                    <div class="hero-feature fade-in-delay-1">
+                        <div class="feature-icon">👶</div>
+                        <span class="feature-text">Детская и взрослая медицина</span>
+                    </div>
+                    <div class="hero-feature fade-in-delay-2">
+                        <div class="feature-icon">🔬</div>
+                        <span class="feature-text">Современная диагностика</span>
+                    </div>
+                    <div class="hero-feature fade-in-delay-2">
+                        <div class="feature-icon">📱</div>
+                        <span class="feature-text">Онлайн запись 24/7</span>
                     </div>
                 </div>
                 
-                <div class="text-center" style="margin-top: 3rem;">
-                    <a href="/services/" class="btn btn-primary btn-large">
-                        <i class="fas fa-list"></i> Все услуги
+                <div class="hero-actions">
+                    <a href="#appointment" class="btn btn-primary btn-large">
+                        <span class="btn-icon">📅</span>
+                        Записаться на прием
+                    </a>
+                    <a href="services/index.html" class="btn btn-secondary btn-large">
+                        <span class="btn-icon">🩺</span>
+                        Наши услуги
                     </a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Врачи (превью) -->
-        <section class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Наши врачи</h2>
-                    <p class="section-subtitle">
-                        Высококвалифицированные специалисты с многолетним опытом
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Наши услуги</h2>
+                <p class="section-subtitle">
+                    Полный спектр медицинских услуг для детей и взрослых
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Педиатрия -->
+                <div class="service-card fade-in">
+                    <div class="service-icon">👶</div>
+                    <h3 class="service-title">Педиатрия</h3>
+                    <p class="service-description">
+                        Профилактика, диагностика и лечение заболеваний у детей всех возрастов
                     </p>
-                </div>
-                
-                <div class="doctors-grid">
-                    <div class="doctor-card">
-                        <div class="doctor-photo">
-                            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Др. Ольга Иванова">
-                            <div class="doctor-badge">
-                                <i class="fas fa-award"></i> Высшая категория
-                            </div>
-                        </div>
-                        <div class="doctor-info">
-                            <h3>Др. Ольга Иванова</h3>
-                            <p class="doctor-specialty">Педиатр высшей категории</p>
-                            <p class="doctor-experience">
-                                <i class="fas fa-briefcase"></i> Стаж: 15 лет
-                            </p>
-                            <div class="doctor-rating">
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
-                                <span class="rating-score">4.8</span>
-                                <span class="rating-count">(127 отзывов)</span>
-                            </div>
-                            <div class="doctor-actions">
-                                <a href="/doctors/ivanova-olga.html" class="btn btn-outline">
-                                    <i class="fas fa-user-md"></i> Профиль
-                                </a>
-                                <a href="#appointment" class="btn btn-primary">
-                                    <i class="fas fa-calendar"></i> Запись
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="doctor-card">
-                        <div class="doctor-photo">
-                            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Др. Алексей Петров">
-                            <div class="doctor-badge">
-                                <i class="fas fa-graduation-cap"></i> Кандидат наук
-                            </div>
-                        </div>
-                        <div class="doctor-info">
-                            <h3>Др. Алексей Петров</h3>
-                            <p class="doctor-specialty">Кардиолог</p>
-                            <p class="doctor-experience">
-                                <i class="fas fa-briefcase"></i> Стаж: 12 лет
-                            </p>
-                            <div class="doctor-rating">
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <span class="rating-score">5.0</span>
-                                <span class="rating-count">(89 отзывов)</span>
-                            </div>
-                            <div class="doctor-actions">
-                                <a href="/doctors/petrov-aleksey.html" class="btn btn-outline">
-                                    <i class="fas fa-user-md"></i> Профиль
-                                </a>
-                                <a href="#appointment" class="btn btn-primary">
-                                    <i class="fas fa-calendar"></i> Запись
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="doctor-card">
-                        <div class="doctor-photo">
-                            <img src="https://images.unsplash.com/photo-1594824434340-7e7dfc37cabb?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Др. Мария Сидорова">
-                            <div class="doctor-badge">
-                                <i class="fas fa-award"></i> Высшая категория
-                            </div>
-                        </div>
-                        <div class="doctor-info">
-                            <h3>Др. Мария Сидорова</h3>
-                            <p class="doctor-specialty">Невролог высшей категории</p>
-                            <p class="doctor-experience">
-                                <i class="fas fa-briefcase"></i> Стаж: 10 лет
-                            </p>
-                            <div class="doctor-rating">
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
-                                <span class="rating-score">4.7</span>
-                                <span class="rating-count">(94 отзыва)</span>
-                            </div>
-                            <div class="doctor-actions">
-                                <a href="/doctors/sidorova-mariya.html" class="btn btn-outline">
-                                    <i class="fas fa-user-md"></i> Профиль
-                                </a>
-                                <a href="#appointment" class="btn btn-primary">
-                                    <i class="fas fa-calendar"></i> Запись
-                                </a>
-                            </div>
-                        </div>
+                    <ul class="service-features">
+                        <li>Профилактические осмотры</li>
+                        <li>Вакцинация по календарю</li>
+                        <li>Лечение детских заболеваний</li>
+                        <li>Патронаж новорожденных</li>
+                    </ul>
+                    <div class="service-actions">
+                        <a href="services/pediatrics.html" class="btn btn-secondary">
+                            Подробнее
+                        </a>
+                        <span class="service-price">от 1 200 ₽</span>
                     </div>
                 </div>
                 
-                <div class="text-center" style="margin-top: 3rem;">
-                    <a href="/doctors/" class="btn btn-primary btn-large">
-                        <i class="fas fa-users"></i> Все врачи
-                    </a>
+                <!-- Терапия -->
+                <div class="service-card fade-in-delay-1">
+                    <div class="service-icon">🩺</div>
+                    <h3 class="service-title">Терапия</h3>
+                    <p class="service-description">
+                        Диагностика и лечение заболеваний внутренних органов у взрослых
+                    </p>
+                    <ul class="service-features">
+                        <li>Консультации терапевта</li>
+                        <li>Лечение ОРВИ, гриппа</li>
+                        <li>Профилактические осмотры</li>
+                        <li>Выдача больничных листов</li>
+                    </ul>
+                    <div class="service-actions">
+                        <a href="services/therapy.html" class="btn btn-secondary">
+                            Подробнее
+                        </a>
+                        <span class="service-price">от 1 500 ₽</span>
+                    </div>
+                </div>
+                
+                <!-- Диагностика -->
+                <div class="service-card fade-in-delay-2">
+                    <div class="service-icon">🔬</div>
+                    <h3 class="service-title">Диагностика</h3>
+                    <p class="service-description">
+                        Комплексные обследования на современном оборудовании
+                    </p>
+                    <ul class="service-features">
+                        <li>Лабораторные анализы</li>
+                        <li>УЗИ всех органов</li>
+                        <li>ЭКГ, Эхо-КГ</li>
+                        <li>Рентген, КТ</li>
+                    </ul>
+                    <div class="service-actions">
+                        <a href="services/diagnostics.html" class="btn btn-secondary">
+                            Подробнее
+                        </a>
+                        <span class="service-price">от 900 ₽</span>
+                    </div>
                 </div>
             </div>
-        </section>
+            
+            <div class="text-center mt-6">
+                <a href="services/index.html" class="btn btn-primary btn-large">
+                    <span class="btn-icon">📋</span>
+                    Все услуги
+                </a>
+            </div>
+        </div>
+    </section>
 
-        <!-- Форма записи -->
-        <section class="section bg-light" id="appointment">
-            <div class="container">
-                <div class="form-container">
-                    <div class="form-header">
-                        <h2 class="section-title">Запись на прием</h2>
-                        <p class="section-subtitle">
-                            Оставьте заявку и мы свяжемся с вами для подтверждения записи
-                        </p>
+    <!-- Doctors Section -->
+    <section class="doctors-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Наши врачи</h2>
+                <p class="section-subtitle">
+                    Высококвалифицированные специалисты с многолетним опытом
+                </p>
+            </div>
+            
+            <div class="doctors-grid">
+                <!-- Врач 1 -->
+                <div class="doctor-card fade-in">
+                    <div class="doctor-header">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             alt="Др. Ольга Иванова" class="doctor-image">
+                        <div class="doctor-badge">Высшая категория</div>
                     </div>
-                    
-                    <form id="appointmentForm" class="appointment-form">
-                        <div class="form-grid">
-                            <div class="form-group">
-                                <label for="name">
-                                    <i class="fas fa-user"></i> ФИО *
-                                </label>
-                                <input type="text" id="name" name="name" required placeholder="Иванов Иван Иванович">
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="phone">
-                                    <i class="fas fa-phone"></i> Телефон *
-                                </label>
-                                <input type="tel" id="phone" name="phone" required placeholder="+7 (999) 123-45-67">
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="service">
-                                    <i class="fas fa-stethoscope"></i> Услуга
-                                </label>
-                                <select id="service" name="service">
-                                    <option value="">Выберите услугу</option>
-                                    <option value="pediatrics">Педиатрия</option>
-                                    <option value="therapy">Терапия</option>
-                                    <option value="diagnostics">Диагностика</option>
-                                    <option value="surgery">Хирургия</option>
-                                    <option value="neurology">Неврология</option>
-                                    <option value="cardiology">Кардиология</option>
-                                </select>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="doctor">
-                                    <i class="fas fa-user-md"></i> Врач
-                                </label>
-                                <select id="doctor" name="doctor">
-                                    <option value="">Любой свободный специалист</option>
-                                    <option value="dr_ivanova">Др. Ольга Иванова</option>
-                                    <option value="dr_petrov">Др. Алексей Петров</option>
-                                    <option value="dr_sidorova">Др. Мария Сидорова</option>
-                                </select>
-                            </div>
-                            
-                            <div class="form-group full-width">
-                                <label for="message">
-                                    <i class="fas fa-comment"></i> Сообщение
-                                </label>
-                                <textarea id="message" name="message" rows="4" placeholder="Опишите симптомы или задайте вопрос..."></textarea>
-                            </div>
+                    <div class="doctor-content">
+                        <h3 class="doctor-name">Др. Ольга Иванова</h3>
+                        <p class="doctor-specialty">Педиатр высшей категории</p>
+                        
+                        <div class="doctor-info">
+                            <span>📚</span>
+                            <span>Казанский ГМУ</span>
+                        </div>
+                        <div class="doctor-info">
+                            <span>💼</span>
+                            <span>Стаж: 15 лет</span>
                         </div>
                         
-                        <div class="form-footer">
-                            <div class="form-agreement">
-                                <input type="checkbox" id="agreement" name="agreement" required>
-                                <label for="agreement">
-                                    Я согласен на обработку персональных данных
-                                </label>
+                        <div class="doctor-rating">
+                            <div class="rating-stars">
+                                ⭐⭐⭐⭐⭐
                             </div>
-                            
-                            <button type="submit" class="btn btn-primary btn-large">
-                                <i class="fas fa-paper-plane"></i> Отправить заявку
-                            </button>
+                            <span class="rating-value">4.8</span>
+                            <span class="rating-count">(127 отзывов)</span>
                         </div>
-                    </form>
+                        
+                        <div class="doctor-tags">
+                            <span class="tag">Консультации</span>
+                            <span class="tag">Вакцинация</span>
+                            <span class="tag">Профилактика</span>
+                        </div>
+                        
+                        <div class="doctor-actions">
+                            <a href="doctors/ivanova-olga.html" class="btn btn-secondary">
+                                Профиль врача
+                            </a>
+                            <a href="#appointment" class="btn btn-primary">
+                                Запись
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Врач 2 -->
+                <div class="doctor-card fade-in-delay-1">
+                    <div class="doctor-header">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             alt="Др. Алексей Петров" class="doctor-image">
+                        <div class="doctor-badge">Кандидат наук</div>
+                    </div>
+                    <div class="doctor-content">
+                        <h3 class="doctor-name">Др. Алексей Петров</h3>
+                        <p class="doctor-specialty">Кардиолог</p>
+                        
+                        <div class="doctor-info">
+                            <span>📚</span>
+                            <span>МГМСУ им. Евдокимова</span>
+                        </div>
+                        <div class="doctor-info">
+                            <span>💼</span>
+                            <span>Стаж: 12 лет</span>
+                        </div>
+                        
+                        <div class="doctor-rating">
+                            <div class="rating-stars">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                            <span class="rating-value">5.0</span>
+                            <span class="rating-count">(89 отзывов)</span>
+                        </div>
+                        
+                        <div class="doctor-tags">
+                            <span class="tag">Диагностика</span>
+                            <span class="tag">Лечение</span>
+                            <span class="tag">Реабилитация</span>
+                        </div>
+                        
+                        <div class="doctor-actions">
+                            <a href="doctors/petrov-aleksey.html" class="btn btn-secondary">
+                                Профиль врача
+                            </a>
+                            <a href="#appointment" class="btn btn-primary">
+                                Запись
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-    </main>
-    
-    <!-- Footer загружается через JS -->
-    
-    <!-- Подключение JavaScript -->
-    <script src="/js/main.js"></script>
+            
+            <div class="text-center mt-6">
+                <a href="doctors/index.html" class="btn btn-primary btn-large">
+                    <span class="btn-icon">👥</span>
+                    Все врачи
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section class="appointment-section" id="appointment">
+        <div class="container">
+            <div class="appointment-container">
+                <!-- Форма -->
+                <div class="appointment-form fade-in">
+                    <h3 class="form-title">Записаться на прием</h3>
+                    <p class="form-description">
+                        Оставьте заявку и наш администратор свяжется с вами для подтверждения записи
+                    </p>
+                    
+                    <form class="appointment-form">
+                        <div class="form-group">
+                            <label class="form-label">Ваше имя *</label>
+                            <input type="text" class="form-input" placeholder="Иванов Иван Иванович" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Телефон *</label>
+                            <input type="tel" class="form-input" placeholder="+7 (999) 123-45-67" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Услуга</label>
+                            <select class="form-select">
+                                <option value="">Выберите услугу</option>
+                                <option value="pediatrics">Педиатрия</option>
+                                <option value="therapy">Терапия</option>
+                                <option value="diagnostics">Диагностика</option>
+                                <option value="surgery">Хирургия</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Сообщение (необязательно)</label>
+                            <textarea class="form-textarea" rows="3" placeholder="Опишите симптомы или задайте вопрос..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span class="btn-icon">📨</span>
+                            Отправить заявку
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Информация -->
+                <div class="appointment-info fade-in-delay-1">
+                    <h3 class="info-title">Контакты центра</h3>
+                    
+                    <ul class="info-list">
+                        <li class="info-item">
+                            <div class="info-icon">📍</div>
+                            <div class="info-content">
+                                <h4>Адрес</h4>
+                                <p>г. Москва, ул. Здоровья, 12</p>
+                                <p>Метро: «Медицинская», 5 минут пешком</p>
+                            </div>
+                        </li>
+                        
+                        <li class="info-item">
+                            <div class="info-icon">📞</div>
+                            <div class="info-content">
+                                <h4>Телефон</h4>
+                                <p><a href="tel:+78001234567" style="color: white;">8 (800) 123-45-67</a></p>
+                                <p>Ежедневно с 8:00 до 20:00</p>
+                            </div>
+                        </li>
+                        
+                        <li class="info-item">
+                            <div class="info-icon">⏰</div>
+                            <div class="info-content">
+                                <h4>Часы работы</h4>
+                                <p>Пн-Пт: 8:00 - 20:00</p>
+                                <p>Сб: 9:00 - 17:00</p>
+                                <p>Вс: 9:00 - 15:00</p>
+                            </div>
+                        </li>
+                        
+                        <li class="info-item">
+                            <div class="info-icon">💬</div>
+                            <div class="info-content">
+                                <h4>Онлайн-консультация</h4>
+                                <p>Доступна в WhatsApp и Telegram</p>
+                                <p>Ответим в течение 15 минут</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Колонка 1 -->
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="logo">
+                            <a href="index.html" class="logo-link">
+                                <div class="logo-icon">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                        <path d="M20 5C25 5 30 10 30 15C30 25 20 35 20 35C20 35 10 25 10 15C10 10 15 5 20 5Z" 
+                                              fill="#2563EB"/>
+                                        <path d="M25 15C25 17.5 22.5 20 20 20C17.5 20 15 17.5 15 15C15 12.5 17.5 10 20 10C22.5 10 25 12.5 25 15Z" 
+                                              fill="#FFFFFF"/>
+                                    </svg>
+                                </div>
+                                <div class="logo-text">
+                                    <span class="logo-title">Колибри</span>
+                                    <span class="logo-subtitle">Медицинский центр</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <p class="footer-description">
+                        Современная медицина с заботой о каждом пациенте. 
+                        Мы предоставляем полный спектр медицинских услуг для детей и взрослых.
+                    </p>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="ВКонтакте">VK</a>
+                        <a href="#" class="social-link" aria-label="Telegram">TG</a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">WA</a>
+                        <a href="#" class="social-link" aria-label="Instagram">IG</a>
+                    </div>
+                </div>
+                
+                <!-- Колонка 2 -->
+                <div class="footer-column">
+                    <h3>Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">🏠 Главная</a></li>
+                        <li><a href="about.html">🏥 О клинике</a></li>
+                        <li><a href="services/index.html">🩺 Услуги</a></li>
+                        <li><a href="doctors/index.html">👨‍⚕️ Врачи</a></li>
+                        <li><a href="prices.html">💰 Цены</a></li>
+                        <li><a href="contacts.html">📍 Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Колонка 3 -->
+                <div class="footer-column">
+                    <h3>Услуги</h3>
+                    <ul class="footer-links">
+                        <li><a href="services/pediatrics.html">👶 Педиатрия</a></li>
+                        <li><a href="services/therapy.html">🩺 Терапия</a></li>
+                        <li><a href="services/cardiology.html">❤️ Кардиология</a></li>
+                        <li><a href="services/diagnostics.html">🔬 Диагностика</a></li>
+                        <li><a href="services/surgery.html">🔪 Хирургия</a></li>
+                        <li><a href="services/ultrasound.html">📡 УЗИ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Колонка 4 -->
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <div class="footer-contact">
+                        <span class="contact-icon">📍</span>
+                        <span>г. Москва, ул. Здоровья, 12</span>
+                    </div>
+                    <div class="footer-contact">
+                        <span class="contact-icon">📞</span>
+                        <a href="tel:+78001234567">8 (800) 123-45-67</a>
+                    </div>
+                    <div class="footer-contact">
+                        <span class="contact-icon">✉️</span>
+                        <a href="mailto:info@kolibri-clinic.ru">info@kolibri-clinic.ru</a>
+                    </div>
+                    <div class="footer-contact">
+                        <span class="contact-icon">⏰</span>
+                        <span>Пн-Пт: 8:00-20:00<br>Сб: 9:00-17:00</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>© 2024 Медицинский центр «Колибри». Все права защищены.</p>
+                    <p>Лицензия № ЛО-77-01-012345 от 12.01.2023</p>
+                </div>
+                
+                <div class="footer-nav">
+                    <a href="privacy.html">Политика конфиденциальности</a>
+                    <a href="documents.html">Документы</a>
+                    <a href="contacts.html">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
 </body>
 </html>
