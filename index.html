@@ -1,112 +1,133 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Клиника «Колибри» — Главная</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клиника Колибри</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <header class="site-header">
-    <div class="container header-row">
-      <a class="logo" href="index.html">Клиника <span>Колибри</span></a>
-      <nav class="main-nav" id="nav">
-        <a href="index.html" class="active">Главная</a>
-        <a href="about.html">О нас</a>
-        <a href="services.html">Услуги</a>
-        <a href="contact.html">Контакты</a>
-      </nav>
-      <div class="header-actions">
-        <a class="btn btn-primary" href="contact.html">Записаться</a>
-        <button id="burger" class="burger" aria-label="Меню">☰</button>
-      </div>
-    </div>
-  </header>
 
-  <section class="hero">
-    <div class="container hero-inner">
-      <div class="hero-text">
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">Клиника Колибри</div>
+        <nav>
+            <a href="#">Главная</a>
+            <a href="#about">О нас</a>
+            <a href="#services">Услуги</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+        <a href="#contacts" class="btn">Записаться</a>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container hero-content">
         <h1>Качественная медицинская помощь в сердце города</h1>
         <p>Клиника «Колибри» — современная амбулаторная клиника с командой высококлассных специалистов и внимательным подходом к каждому пациенту.</p>
-        <div class="hero-ctas">
-          <a class="btn btn-primary" href="contact.html">Записаться онлайн</a>
-          <a class="btn btn-ghost" href="services.html">Наши услуги</a>
+        <div class="hero-buttons">
+            <a href="#contacts" class="btn">Записаться онлайн</a>
+            <a href="#services" class="btn-light">Наши услуги</a>
         </div>
-        <ul class="features-list">
-          <li>Современное оборудование</li>
-          <li>Опытные специалисты</li>
-          <li>Удобная запись</li>
+    </div>
+</section>
+
+<section id="benefits" class="benefits">
+    <div class="container">
+        <h2>Почему выбирают нас</h2>
+        <div class="benefit-list">
+            <div class="benefit-item">Современное оборудование</div>
+            <div class="benefit-item">Опытные специалисты</div>
+            <div class="benefit-item">Удобная запись</div>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="services">
+    <div class="container">
+        <h2>Популярные услуги</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Диагностика</h3>
+                <p>Комплексные обследования: УЗИ, ЭКГ, лабораторная диагностика и т.д.</p>
+                <a href="#" class="card-btn">Подробнее</a>
+            </div>
+
+            <div class="card">
+                <h3>Хирургия</h3>
+                <p>Современные методики для быстрого восстановления.</p>
+                <a href="#" class="card-btn">Подробнее</a>
+            </div>
+
+            <div class="card">
+                <h3>Консультации</h3>
+                <p>Прием терапевта, хирурга, педиатра, эндокринолога и других.</p>
+                <a href="#" class="card-btn">Подробнее</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="team" class="team">
+    <div class="container">
+        <h2>Наша команда</h2>
+
+        <div class="team-list">
+            <div class="team-item">
+                <h3>Др. Ольга Иванова</h3>
+                <p>Терапевт</p>
+            </div>
+
+            <div class="team-item">
+                <h3>Др. Алексей Петров</h3>
+                <p>Хирург</p>
+            </div>
+
+            <div class="team-item">
+                <h3>Др. Мария Сидорова</h3>
+                <p>Педиатр</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="reviews">
+    <div class="container">
+        <h2>Отзывы пациентов</h2>
+
+        <ul class="review-list">
+            <li>«Отличная клиника, внимательные врачи и короткое ожидание. Записался онлайн — все удобно!» — Иван П.</li>
+            <li>«Проходила обследование — очень профессионально и быстро. Рекомендую.» — Марина С.</li>
+            <li>«Доброжелательный персонал и комфортные условия.» — Ольга К.</li>
         </ul>
-      </div>
-      <div class="hero-media">
-        <img src="assets/img/hero.jpg" alt="Клиника Колибри">
-      </div>
-    </div>
-  </section>
 
-  <section class="services-preview container">
-    <h2>Популярные услуги</h2>
-    <div class="cards">
-      <article class="card">
-        <img src="assets/img/service1.jpg" alt="Диагностика">
-        <h3>Полная диагностика</h3>
-        <p>Комплексные обследования: УЗИ, ЭКГ, лабораторная диагностика и т.д.</p>
-        <a class="btn btn-sm" href="services.html#diagnostics">Подробнее</a>
-      </article>
-      <article class="card">
-        <img src="assets/img/service2.jpg" alt="Хирургия">
-        <h3>Минимально инвазивная хирургия</h3>
-        <p>Современные методики для быстрого восстановления.</p>
-        <a class="btn btn-sm" href="services.html#surgery">Подробнее</a>
-      </article>
-      <article class="card">
-        <img src="assets/img/service3.jpg" alt="Консультации">
-        <h3>Консультации специалистов</h3>
-        <p>Прием терапевта, хирурга, педиатра, эндокринолога и других.</p>
-        <a class="btn btn-sm" href="services.html#consult">Подробнее</a>
-      </article>
     </div>
-  </section>
+</section>
 
-  <section class="team container">
-    <h2>Наша команда</h2>
-    <div class="team-grid">
-      <article class="member"><img src="assets/img/team1.jpg" alt=""><h4>Др. Ольга Иванова</h4><p>Терапевт</p></article>
-      <article class="member"><img src="assets/img/team2.jpg" alt=""><h4>Др. Алексей Петров</h4><p>Хирург</p></article>
-      <article class="member"><img src="assets/img/team3.jpg" alt=""><h4>Др. Мария Сидорова</h4><p>Педиатр</p></article>
-    </div>
-  </section>
-
-  <section class="testimonials container">
-    <h2>Отзывы пациентов</h2>
-    <div class="testimonial-track" id="testimonialTrack">
-      <blockquote class="testimonial">«Отличная клиника, внимательные врачи и короткое ожидание. Записался онлайн — все удобно!» — Иван П.</blockquote>
-      <blockquote class="testimonial">«Проходила обследование — очень профессионально и быстро. Рекомендую.» — Марина С.</blockquote>
-      <blockquote class="testimonial">«Доброжелательный персонал и комфортные условия.» — Ольга К.</blockquote>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <a class="logo" href="index.html">Клиника <span>Колибри</span></a>
+<footer id="contacts">
+    <div class="container">
+        <h2>Клиника Колибри</h2>
         <p>Адрес: г. Пример, ул. Здоровья, 12</p>
         <p>Телефон: +7 (900) 000-00-00</p>
-      </div>
-      <nav class="footer-nav">
-        <a href="about.html">О нас</a>
-        <a href="services.html">Услуги</a>
-        <a href="contact.html">Контакты</a>
-        <a href="privacy.html">Политика конфиденц.</a>
-      </nav>
-      <div class="footer-cta">
-        <a class="btn btn-primary" href="contact.html">Записаться</a>
-      </div>
-    </div>
-    <div class="copyright">© <span id="year"></span> Клиника Колибри</div>
-  </footer>
 
-  <script src="js/main.js"></script>
+        <div class="footer-links">
+            <a href="#about">О нас</a>
+            <a href="#services">Услуги</a>
+            <a href="#contacts">Контакты</a>
+            <a href="#">Политика конфиденц.</a>
+        </div>
+
+        <a href="#contacts" class="btn">Записаться</a>
+
+        <p class="copy">© Клиника Колибри</p>
+    </div>
+</footer>
+
 </body>
 </html>
