@@ -1,102 +1,279 @@
-/* ===== ОСНОВНАЯ НАВИГАЦИЯ ===== */
-.main-nav ul {
+/* ===== ПРЕВЬЮ БЛОКИ ===== */
+.services-preview {
+    padding: 80px 0;
+    background: var(--bg-light);
+}
+
+.services-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.service-preview-card {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.service-preview-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.service-preview-icon {
+    width: 70px;
+    height: 70px;
+    background: var(--primary-extra-light);
+    border-radius: 50%;
     display: flex;
-    gap: 1.5rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: var(--primary-color);
+    font-size: 1.8rem;
 }
 
-.nav-item {
+.service-preview-card h3 {
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.service-preview-card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.service-preview-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.service-preview-link:hover {
+    gap: 0.75rem;
+    color: var(--primary-dark);
+}
+
+.services-preview-actions {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Врачи превью */
+.doctors-preview {
+    padding: 80px 0;
+}
+
+.doctors-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.doctor-preview-card {
+    background: white;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.doctor-preview-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.doctor-preview-photo {
     position: relative;
+    height: 250px;
+    overflow: hidden;
 }
 
-.nav-link {
+.doctor-preview-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.doctor-preview-card:hover .doctor-preview-photo img {
+    transform: scale(1.05);
+}
+
+.doctor-preview-experience {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.doctor-preview-info {
+    padding: 1.5rem;
+}
+
+.doctor-preview-info h3 {
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.doctor-preview-specialty {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.doctor-preview-rating {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.doctor-preview-rating i {
+    color: #ffc107;
+}
+
+.doctor-preview-rating span {
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.doctor-preview-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-color);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.95rem;
-    padding: 0.5rem 0;
     transition: var(--transition);
-    position: relative;
 }
 
-.nav-link:hover {
-    color: var(--primary-color);
+.doctor-preview-link:hover {
+    gap: 0.75rem;
+    color: var(--primary-dark);
 }
 
-.nav-link.active {
-    color: var(--primary-color);
+.doctors-preview-actions {
+    text-align: center;
+    margin-top: 2rem;
 }
 
-.nav-link.active::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
+/* Отзывы превью */
+.reviews-preview {
+    padding: 80px 0;
+    background: var(--bg-light);
+}
+
+.reviews-preview-slider {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.review-preview-card {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow);
+}
+
+.review-preview-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.reviewer-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.reviewer-avatar img {
     width: 100%;
-    height: 2px;
-    background: var(--primary-color);
-    border-radius: 1px;
+    height: 100%;
+    object-fit: cover;
 }
 
-/* Стили для выпадающих меню на мобильных */
-@media (max-width: 992px) {
-    .main-nav {
-        position: fixed;
-        top: 80px;
-        left: 0;
-        right: 0;
-        background: white;
-        padding: 1rem;
-        box-shadow: var(--shadow-lg);
-        transform: translateY(-100%);
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease;
-        z-index: 999;
-        max-height: calc(100vh - 80px);
-        overflow-y: auto;
-    }
-    
-    .main-nav.active {
-        transform: translateY(0);
-        opacity: 1;
-        visibility: visible;
-    }
-    
-    .main-nav ul {
-        flex-direction: column;
-        gap: 0;
-    }
-    
-    .nav-item {
-        width: 100%;
-    }
-    
-    .nav-link {
-        padding: 0.75rem 1rem;
-        border-bottom: 1px solid var(--border-light);
-    }
-    
-    .nav-dropdown {
-        position: static;
-        opacity: 1;
-        visibility: visible;
-        transform: none;
-        box-shadow: none;
-        padding: 0;
-        background: var(--bg-light);
-        margin-left: 1rem;
-        border-radius: var(--radius-sm);
-    }
-    
-    .mega-menu {
-        min-width: auto;
+.reviewer-info h4 {
+    margin-bottom: 0.25rem;
+    color: var(--text-primary);
+}
+
+.review-rating {
+    color: #ffc107;
+    font-size: 0.9rem;
+}
+
+.review-preview-text {
+    font-style: italic;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.review-preview-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-light);
+}
+
+.review-date {
+    color: var(--text-light);
+    font-size: 0.85rem;
+}
+
+.review-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.review-link:hover {
+    text-decoration: underline;
+}
+
+.reviews-preview-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+/* Адаптивность превью блоков */
+@media (max-width: 768px) {
+    .services-preview-grid,
+    .doctors-preview-grid,
+    .reviews-preview-slider {
         grid-template-columns: 1fr;
-        padding: 0.5rem !important;
+    }
+    
+    .reviews-preview-actions {
+        flex-direction: column;
+        align-items: center;
     }
 }
