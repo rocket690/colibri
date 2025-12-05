@@ -1,216 +1,201 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Медицинский центр Колибри | Современная медицина</title>
-    
-    <!-- Стили -->
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/components.css">
-    <link rel="stylesheet" href="/css/pages.css">
-    
-    <!-- Шрифты -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- Иконки -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    
-    <!-- SEO -->
-    <meta name="description" content="Современный медицинский центр Колибри в Москве. Диагностика, лечение, консультации врачей для детей и взрослых. Запись онлайн.">
-    <meta name="keywords" content="медицинский центр, клиника, врачи, диагностика, лечение, педиатр, терапевт, Москва">
-    <meta name="robots" content="index, follow">
-</head>
-
-<body>
-    <!-- Header -->
-    <header class="main-header">
-        <div class="container header-container">
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+    <div class="container">
+        <div class="header-wrapper">
+            <!-- Логотип -->
             <div class="logo">
-                <a href="/">
+                <a href="index.html" class="logo-link">
                     <div class="logo-icon">
-                        <i class="fas fa-heartbeat"></i>
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M20 5C25 5 30 10 30 15C30 25 20 35 20 35C20 35 10 25 10 15C10 10 15 5 20 5Z" 
+                                  fill="#2563EB"/>
+                            <path d="M25 15C25 17.5 22.5 20 20 20C17.5 20 15 17.5 15 15C15 12.5 17.5 10 20 10C22.5 10 25 12.5 25 15Z" 
+                                  fill="#FFFFFF"/>
+                        </svg>
                     </div>
                     <div class="logo-text">
-                        <span class="logo-main">Колибри</span>
-                        <span class="logo-sub">Медицинский центр</span>
+                        <span class="logo-title">Колибри</span>
+                        <span class="logo-subtitle">Медицинский центр</span>
                     </div>
                 </a>
             </div>
-            
-            <!-- Основное меню -->
-            <nav class="main-nav" id="mainNav">
+
+            <!-- Основная навигация -->
+            <nav class="main-nav">
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="/" class="nav-link active">
-                            <i class="fas fa-home"></i> Главная
+                        <a href="index.html" class="nav-link active">
+                            <span class="nav-icon">🏠</span>
+                            <span class="nav-text">Главная</span>
                         </a>
                     </li>
                     
-                    <li class="nav-item dropdown">
-                        <a href="/about.html" class="nav-link dropdown-toggle">
-                            <i class="fas fa-info-circle"></i> О клинике
-                        </a>
-                        <div class="dropdown-menu">
-                            <a href="/about.html#history" class="dropdown-item">
-                                <i class="fas fa-history"></i> История
-                            </a>
-                            <a href="/about.html#mission" class="dropdown-item">
-                                <i class="fas fa-bullseye"></i> Миссия и ценности
-                            </a>
-                            <a href="/about.html#equipment" class="dropdown-item">
-                                <i class="fas fa-microscope"></i> Оборудование
-                            </a>
-                            <a href="/about.html#licenses" class="dropdown-item">
-                                <i class="fas fa-file-certificate"></i> Лицензии
-                            </a>
-                            <a href="/documents.html" class="dropdown-item">
-                                <i class="fas fa-folder"></i> Документы
-                            </a>
-                        </div>
-                    </li>
-                    
-                    <li class="nav-item dropdown mega-menu">
-                        <a href="/services/" class="nav-link dropdown-toggle">
-                            <i class="fas fa-stethoscope"></i> Услуги
-                        </a>
-                        <div class="mega-menu-content">
-                            <div class="mega-menu-column">
-                                <h4><i class="fas fa-child"></i> Для детей</h4>
-                                <a href="/services/pediatrics.html" class="mega-menu-link">
-                                    <i class="fas fa-baby"></i> Педиатрия
-                                </a>
-                                <a href="/services/child-neurology.html" class="mega-menu-link">
-                                    <i class="fas fa-brain"></i> Детская неврология
-                                </a>
-                                <a href="/services/child-surgery.html" class="mega-menu-link">
-                                    <i class="fas fa-cut"></i> Детская хирургия
-                                </a>
-                                <a href="/services/vaccination.html" class="mega-menu-link">
-                                    <i class="fas fa-syringe"></i> Вакцинация
-                                </a>
-                            </div>
-                            
-                            <div class="mega-menu-column">
-                                <h4><i class="fas fa-user-injured"></i> Для взрослых</h4>
-                                <a href="/services/therapy.html" class="mega-menu-link">
-                                    <i class="fas fa-user-md"></i> Терапия
-                                </a>
-                                <a href="/services/cardiology.html" class="mega-menu-link">
-                                    <i class="fas fa-heart"></i> Кардиология
-                                </a>
-                                <a href="/services/neurology.html" class="mega-menu-link">
-                                    <i class="fas fa-brain"></i> Неврология
-                                </a>
-                                <a href="/services/gastroenterology.html" class="mega-menu-link">
-                                    <i class="fas fa-stomach"></i> Гастроэнтерология
-                                </a>
-                            </div>
-                            
-                            <div class="mega-menu-column">
-                                <h4><i class="fas fa-heartbeat"></i> Диагностика</h4>
-                                <a href="/services/diagnostics.html" class="mega-menu-link">
-                                    <i class="fas fa-microscope"></i> Лабораторная
-                                </a>
-                                <a href="/services/ultrasound.html" class="mega-menu-link">
-                                    <i class="fas fa-wave-square"></i> УЗИ
-                                </a>
-                                <a href="/services/ecg.html" class="mega-menu-link">
-                                    <i class="fas fa-heartbeat"></i> ЭКГ/Эхо-КГ
-                                </a>
-                                <a href="/services/eeg.html" class="mega-menu-link">
-                                    <i class="fas fa-brain"></i> ЭЭГ
-                                </a>
-                            </div>
-                            
-                            <div class="mega-menu-column">
-                                <h4><i class="fas fa-procedures"></i> Лечение</h4>
-                                <a href="/services/surgery.html" class="mega-menu-link">
-                                    <i class="fas fa-cut"></i> Хирургия
-                                </a>
-                                <a href="/services/physical-therapy.html" class="mega-menu-link">
-                                    <i class="fas fa-dumbbell"></i> Физиотерапия
-                                </a>
-                                <a href="/services/massage.html" class="mega-menu-link">
-                                    <i class="fas fa-hands"></i> Массаж
-                                </a>
-                                <a href="/services/injections.html" class="mega-menu-link">
-                                    <i class="fas fa-tint"></i> Инъекции
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    
-                    <li class="nav-item dropdown">
-                        <a href="/doctors/" class="nav-link dropdown-toggle">
-                            <i class="fas fa-user-md"></i> Врачи
+                    <li class="nav-item has-dropdown">
+                        <a href="about.html" class="nav-link">
+                            <span class="nav-icon">🏥</span>
+                            <span class="nav-text">О клинике</span>
+                            <span class="dropdown-arrow">▼</span>
                         </a>
                         <div class="dropdown-menu">
-                            <a href="/doctors/all.html" class="dropdown-item">
-                                <i class="fas fa-users"></i> Все врачи
+                            <a href="about.html#history" class="dropdown-item">
+                                <span class="dropdown-icon">📜</span>
+                                Наша история
                             </a>
-                            <a href="/doctors/pediatricians.html" class="dropdown-item">
-                                <i class="fas fa-baby"></i> Педиатры
+                            <a href="about.html#mission" class="dropdown-item">
+                                <span class="dropdown-icon">🎯</span>
+                                Наша миссия
                             </a>
-                            <a href="/doctors/therapists.html" class="dropdown-item">
-                                <i class="fas fa-user-md"></i> Терапевты
+                            <a href="about.html#licenses" class="dropdown-item">
+                                <span class="dropdown-icon">📋</span>
+                                Лицензии
                             </a>
-                            <a href="/doctors/specialists.html" class="dropdown-item">
-                                <i class="fas fa-user-md"></i> Узкие специалисты
+                            <a href="documents.html" class="dropdown-item">
+                                <span class="dropdown-icon">📁</span>
+                                Документы
                             </a>
-                            <a href="/doctors/surgeons.html" class="dropdown-item">
-                                <i class="fas fa-cut"></i> Хирурги
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item has-megamenu">
+                        <a href="services/index.html" class="nav-link">
+                            <span class="nav-icon">🩺</span>
+                            <span class="nav-text">Услуги</span>
+                            <span class="dropdown-arrow">▼</span>
+                        </a>
+                        <div class="megamenu">
+                            <div class="megamenu-grid">
+                                <!-- Для детей -->
+                                <div class="megamenu-column">
+                                    <h3 class="megamenu-title">
+                                        <span class="megamenu-icon">👶</span>
+                                        Для детей
+                                    </h3>
+                                    <ul class="megamenu-list">
+                                        <li><a href="services/pediatrics.html">Педиатрия</a></li>
+                                        <li><a href="services/child-neurology.html">Детская неврология</a></li>
+                                        <li><a href="services/child-surgery.html">Детская хирургия</a></li>
+                                        <li><a href="services/vaccination.html">Вакцинация</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <!-- Для взрослых -->
+                                <div class="megamenu-column">
+                                    <h3 class="megamenu-title">
+                                        <span class="megamenu-icon">👨‍🦰</span>
+                                        Для взрослых
+                                    </h3>
+                                    <ul class="megamenu-list">
+                                        <li><a href="services/therapy.html">Терапия</a></li>
+                                        <li><a href="services/cardiology.html">Кардиология</a></li>
+                                        <li><a href="services/neurology.html">Неврология</a></li>
+                                        <li><a href="services/gastroenterology.html">Гастроэнтерология</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <!-- Диагностика -->
+                                <div class="megamenu-column">
+                                    <h3 class="megamenu-title">
+                                        <span class="megamenu-icon">🔍</span>
+                                        Диагностика
+                                    </h3>
+                                    <ul class="megamenu-list">
+                                        <li><a href="services/diagnostics.html">Лабораторная</a></li>
+                                        <li><a href="services/ultrasound.html">УЗИ</a></li>
+                                        <li><a href="services/ecg.html">ЭКГ/Эхо-КГ</a></li>
+                                        <li><a href="services/eeg.html">ЭЭГ</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <!-- Лечение -->
+                                <div class="megamenu-column">
+                                    <h3 class="megamenu-title">
+                                        <span class="megamenu-icon">💊</span>
+                                        Лечение
+                                    </h3>
+                                    <ul class="megamenu-list">
+                                        <li><a href="services/surgery.html">Хирургия</a></li>
+                                        <li><a href="services/physical-therapy.html">Физиотерапия</a></li>
+                                        <li><a href="services/massage.html">Массаж</a></li>
+                                        <li><a href="services/injections.html">Инъекции</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item has-dropdown">
+                        <a href="doctors/index.html" class="nav-link">
+                            <span class="nav-icon">👨‍⚕️</span>
+                            <span class="nav-text">Врачи</span>
+                            <span class="dropdown-arrow">▼</span>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="doctors/all.html" class="dropdown-item">
+                                <span class="dropdown-icon">👥</span>
+                                Все врачи
+                            </a>
+                            <a href="doctors/pediatricians.html" class="dropdown-item">
+                                <span class="dropdown-icon">👶</span>
+                                Педиатры
+                            </a>
+                            <a href="doctors/therapists.html" class="dropdown-item">
+                                <span class="dropdown-icon">🩺</span>
+                                Терапевты
+                            </a>
+                            <a href="doctors/specialists.html" class="dropdown-item">
+                                <span class="dropdown-icon">🎓</span>
+                                Узкие специалисты
                             </a>
                         </div>
                     </li>
                     
                     <li class="nav-item">
-                        <a href="/prices.html" class="nav-link">
-                            <i class="fas fa-tags"></i> Цены
+                        <a href="prices.html" class="nav-link">
+                            <span class="nav-icon">💰</span>
+                            <span class="nav-text">Цены</span>
                         </a>
                     </li>
                     
                     <li class="nav-item">
-                        <a href="/reviews.html" class="nav-link">
-                            <i class="fas fa-star"></i> Отзывы
+                        <a href="reviews.html" class="nav-link">
+                            <span class="nav-icon">⭐</span>
+                            <span class="nav-text">Отзывы</span>
                         </a>
                     </li>
                     
                     <li class="nav-item">
-                        <a href="/contacts.html" class="nav-link">
-                            <i class="fas fa-map-marker-alt"></i> Контакты
+                        <a href="contacts.html" class="nav-link">
+                            <span class="nav-icon">📍</span>
+                            <span class="nav-text">Контакты</span>
                         </a>
                     </li>
                 </ul>
             </nav>
-            
-            <!-- Контакты и действия -->
+
+            <!-- Контакты и CTA -->
             <div class="header-actions">
                 <div class="contact-info">
-                    <div class="phone-number">
-                        <i class="fas fa-phone-alt"></i>
-                        <a href="tel:+78001234567">8 (800) 123-45-67</a>
-                    </div>
+                    <a href="tel:+78001234567" class="phone-link">
+                        <span class="phone-icon">📞</span>
+                        <span class="phone-number">8 (800) 123-45-67</span>
+                    </a>
                     <div class="work-hours">
                         Пн-Пт: 8:00-20:00, Сб: 9:00-17:00
                     </div>
                 </div>
                 
-                <a href="/contacts.html#appointment" class="btn btn-primary btn-appointment">
-                    <i class="fas fa-calendar-check"></i> Запись онлайн
+                <a href="contacts.html#appointment" class="btn btn-primary">
+                    <span class="btn-icon">📅</span>
+                    Запись онлайн
                 </a>
             </div>
-            
+
             <!-- Мобильное меню -->
-            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Открыть меню">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="mobile-menu-toggle" aria-label="Открыть меню">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
             </button>
         </div>
-    </header>
+    </div>
+</header>
