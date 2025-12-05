@@ -1,62 +1,559 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Услуги — Клиника Колибри</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги | Клиника Колибри</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
-  <header class="site-header small">
-    <div class="container header-row">
-      <a class="logo" href="index.html">Клиника <span>Колибри</span></a>
-      <nav class="main-nav" id="nav">
-        <a href="index.html">Главная</a>
-        <a href="about.html">О нас</a>
-        <a href="services.html" class="active">Услуги</a>
-        <a href="contact.html">Контакты</a>
-      </nav>
-      <div class="header-actions">
-        <a class="btn btn-primary" href="contact.html">Записаться</a>
-        <button id="burger" class="burger" aria-label="Меню">☰</button>
-      </div>
-    </div>
-  </header>
+    <!-- Хедер -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>Клиника <strong>Колибри</strong></span>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html"><i class="fas fa-home"></i> Главная</a>
+                <a href="about.html"><i class="fas fa-info-circle"></i> О нас</a>
+                <a href="services.html" class="active"><i class="fas fa-stethoscope"></i> Услуги</a>
+                <a href="contact.html"><i class="fas fa-address-book"></i> Контакты</a>
+            </nav>
+            <div class="header-actions">
+                <a href="contact.html#form" class="btn btn-primary">
+                    <i class="fas fa-calendar-check"></i> Записаться
+                </a>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
 
-  <main class="container content">
-    <h1>Наши услуги</h1>
-    <p>Мы предоставляем широкий спектр медицинских услуг для всей семьи.</p>
-
-    <section id="diagnostics" class="service">
-      <img src="assets/img/service1.jpg" alt="Диагностика">
-      <div>
-        <h2>Диагностика</h2>
-        <p>УЗИ, ЭКГ, лабораторные исследования, скрининг и многое другое.</p>
-      </div>
+    <!-- Баннер страницы -->
+    <section class="page-banner">
+        <div class="container">
+            <h1 class="page-title">Наши услуги</h1>
+            <p class="page-subtitle">Полный спектр медицинских услуг для всей семьи</p>
+            <nav class="breadcrumb">
+                <a href="index.html">Главная</a>
+                <span class="separator">/</span>
+                <span>Услуги</span>
+            </nav>
+        </div>
     </section>
 
-    <section id="surgery" class="service alt">
-      <img src="assets/img/service2.jpg" alt="Хирургия">
-      <div>
-        <h2>Минимально инвазивная хирургия</h2>
-        <p>Современные и безопасные методы, быстрый послеоперационный период.</p>
-      </div>
+    <!-- Категории услуг -->
+    <section class="service-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <a href="#diagnostics" class="category-tab active">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>Диагностика</span>
+                </a>
+                <a href="#treatment" class="category-tab">
+                    <i class="fas fa-user-md"></i>
+                    <span>Лечение</span>
+                </a>
+                <a href="#consultations" class="category-tab">
+                    <i class="fas fa-stethoscope"></i>
+                    <span>Консультации</span>
+                </a>
+                <a href="#prevention" class="category-tab">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Профилактика</span>
+                </a>
+            </div>
+        </div>
     </section>
 
-    <section id="consult" class="service">
-      <img src="assets/img/service3.jpg" alt="Консультации">
-      <div>
-        <h2>Консультации специалистов</h2>
-        <p>Терапевт, хирург, педиатр, эндокринолог, невролог и другие.</p>
-      </div>
+    <!-- Диагностика -->
+    <section id="diagnostics" class="service-detail active-section">
+        <div class="container">
+            <div class="service-header">
+                <div class="service-icon-large">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <div>
+                    <h2>Диагностика</h2>
+                    <p class="service-description">
+                        Точная и быстрая диагностика — основа правильного лечения. 
+                        Мы используем современное оборудование экспертного класса.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="services-grid-detailed">
+                <div class="service-item-detailed">
+                    <div class="service-item-header">
+                        <div class="service-item-icon">
+                            <i class="fas fa-wave-square"></i>
+                        </div>
+                        <h3>УЗИ диагностика</h3>
+                        <span class="service-price">от 1 500 ₽</span>
+                    </div>
+                    <p>Ультразвуковое исследование всех органов и систем</p>
+                    <ul class="service-features-list">
+                        <li><i class="fas fa-check"></i> Безопасно и безболезненно</li>
+                        <li><i class="fas fa-check"></i> Результат сразу после процедуры</li>
+                        <li><i class="fas fa-check"></i> Опытные врачи-сонологи</li>
+                    </ul>
+                    <a href="contact.html#form" class="btn-service-book">
+                        <i class="fas fa-calendar"></i> Записаться
+                    </a>
+                </div>
+                
+                <div class="service-item-detailed">
+                    <div class="service-item-header">
+                        <div class="service-item-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>ЭКГ и Холтер</h3>
+                        <span class="service-price">от 900 ₽</span>
+                    </div>
+                    <p>Исследование работы сердца в покое и при нагрузке</p>
+                    <ul class="service-features-list">
+                        <li><i class="fas fa-check"></i> Суточное мониторирование</li>
+                        <li><i class="fas fa-check"></i> Расшифровка кардиологом</li>
+                        <li><i class="fas fa-check"></i> Тест с физической нагрузкой</li>
+                    </ul>
+                    <a href="contact.html#form" class="btn-service-book">
+                        <i class="fas fa-calendar"></i> Записаться
+                    </a>
+                </div>
+                
+                <div class="service-item-detailed">
+                    <div class="service-item-header">
+                        <div class="service-item-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3>Лабораторные исследования</h3>
+                        <span class="service-price">от 400 ₽</span>
+                    </div>
+                    <p>Полный спектр анализов крови, мочи и других биоматериалов</p>
+                    <ul class="service-features-list">
+                        <li><i class="fas fa-check"></i> Результаты за 1-2 дня</li>
+                        <li><i class="fas fa-check"></i> Точность результатов 99,9%</li>
+                        <li><i class="fas fa-check"></i> Современная лаборатория</li>
+                    </ul>
+                    <a href="contact.html#form" class="btn-service-book">
+                        <i class="fas fa-calendar"></i> Записаться
+                    </a>
+                </div>
+                
+                <div class="service-item-detailed">
+                    <div class="service-item-header">
+                        <div class="service-item-icon">
+                            <i class="fas fa-x-ray"></i>
+                        </div>
+                        <h3>Рентген и КТ</h3>
+                        <span class="service-price">от 2 000 ₽</span>
+                    </div>
+                    <p>Лучевая диагностика с минимальной дозой облучения</p>
+                    <ul class="service-features-list">
+                        <li><i class="fas fa-check"></i> Низкодозовые аппараты</li>
+                        <li><i class="fas fa-check"></i> 3D-реконструкция</li>
+                        <li><i class="fas fa-check"></i> Цифровые снимки</li>
+                    </ul>
+                    <a href="contact.html#form" class="btn-service-book">
+                        <i class="fas fa-calendar"></i> Записаться
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <footer class="site-footer small">
-    <div class="container footer-grid">© <span id="year3"></span> Клиника Колибри</div>
-  </footer>
-  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
-  <script src="js/main.js"></script>
+    <!-- Лечение -->
+    <section id="treatment" class="service-detail">
+        <div class="container">
+            <div class="service-header">
+                <div class="service-icon-large">
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <div>
+                    <h2>Лечение</h2>
+                    <p class="service-description">
+                        Современные методики лечения с быстрым восстановлением. 
+                        Малоинвазивная хирургия и эффективная терапия.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="services-grid-detailed">
+                <div class="service-item-detailed">
+                    <div class="service-item-header">
+                        <div class="service-item-icon">
+                            <i class="fas fa-syringe"></i>
+                        </div>
+                        <h3>Малоинвазивная хирургия</h3>
+                        <span class="service-price">от 15 000 ₽</span>
+                    </div>
+                    <p>Операции через минимальные разрезы</p>
+                    <ul class="service-features-list">
+                        <li><i class="fas fa-check"></i> Быстрое восстановление</li>
+                        <li><i class="fas fa-check"></i> Минимальные рубцы</li>
+                        <li><i class="fas fa-check"></i> Сниженный риск осложнений</li>
+                    </ul>
+                    <a href="contact.html#form" class="btn-service-book">
+                        <i class="fas fa-calendar"></i> Записаться
+                    </a>
+                </div>
+                
+                <div class="service-item-detailed">
+                    <div class="service-item-header">
+                        <div class="service-item-icon">
+                            <i class="fas fa-prescription-bottle-alt"></i>
+                        </div>
+                        <h3>Инъекционная терапия</h3>
+                        <span class="service-price">от 1 200 ₽</span>
+                    </div>
+                    <p>Капельницы, уколы, блокады под контролем УЗИ</p>
+                    <ul class="service-features-list">
+                        <li><i class="fas fa-check"></i> Точное попадание</li>
+                        <li><i class="fas fa-check"></i> Безопасно</li>
+                        <li><i class="fas fa-check"></i> Быстрый эффект</li>
+                    </ul>
+                    <a href="contact.html#form" class="btn-service-book">
+                        <i class="fas fa-calendar"></i> Записаться
+                    </a>
+                </div>
+                
+                <div class="service-item-detailed">
+                    <div class="service-item-header">
+                        <div class="service-item-icon">
+                            <i class="fas fa-band-aid"></i>
+                        </div>
+                        <h3>Перевязочный кабинет</h3>
+                        <span class="service-price">от 500 ₽</span>
+                    </div>
+                    <p>Профессиональная обработка ран и перевязки</p>
+                    <ul class="service-features-list">
+                        <li><i class="fas fa-check"></i> Стерильные условия</li>
+                        <li><i class="fas fa-check"></i> Современные материалы</li>
+                        <li><i class="fas fa-check"></i> Безболезненно</li>
+                    </ul>
+                    <a href="contact.html#form" class="btn-service-book">
+                        <i class="fas fa-calendar"></i> Записаться
+                    </a>
+                </div>
+                
+                <div class="service-item-detailed">
+                    <div class="service-item-header">
+                        <div class="service-item-icon">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                        <h3>Медикаментозное лечение</h3>
+                        <span class="service-price">от 800 ₽</span>
+                    </div>
+                    <p>Индивидуально подобранные схемы лечения</p>
+                    <ul class="service-features-list">
+                        <li><i class="fas fa-check"></i> Персональный подход</li>
+                        <li><i class="fas fa-check"></i> Контроль эффективности</li>
+                        <li><i class="fas fa-check"></i> Коррекция схемы</li>
+                    </ul>
+                    <a href="contact.html#form" class="btn-service-book">
+                        <i class="fas fa-calendar"></i> Записаться
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Консультации -->
+    <section id="consultations" class="service-detail">
+        <div class="container">
+            <div class="service-header">
+                <div class="service-icon-large">
+                    <i class="fas fa-stethoscope"></i>
+                </div>
+                <div>
+                    <h2>Консультации специалистов</h2>
+                    <p class="service-description">
+                        Прием врачей всех специальностей. Очные и онлайн консультации.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="consultation-grid">
+                <div class="consultation-card">
+                    <div class="consultation-header">
+                        <div class="consultation-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3>Терапевт</h3>
+                        <span class="consultation-price">1 200 ₽</span>
+                    </div>
+                    <p>Первичный прием, диагностика, назначение лечения</p>
+                    <div class="consultation-doctor">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=60&h=60&fit=crop" alt="Терапевт">
+                        <div>
+                            <strong>Др. Ольга Иванова</strong>
+                            <small>Опыт: 15 лет</small>
+                        </div>
+                    </div>
+                    <a href="contact.html#form" class="btn-consultation">
+                        <i class="fas fa-calendar-plus"></i> Запись
+                    </a>
+                </div>
+                
+                <div class="consultation-card">
+                    <div class="consultation-header">
+                        <div class="consultation-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <h3>Хирург</h3>
+                        <span class="consultation-price">1 500 ₽</span>
+                    </div>
+                    <p>Консультация, осмотр, планирование операции</p>
+                    <div class="consultation-doctor">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=60&h=60&fit=crop" alt="Хирург">
+                        <div>
+                            <strong>Др. Алексей Петров</strong>
+                            <small>Опыт: 12 лет</small>
+                        </div>
+                    </div>
+                    <a href="contact.html#form" class="btn-consultation">
+                        <i class="fas fa-calendar-plus"></i> Запись
+                    </a>
+                </div>
+                
+                <div class="consultation-card">
+                    <div class="consultation-header">
+                        <div class="consultation-icon">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                        <h3>Педиатр</h3>
+                        <span class="consultation-price">1 000 ₽</span>
+                    </div>
+                    <p>Осмотр детей, вакцинация, патронаж</p>
+                    <div class="consultation-doctor">
+                        <img src="https://images.unsplash.com/photo-1594824434340-7e7dfc37cabb?w=60&h=60&fit=crop" alt="Педиатр">
+                        <div>
+                            <strong>Др. Мария Сидорова</strong>
+                            <small>Опыт: 10 лет</small>
+                        </div>
+                    </div>
+                    <a href="contact.html#form" class="btn-consultation">
+                        <i class="fas fa-calendar-plus"></i> Запись
+                    </a>
+                </div>
+            </div>
+            
+            <div class="specialists-list">
+                <h3>Также ведут прием:</h3>
+                <div class="specialists-grid">
+                    <div class="specialist-item">
+                        <i class="fas fa-user-md"></i>
+                        <span>Кардиолог</span>
+                    </div>
+                    <div class="specialist-item">
+                        <i class="fas fa-user-md"></i>
+                        <span>Невролог</span>
+                    </div>
+                    <div class="specialist-item">
+                        <i class="fas fa-user-md"></i>
+                        <span>Эндокринолог</span>
+                    </div>
+                    <div class="specialist-item">
+                        <i class="fas fa-user-md"></i>
+                        <span>Гастроэнтеролог</span>
+                    </div>
+                    <div class="specialist-item">
+                        <i class="fas fa-user-md"></i>
+                        <span>Гинеколог</span>
+                    </div>
+                    <div class="specialist-item">
+                        <i class="fas fa-user-md"></i>
+                        <span>Уролог</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Профилактика -->
+    <section id="prevention" class="service-detail">
+        <div class="container">
+            <div class="service-header">
+                <div class="service-icon-large">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div>
+                    <h2>Профилактика и check-up</h2>
+                    <p class="service-description">
+                        Комплексные программы обследования для раннего выявления заболеваний
+                    </p>
+                </div>
+            </div>
+            
+            <div class="checkup-grid">
+                <div class="checkup-card">
+                    <div class="checkup-header">
+                        <h3>Базовый check-up</h3>
+                        <span class="checkup-price">5 900 ₽</span>
+                    </div>
+                    <ul class="checkup-features">
+                        <li><i class="fas fa-check"></i> Консультация терапевта</li>
+                        <li><i class="fas fa-check"></i> Общий анализ крови</li>
+                        <li><i class="fas fa-check"></i> Биохимия крови</li>
+                        <li><i class="fas fa-check"></i> ЭКГ</li>
+                        <li><i class="fas fa-check"></i> УЗИ брюшной полости</li>
+                    </ul>
+                    <a href="contact.html#form" class="btn-checkup">
+                        <i class="fas fa-shopping-cart"></i> Заказать
+                    </a>
+                </div>
+                
+                <div class="checkup-card featured">
+                    <div class="checkup-badge">Популярный</div>
+                    <div class="checkup-header">
+                        <h3>Расширенный check-up</h3>
+                        <span class="checkup-price">12 900 ₽</span>
+                    </div>
+                    <ul class="checkup-features">
+                        <li><i class="fas fa-check"></i> Всё из базового +</li>
+                        <li><i class="fas fa-check"></i> Консультация 2 специалистов</li>
+                        <li><i class="fas fa-check"></i> УЗИ сердца и сосудов</li>
+                        <li><i class="fas fa-check"></i> Гормональный профиль</li>
+                        <li><i class="fas fa-check"></i> Онкомаркеры</li>
+                    </ul>
+                    <a href="contact.html#form" class="btn-checkup">
+                        <i class="fas fa-shopping-cart"></i> Заказать
+                    </a>
+                </div>
+                
+                <div class="checkup-card">
+                    <div class="checkup-header">
+                        <h3>Профилактический осмотр</h3>
+                        <span class="checkup-price">3 900 ₽</span>
+                    </div>
+                    <ul class="checkup-features">
+                        <li><i class="fas fa-check"></i> Консультация терапевта</li>
+                        <li><i class="fas fa-check"></i> Общий анализ крови</li>
+                        <li><i class="fas fa-check"></i> Флюорография</li>
+                        <li><i class="fas fa-check"></i> ЭКГ</li>
+                        <li><i class="fas fa-check"></i> Заключение врача</li>
+                    </ul>
+                    <a href="contact.html#form" class="btn-checkup">
+                        <i class="fas fa-shopping-cart"></i> Заказать
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Запись на услугу -->
+    <section class="service-booking">
+        <div class="container">
+            <div class="booking-content">
+                <h2>Заинтересовала услуга?</h2>
+                <p>Оставьте заявку и наш администратор свяжется с вами для уточнения деталей</p>
+                <a href="contact.html#form" class="btn btn-primary btn-large">
+                    <i class="fas fa-calendar-check"></i> Записаться на прием
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>Клиника <strong>Колибри</strong></span>
+                    </div>
+                    <p class="footer-text">
+                        Современная медицинская помощь с заботой о каждом пациенте.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Здоровья, 12</li>
+                        <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
+                        <li><i class="fas fa-envelope"></i> info@kolibri-clinic.ru</li>
+                        <li><i class="fas fa-clock"></i> Пн-Пт: 8:00-20:00, Сб: 9:00-15:00</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Навигация</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Главная</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> О нас</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Услуги</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Контакты</a></li>
+                        <li><a href="privacy.html"><i class="fas fa-chevron-right"></i> Политика</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Быстрая запись</h4>
+                    <a href="contact.html#form" class="btn btn-primary btn-block">
+                        <i class="fas fa-calendar-check"></i> Онлайн запись
+                    </a>
+                    <p class="footer-note">
+                        Запишитесь прямо сейчас без ожидания
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Клиника Колибри. Все права защищены.</p>
+                <p>Лицензия № ЛО-77-01-012345 от 12.01.2023</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Скрипты -->
+    <script>
+        // Текущий год в футере
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Мобильное меню
+        const menuToggle = document.getElementById('menuToggle');
+        const mainNav = document.querySelector('.main-nav');
+        
+        menuToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            menuToggle.innerHTML = mainNav.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Табы услуг
+        const tabs = document.querySelectorAll('.category-tab');
+        const sections = document.querySelectorAll('.service-detail');
+        
+        tabs.forEach(tab => {
+            tab.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                // Убираем активные классы
+                tabs.forEach(t => t.classList.remove('active'));
+                sections.forEach(s => s.classList.remove('active-section'));
+                
+                // Добавляем активный класс
+                tab.classList.add('active');
+                
+                // Показываем нужную секцию
+                const targetId = tab.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    targetSection.classList.add('active-section');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
