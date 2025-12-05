@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Врачи | Медицинский центр Колибри</title>
+    
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/components.css">
-    <!-- остальные подключения -->
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <meta name="description" content="Врачи медицинского центра Колибри. Опытные специалисты высшей категории. Педиатры, терапевты, хирурги, кардиологи.">
 </head>
 
 <body>
     <!-- Header -->
+    <header class="main-header">
+        <!-- Вставьте header -->
+    </header>
 
     <!-- Хлебные крошки -->
     <section class="breadcrumbs">
@@ -28,56 +38,79 @@
         <div class="container">
             <div class="page-hero-content">
                 <h1>Наши врачи</h1>
-                <p>Квалифицированные специалисты с опытом работы</p>
+                <p>Высококвалифицированные специалисты с многолетним опытом</p>
             </div>
         </div>
     </section>
 
-    <!-- Фильтры врачей -->
-    <section class="page-section bg-light">
+    <!-- Поиск и фильтры -->
+    <section class="page-section">
         <div class="container">
-            <div class="doctors-filters">
-                <h3>Выберите специализацию:</h3>
-                <div class="filter-buttons">
-                    <button class="filter-btn active" data-filter="all">Все врачи</button>
-                    <button class="filter-btn" data-filter="pediatrician">Педиатры</button>
-                    <button class="filter-btn" data-filter="therapist">Терапевты</button>
-                    <button class="filter-btn" data-filter="cardiologist">Кардиологи</button>
-                    <button class="filter-btn" data-filter="neurologist">Неврологи</button>
-                    <button class="filter-btn" data-filter="surgeon">Хирурги</button>
+            <div class="doctors-search">
+                <div class="search-box">
+                    <input type="text" placeholder="Поиск врача по имени или специальности..." id="doctorSearch">
+                    <button type="button" id="searchButton">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                
+                <div class="filters">
+                    <div class="filter-group">
+                        <label for="specialtyFilter">Специальность:</label>
+                        <select id="specialtyFilter">
+                            <option value="all">Все специальности</option>
+                            <option value="pediatrician">Педиатр</option>
+                            <option value="therapist">Терапевт</option>
+                            <option value="cardiologist">Кардиолог</option>
+                            <option value="neurologist">Невролог</option>
+                            <option value="surgeon">Хирург</option>
+                            <option value="gastroenterologist">Гастроэнтеролог</option>
+                            <option value="endocrinologist">Эндокринолог</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="experienceFilter">Опыт работы:</label>
+                        <select id="experienceFilter">
+                            <option value="all">Любой опыт</option>
+                            <option value="5">Более 5 лет</option>
+                            <option value="10">Более 10 лет</option>
+                            <option value="15">Более 15 лет</option>
+                        </select>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Список врачей -->
-    <section class="page-section">
+    <section class="page-section bg-light">
         <div class="container">
-            <div class="doctors-grid">
+            <div class="doctors-grid" id="doctorsContainer">
                 <!-- Врач 1 -->
-                <div class="doctor-card" data-category="pediatrician">
+                <div class="doctor-card" data-specialty="pediatrician" data-experience="15">
                     <div class="doctor-photo">
                         <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Др. Ольга Иванова">
-                        <div class="doctor-experience">15 лет опыта</div>
+                        <div class="doctor-badge">
+                            <i class="fas fa-award"></i> Высшая категория
+                        </div>
                     </div>
                     <div class="doctor-info">
                         <h3>Др. Ольга Иванова</h3>
                         <p class="doctor-specialty">Педиатр высшей категории</p>
-                        <p class="doctor-education">Казанский государственный медицинский университет</p>
+                        <p class="doctor-experience"><i class="fas fa-briefcase"></i> Стаж: 15 лет</p>
+                        <p class="doctor-education"><i class="fas fa-graduation-cap"></i> Казанский ГМУ</p>
                         
-                        <div class="doctor-details">
-                            <div class="detail-item">
-                                <i class="fas fa-graduation-cap"></i>
-                                <span>Кандидат медицинских наук</span>
-                            </div>
-                            <div class="detail-item">
-                                <i class="fas fa-award"></i>
-                                <span>Врач высшей категории</span>
-                            </div>
-                            <div class="detail-item">
+                        <div class="doctor-rating">
+                            <div class="stars">
                                 <i class="fas fa-star"></i>
-                                <span>Стаж: 15 лет</span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
                             </div>
+                            <span class="rating-score">4.8</span>
+                            <span class="rating-count">(127 отзывов)</span>
                         </div>
                         
                         <div class="doctor-services">
@@ -87,8 +120,8 @@
                         </div>
                         
                         <div class="doctor-actions">
-                            <a href="doctor-ivanova.html" class="btn btn-outline btn-small">
-                                <i class="fas fa-user-md"></i> Подробнее
+                            <a href="ivanova-olga.html" class="btn btn-outline btn-small">
+                                <i class="fas fa-user-md"></i> Профиль врача
                             </a>
                             <a href="../index.html#appointment" class="btn btn-primary btn-small">
                                 <i class="fas fa-calendar"></i> Запись
@@ -98,40 +131,40 @@
                 </div>
                 
                 <!-- Врач 2 -->
-                <div class="doctor-card" data-category="cardiologist">
+                <div class="doctor-card" data-specialty="cardiologist" data-experience="12">
                     <div class="doctor-photo">
                         <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Др. Алексей Петров">
-                        <div class="doctor-experience">12 лет опыта</div>
+                        <div class="doctor-badge">
+                            <i class="fas fa-graduation-cap"></i> Кандидат наук
+                        </div>
                     </div>
                     <div class="doctor-info">
                         <h3>Др. Алексей Петров</h3>
-                        <p class="doctor-specialty">Кардиолог, кандидат наук</p>
-                        <p class="doctor-education">Московский государственный медико-стоматологический университет</p>
+                        <p class="doctor-specialty">Кардиолог, кандидат медицинских наук</p>
+                        <p class="doctor-experience"><i class="fas fa-briefcase"></i> Стаж: 12 лет</p>
+                        <p class="doctor-education"><i class="fas fa-graduation-cap"></i> МГМСУ им. Евдокимова</p>
                         
-                        <div class="doctor-details">
-                            <div class="detail-item">
-                                <i class="fas fa-graduation-cap"></i>
-                                <span>Кандидат медицинских наук</span>
-                            </div>
-                            <div class="detail-item">
-                                <i class="fas fa-award"></i>
-                                <span>Врач высшей категории</span>
-                            </div>
-                            <div class="detail-item">
+                        <div class="doctor-rating">
+                            <div class="stars">
                                 <i class="fas fa-star"></i>
-                                <span>Стаж: 12 лет</span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
                             </div>
+                            <span class="rating-score">5.0</span>
+                            <span class="rating-count">(89 отзывов)</span>
                         </div>
                         
                         <div class="doctor-services">
-                            <span class="service-tag">Диагностика сердца</span>
-                            <span class="service-tag">Лечение гипертонии</span>
+                            <span class="service-tag">Диагностика</span>
+                            <span class="service-tag">Лечение</span>
                             <span class="service-tag">Реабилитация</span>
                         </div>
                         
                         <div class="doctor-actions">
-                            <a href="doctor-petrov.html" class="btn btn-outline btn-small">
-                                <i class="fas fa-user-md"></i> Подробнее
+                            <a href="petrov-aleksey.html" class="btn btn-outline btn-small">
+                                <i class="fas fa-user-md"></i> Профиль врача
                             </a>
                             <a href="../index.html#appointment" class="btn btn-primary btn-small">
                                 <i class="fas fa-calendar"></i> Запись
@@ -140,7 +173,177 @@
                     </div>
                 </div>
                 
-                <!-- Добавить остальных врачей -->
+                <!-- Врач 3 -->
+                <div class="doctor-card" data-specialty="neurologist" data-experience="10">
+                    <div class="doctor-photo">
+                        <img src="https://images.unsplash.com/photo-1594824434340-7e7dfc37cabb?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Др. Мария Сидорова">
+                        <div class="doctor-badge">
+                            <i class="fas fa-award"></i> Высшая категория
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Др. Мария Сидорова</h3>
+                        <p class="doctor-specialty">Невролог высшей категории</p>
+                        <p class="doctor-experience"><i class="fas fa-briefcase"></i> Стаж: 10 лет</p>
+                        <p class="doctor-education"><i class="fas fa-graduation-cap"></i> РНИМУ им. Пирогова</p>
+                        
+                        <div class="doctor-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-score">4.7</span>
+                            <span class="rating-count">(94 отзыва)</span>
+                        </div>
+                        
+                        <div class="doctor-services">
+                            <span class="service-tag">Диагностика</span>
+                            <span class="service-tag">Лечение</span>
+                            <span class="service-tag">Реабилитация</span>
+                        </div>
+                        
+                        <div class="doctor-actions">
+                            <a href="sidorova-mariya.html" class="btn btn-outline btn-small">
+                                <i class="fas fa-user-md"></i> Профиль врача
+                            </a>
+                            <a href="../index.html#appointment" class="btn btn-primary btn-small">
+                                <i class="fas fa-calendar"></i> Запись
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Врач 4 -->
+                <div class="doctor-card" data-specialty="therapist" data-experience="18">
+                    <div class="doctor-photo">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Др. Игорь Смирнов">
+                        <div class="doctor-badge">
+                            <i class="fas fa-award"></i> Высшая категория
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Др. Игорь Смирнов</h3>
+                        <p class="doctor-specialty">Терапевт высшей категории</p>
+                        <p class="doctor-experience"><i class="fas fa-briefcase"></i> Стаж: 18 лет</p>
+                        <p class="doctor-education"><i class="fas fa-graduation-cap"></i> Первый МГМУ им. Сеченова</p>
+                        
+                        <div class="doctor-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-score">4.9</span>
+                            <span class="rating-count">(156 отзывов)</span>
+                        </div>
+                        
+                        <div class="doctor-services">
+                            <span class="service-tag">Консультации</span>
+                            <span class="service-tag">Диагностика</span>
+                            <span class="service-tag">Лечение</span>
+                        </div>
+                        
+                        <div class="doctor-actions">
+                            <a href="smirnov-igor.html" class="btn btn-outline btn-small">
+                                <i class="fas fa-user-md"></i> Профиль врача
+                            </a>
+                            <a href="../index.html#appointment" class="btn btn-primary btn-small">
+                                <i class="fas fa-calendar"></i> Запись
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Врач 5 -->
+                <div class="doctor-card" data-specialty="surgeon" data-experience="14">
+                    <div class="doctor-photo">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Др. Дмитрий Васильев">
+                        <div class="doctor-badge">
+                            <i class="fas fa-graduation-cap"></i> Кандидат наук
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Др. Дмитрий Васильев</h3>
+                        <p class="doctor-specialty">Хирург, кандидат медицинских наук</p>
+                        <p class="doctor-experience"><i class="fas fa-briefcase"></i> Стаж: 14 лет</p>
+                        <p class="doctor-education"><i class="fas fa-graduation-cap"></i> СПбГПМУ</p>
+                        
+                        <div class="doctor-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-score">4.8</span>
+                            <span class="rating-count">(67 отзывов)</span>
+                        </div>
+                        
+                        <div class="doctor-services">
+                            <span class="service-tag">Операции</span>
+                            <span class="service-tag">Консультации</span>
+                            <span class="service-tag">Реабилитация</span>
+                        </div>
+                        
+                        <div class="doctor-actions">
+                            <a href="vasiliev-dmitry.html" class="btn btn-outline btn-small">
+                                <i class="fas fa-user-md"></i> Профиль врача
+                            </a>
+                            <a href="../index.html#appointment" class="btn btn-primary btn-small">
+                                <i class="fas fa-calendar"></i> Запись
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Врач 6 -->
+                <div class="doctor-card" data-specialty="gastroenterologist" data-experience="9">
+                    <div class="doctor-photo">
+                        <img src="https://images.unsplash.com/photo-1594824434340-7e7dfc37cabb?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Др. Елена Кузнецова">
+                        <div class="doctor-badge">
+                            <i class="fas fa-award"></i> Первая категория
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Др. Елена Кузнецова</h3>
+                        <p class="doctor-specialty">Гастроэнтеролог</p>
+                        <p class="doctor-experience"><i class="fas fa-briefcase"></i> Стаж: 9 лет</p>
+                        <p class="doctor-education"><i class="fas fa-graduation-cap"></i> РУДН</p>
+                        
+                        <div class="doctor-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-score">4.9</span>
+                            <span class="rating-count">(82 отзыва)</span>
+                        </div>
+                        
+                        <div class="doctor-services">
+                            <span class="service-tag">Диагностика</span>
+                            <span class="service-tag">Лечение</span>
+                            <span class="service-tag">Диетология</span>
+                        </div>
+                        
+                        <div class="doctor-actions">
+                            <a href="kuznetsova-elena.html" class="btn btn-outline btn-small">
+                                <i class="fas fa-user-md"></i> Профиль врача
+                            </a>
+                            <a href="../index.html#appointment" class="btn btn-primary btn-small">
+                                <i class="fas fa-calendar"></i> Запись
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
             
             <!-- Пагинация -->
@@ -148,6 +351,8 @@
                 <a href="#" class="page-link active">1</a>
                 <a href="#" class="page-link">2</a>
                 <a href="#" class="page-link">3</a>
+                <span class="page-dots">...</span>
+                <a href="#" class="page-link">5</a>
                 <a href="#" class="page-link">
                     <i class="fas fa-chevron-right"></i>
                 </a>
@@ -155,6 +360,57 @@
         </div>
     </section>
 
+    <!-- Как выбрать врача -->
+    <section class="page-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Как выбрать врача?</h2>
+                <p class="section-subtitle">Рекомендации для вашего комфорта</p>
+            </div>
+            
+            <div class="choose-doctor">
+                <div class="choose-item">
+                    <div class="choose-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3>Определите специализацию</h3>
+                    <p>Выберите врача в соответствии с вашей проблемой или заболеванием</p>
+                </div>
+                
+                <div class="choose-item">
+                    <div class="choose-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Обратите внимание на квалификацию</h3>
+                    <p>Ознакомьтесь с образованием, опытом и сертификатами врача</p>
+                </div>
+                
+                <div class="choose-item">
+                    <div class="choose-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Прочитайте отзывы</h3>
+                    <p>Ознакомьтесь с отзывами других пациентов о работе врача</p>
+                </div>
+                
+                <div class="choose-item">
+                    <div class="choose-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Запишитесь на консультацию</h3>
+                    <p>Первичная консультация поможет понять, подходит ли вам врач</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
+    <footer class="main-footer">
+        <!-- Вставьте footer -->
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/doctors-filter.js"></script>
 </body>
 </html>
