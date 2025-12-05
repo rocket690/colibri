@@ -1,59 +1,448 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Контакты — Клиника Колибри</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | Клиника Колибри</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
-  <header class="site-header small">
-    <div class="container header-row">
-      <a class="logo" href="index.html">Клиника <span>Колибри</span></a>
-      <nav class="main-nav" id="nav">
-        <a href="index.html">Главная</a>
-        <a href="about.html">О нас</a>
-        <a href="services.html">Услуги</a>
-        <a href="contact.html" class="active">Контакты</a>
-      </nav>
-      <div class="header-actions">
-        <a class="btn btn-primary" href="contact.html">Записаться</a>
-        <button id="burger" class="burger" aria-label="Меню">☰</button>
-      </div>
-    </div>
-  </header>
+    <!-- Хедер -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>Клиника <strong>Колибри</strong></span>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html"><i class="fas fa-home"></i> Главная</a>
+                <a href="about.html"><i class="fas fa-info-circle"></i> О нас</a>
+                <a href="services.html"><i class="fas fa-stethoscope"></i> Услуги</a>
+                <a href="contact.html" class="active"><i class="fas fa-address-book"></i> Контакты</a>
+            </nav>
+            <div class="header-actions">
+                <a href="#form" class="btn btn-primary">
+                    <i class="fas fa-calendar-check"></i> Записаться
+                </a>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
 
-  <main class="container content contact-page">
-    <h1>Контакты</h1>
-    <div class="contact-grid">
-      <div class="contact-info">
-        <p><strong>Адрес:</strong> г. Пример, ул. Здоровья, 12</p>
-        <p><strong>Телефон:</strong> +7 (900) 000-00-00</p>
-        <p><strong>Часы работы:</strong> Пн–Пт 8:00–20:00, Сб 9:00–15:00</p>
-        <a class="btn btn-primary" href="contact.html#form">Записаться</a>
-      </div>
-      <div class="contact-map">
-        <img src="assets/img/map.jpg" alt="Карта проезда">
-      </div>
-    </div>
-
-    <section id="form" class="appointment-form">
-      <h2>Онлайн-запись</h2>
-      <form action="https://formspree.io/f/yourformid" method="POST">
-        <label>Имя <input name="name" required></label>
-        <label>Телефон <input name="phone" required></label>
-        <label>Услуга <select name="service"><option>Диагностика</option><option>Консультация</option><option>Хирургия</option></select></label>
-        <label>Сообщение <textarea name="message"></textarea></label>
-        <button class="btn btn-primary" type="submit">Отправить</button>
-      </form>
+    <!-- Баннер страницы -->
+    <section class="page-banner">
+        <div class="container">
+            <h1 class="page-title">Контакты</h1>
+            <p class="page-subtitle">Свяжитесь с нами удобным для вас способом</p>
+            <nav class="breadcrumb">
+                <a href="index.html">Главная</a>
+                <span class="separator">/</span>
+                <span>Контакты</span>
+            </nav>
+        </div>
     </section>
-  </main>
 
-  <footer class="site-footer small">
-    <div class="container footer-grid">© <span id="year4"></span> Клиника Колибри</div>
-  </footer>
-  <script>document.getElementById('year4').textContent = new Date().getFullYear();</script>
-  <script src="js/main.js"></script>
+    <!-- Контактная информация -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Основная информация -->
+                <div class="contact-main">
+                    <div class="contact-card primary">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Наш адрес</h3>
+                        <p class="contact-detail">г. Москва, ул. Здоровья, 12</p>
+                        <p class="contact-note">Метро: «Медицинская», 5 минут пешком</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Часы работы</h3>
+                        <div class="schedule">
+                            <div class="schedule-item">
+                                <span>Понедельник - Пятница</span>
+                                <span>8:00 - 20:00</span>
+                            </div>
+                            <div class="schedule-item">
+                                <span>Суббота</span>
+                                <span>9:00 - 15:00</span>
+                            </div>
+                            <div class="schedule-item">
+                                <span>Воскресенье</span>
+                                <span>выходной</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Контакты и соцсети -->
+                <div class="contact-secondary">
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="method-content">
+                                <h4>Телефон для записи</h4>
+                                <a href="tel:+74951234567" class="method-detail">+7 (495) 123-45-67</a>
+                                <p class="method-note">Ежедневно с 8:00 до 20:00</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-content">
+                                <h4>Электронная почта</h4>
+                                <a href="mailto:info@kolibri-clinic.ru" class="method-detail">info@kolibri-clinic.ru</a>
+                                <p class="method-note">Отвечаем в течение 24 часов</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="method-content">
+                                <h4>Онлайн-чат</h4>
+                                <p class="method-detail">На сайте и в мессенджерах</p>
+                                <div class="messengers">
+                                    <a href="#" class="messenger-link whatsapp">
+                                        <i class="fab fa-whatsapp"></i>
+                                        WhatsApp
+                                    </a>
+                                    <a href="#" class="messenger-link telegram">
+                                        <i class="fab fa-telegram"></i>
+                                        Telegram
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-section">
+                        <h3>Мы в социальных сетях</h3>
+                        <div class="social-links-large">
+                            <a href="#" class="social-link vk">
+                                <i class="fab fa-vk"></i>
+                                <span>ВКонтакте</span>
+                            </a>
+                            <a href="#" class="social-link telegram">
+                                <i class="fab fa-telegram"></i>
+                                <span>Telegram</span>
+                            </a>
+                            <a href="#" class="social-link instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="#" class="social-link youtube">
+                                <i class="fab fa-youtube"></i>
+                                <span>YouTube</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Карта -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-line">Как</span>
+                добраться
+            </h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <div class="map-overlay">
+                        <h3><i class="fas fa-map-marked-alt"></i> Клиника Колибри</h3>
+                        <p>г. Москва, ул. Здоровья, 12</p>
+                        <div class="transport-info">
+                            <div class="transport-item">
+                                <i class="fas fa-subway"></i>
+                                <span>Метро «Медицинская»</span>
+                                <small>5 минут пешком</small>
+                            </div>
+                            <div class="transport-item">
+                                <i class="fas fa-bus"></i>
+                                <span>Автобусы: 123, 456</span>
+                                <small>Остановка «Поликлиника»</small>
+                            </div>
+                            <div class="transport-item">
+                                <i class="fas fa-parking"></i>
+                                <span>Парковка</span>
+                                <small>Бесплатная для пациентов</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Здесь можно вставить реальную карту Яндекс или Google -->
+                    <div class="map-image">
+                        <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1200&h=400&fit=crop" alt="Карта расположения">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма записи -->
+    <section id="form" class="appointment-form-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Запись на прием</h2>
+                    <p>Заполните форму и наш администратор свяжется с вами для подтверждения записи</p>
+                </div>
+                
+                <form class="appointment-form" id="appointmentForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">
+                                <i class="fas fa-user"></i> ФИО *
+                            </label>
+                            <input type="text" id="name" name="name" required placeholder="Иванов Иван Иванович">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">
+                                <i class="fas fa-phone"></i> Телефон *
+                            </label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+7 (999) 123-45-67">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i> Email
+                            </label>
+                            <input type="email" id="email" name="email" placeholder="ivanov@example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">
+                                <i class="fas fa-stethoscope"></i> Услуга *
+                            </label>
+                            <select id="service" name="service" required>
+                                <option value="">Выберите услугу</option>
+                                <option value="consultation">Консультация терапевта</option>
+                                <option value="diagnostics">Диагностика</option>
+                                <option value="surgery">Хирургия</option>
+                                <option value="pediatric">Прием педиатра</option>
+                                <option value="checkup">Check-up обследование</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="doctor">
+                                <i class="fas fa-user-md"></i> Врач (если знаете)
+                            </label>
+                            <select id="doctor" name="doctor">
+                                <option value="">Любой свободный специалист</option>
+                                <option value="dr_ivanova">Др. Ольга Иванова (Терапевт)</option>
+                                <option value="dr_petrov">Др. Алексей Петров (Хирург)</option>
+                                <option value="dr_sidorova">Др. Мария Сидорова (Педиатр)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="date">
+                                <i class="fas fa-calendar"></i> Предпочтительная дата *
+                            </label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="message">
+                                <i class="fas fa-comment"></i> Сообщение
+                            </label>
+                            <textarea id="message" name="message" rows="4" placeholder="Опишите симптомы или задайте вопрос..."></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="form-footer">
+                        <div class="form-agreement">
+                            <input type="checkbox" id="agreement" name="agreement" required>
+                            <label for="agreement">
+                                Я согласен на обработку персональных данных и ознакомлен с 
+                                <a href="privacy.html">политикой конфиденциальности</a>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i> Отправить заявку
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-line">Частые</span>
+                вопросы
+            </h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>Как подготовиться к приему?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Возьмите с собой паспорт, страховой полис и медицинские документы (если есть). Для некоторых исследований требуется предварительная подготовка.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>Можно ли прийти без записи?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, но мы рекомендуем записываться заранее, чтобы избежать ожидания. Время приема пациентов без записи зависит от загрузки врачей.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>Работает ли клиника в праздничные дни?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Мы работаем по особому графику в праздники. Актуальное расписание всегда можно уточнить по телефону или в соцсетях.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>Есть ли парковка для пациентов?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, у клиники есть бесплатная парковка на 20 мест. Для пациентов предоставляется скидка на платную парковку рядом.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>Клиника <strong>Колибри</strong></span>
+                    </div>
+                    <p class="footer-text">
+                        Современная медицинская помощь с заботой о каждом пациенте.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Здоровья, 12</li>
+                        <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
+                        <li><i class="fas fa-envelope"></i> info@kolibri-clinic.ru</li>
+                        <li><i class="fas fa-clock"></i> Пн-Пт: 8:00-20:00, Сб: 9:00-15:00</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Навигация</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Главная</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> О нас</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Услуги</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Контакты</a></li>
+                        <li><a href="privacy.html"><i class="fas fa-chevron-right"></i> Политика</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Быстрая запись</h4>
+                    <a href="#form" class="btn btn-primary btn-block">
+                        <i class="fas fa-calendar-check"></i> Онлайн запись
+                    </a>
+                    <p class="footer-note">
+                        Запишитесь прямо сейчас без ожидания
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Клиника Колибри. Все права защищены.</p>
+                <p>Лицензия № ЛО-77-01-012345 от 12.01.2023</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Скрипты -->
+    <script>
+        // Текущий год в футере
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Мобильное меню
+        const menuToggle = document.getElementById('menuToggle');
+        const mainNav = document.querySelector('.main-nav');
+        
+        menuToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            menuToggle.innerHTML = mainNav.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // FAQ аккордеон
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+        
+        // Обработка формы
+        const appointmentForm = document.getElementById('appointmentForm');
+        appointmentForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Простая валидация
+            const phone = document.getElementById('phone').value;
+            const date = document.getElementById('date').value;
+            const today = new Date().toISOString().split('T')[0];
+            
+            if (date < today) {
+                alert('Пожалуйста, выберите дату не ранее сегодняшней');
+                return;
+            }
+            
+            // Здесь обычно отправка на сервер
+            alert('Спасибо! Ваша заявка принята. Мы свяжемся с вами в ближайшее время для подтверждения записи.');
+            appointmentForm.reset();
+            
+            // Скролл к верху формы для обратной связи
+            window.scrollTo({
+                top: appointmentForm.offsetTop - 100,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 </html>
