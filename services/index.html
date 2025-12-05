@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги | Медицинский центр Колибри</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    
+    <meta name="description" content="Полный спектр медицинских услуг в центре Колибри: педиатрия, терапия, диагностика, хирургия, физиотерапия и другие.">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <!-- Вставьте header из index.html, обновив пути -->
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../index.html">
+                    <div class="logo-icon">
+                        <i class="fas fa-feather-alt"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-main">Колибри</span>
+                        <span class="logo-sub">Медицинский центр</span>
+                    </div>
+                </a>
+            </div>
+            
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">
+                            <i class="fas fa-home"></i> Главная
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item nav-item-with-dropdown">
+                        <a href="../about.html" class="nav-link nav-link-with-dropdown">
+                            <i class="fas fa-info-circle"></i> О клинике
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="nav-dropdown">
+                            <a href="../about.html#history" class="dropdown-item">
+                                <i class="fas fa-history"></i> Наша история
+                            </a>
+                            <a href="../about.html#mission" class="dropdown-item">
+                                <i class="fas fa-bullseye"></i> Наша миссия
+                            </a>
+                            <a href="../about.html#licenses" class="dropdown-item">
+                                <i class="fas fa-file-certificate"></i> Лицензии
+                            </a>
+                            <a href="../documents.html" class="dropdown-item">
+                                <i class="fas fa-folder-open"></i> Документы
+                            </a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item nav-item-with-dropdown">
+                        <a href="index.html" class="nav-link nav-link-with-dropdown active">
+                            <i class="fas fa-stethoscope"></i> Услуги
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="nav-dropdown mega-menu">
+                            <div class="mega-menu-column">
+                                <div class="mega-menu-title">
+                                    <i class="fas fa-child"></i> Для детей
+                                </div>
+                                <ul class="mega-menu-list">
+                                    <li><a href="pediatrics.html" class="mega-menu-link">
+                                        <i class="fas fa-baby"></i> Педиатрия
+                                    </a></li>
+                                    <li><a href="child-neurology.html" class="mega-menu-link">
+                                        <i class="fas fa-brain"></i> Детская неврология
+                                    </a></li>
+                                    <li><a href="child-surgery.html" class="mega-menu-link">
+                                        <i class="fas fa-cut"></i> Детская хирургия
+                                    </a></li>
+                                    <li><a href="vaccination.html" class="mega-menu-link">
+                                        <i class="fas fa-syringe"></i> Вакцинация
+                                    </a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mega-menu-column">
+                                <div class="mega-menu-title">
+                                    <i class="fas fa-user-injured"></i> Для взрослых
+                                </div>
+                                <ul class="mega-menu-list">
+                                    <li><a href="therapy.html" class="mega-menu-link">
+                                        <i class="fas fa-user-md"></i> Терапия
+                                    </a></li>
+                                    <li><a href="cardiology.html" class="mega-menu-link">
+                                        <i class="fas fa-heart"></i> Кардиология
+                                    </a></li>
+                                    <li><a href="neurology.html" class="mega-menu-link">
+                                        <i class="fas fa-brain"></i> Неврология
+                                    </a></li>
+                                    <li><a href="gastroenterology.html" class="mega-menu-link">
+                                        <i class="fas fa-stomach"></i> Гастроэнтерология
+                                    </a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mega-menu-column">
+                                <div class="mega-menu-title">
+                                    <i class="fas fa-heartbeat"></i> Диагностика
+                                </div>
+                                <ul class="mega-menu-list">
+                                    <li><a href="diagnostics.html" class="mega-menu-link">
+                                        <i class="fas fa-microscope"></i> Лаборатория
+                                    </a></li>
+                                    <li><a href="ultrasound.html" class="mega-menu-link">
+                                        <i class="fas fa-wave-square"></i> УЗИ
+                                    </a></li>
+                                    <li><a href="ecg.html" class="mega-menu-link">
+                                        <i class="fas fa-heartbeat"></i> ЭКГ, Эхо-КГ
+                                    </a></li>
+                                    <li><a href="eeg.html" class="mega-menu-link">
+                                        <i class="fas fa-brain"></i> ЭЭГ
+                                    </a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mega-menu-column">
+                                <div class="mega-menu-title">
+                                    <i class="fas fa-procedures"></i> Лечение
+                                </div>
+                                <ul class="mega-menu-list">
+                                    <li><a href="surgery.html" class="mega-menu-link">
+                                        <i class="fas fa-cut"></i> Хирургия
+                                    </a></li>
+                                    <li><a href="physical-therapy.html" class="mega-menu-link">
+                                        <i class="fas fa-dumbbell"></i> Физиотерапия
+                                    </a></li>
+                                    <li><a href="massage.html" class="mega-menu-link">
+                                        <i class="fas fa-hands"></i> Массаж
+                                    </a></li>
+                                    <li><a href="injections.html" class="mega-menu-link">
+                                        <i class="fas fa-tint"></i> Инъекции
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item nav-item-with-dropdown">
+                        <a href="../doctors/index.html" class="nav-link nav-link-with-dropdown">
+                            <i class="fas fa-user-md"></i> Врачи
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="nav-dropdown">
+                            <a href="../doctors/all.html" class="dropdown-item">
+                                <i class="fas fa-users"></i> Все врачи
+                            </a>
+                            <a href="../doctors/pediatricians.html" class="dropdown-item">
+                                <i class="fas fa-baby"></i> Педиатры
+                            </a>
+                            <a href="../doctors/therapists.html" class="dropdown-item">
+                                <i class="fas fa-user-md"></i> Терапевты
+                            </a>
+                            <a href="../doctors/specialists.html" class="dropdown-item">
+                                <i class="fas fa-user-md"></i> Узкие специалисты
+                            </a>
+                            <a href="../doctors/surgeons.html" class="dropdown-item">
+                                <i class="fas fa-cut"></i> Хирурги
+                            </a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="../prices.html" class="nav-link">
+                            <i class="fas fa-tags"></i> Цены
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="../reviews.html" class="nav-link">
+                            <i class="fas fa-star"></i> Отзывы
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="../contacts.html" class="nav-link">
+                            <i class="fas fa-map-marker-alt"></i> Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <div class="phone-number">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:+78001234567">8 (800) 123-45-67</a>
+                </div>
+                <a href="#appointment" class="btn btn-primary btn-small">
+                    <i class="fas fa-calendar-check"></i> Запись онлайн
+                </a>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Хлебные крошки -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="../index.html">Главная</a>
+                <span class="separator">/</span>
+                <span class="current">Услуги</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Герой секция -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Медицинские услуги</h1>
+                <p>Полный спектр услуг для детей и взрослых</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Категории услуг -->
+    <section class="page-section">
+        <div class="container">
+            <div class="services-categories">
+                <div class="category-nav">
+                    <button class="category-btn active" data-category="all">
+                        <i class="fas fa-th"></i> Все услуги
+                    </button>
+                    <button class="category-btn" data-category="children">
+                        <i class="fas fa-child"></i> Для детей
+                    </button>
+                    <button class="category-btn" data-category="adults">
+                        <i class="fas fa-user-injured"></i> Для взрослых
+                    </button>
+                    <button class="category-btn" data-category="diagnostics">
+                        <i class="fas fa-heartbeat"></i> Диагностика
+                    </button>
+                    <button class="category-btn" data-category="treatment">
+                        <i class="fas fa-procedures"></i> Лечение
+                    </button>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Педиатрия -->
+                    <div class="service-item" data-category="children">
+                        <div class="service-icon">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3><a href="pediatrics.html">Педиатрия</a></h3>
+                            <p>Профилактика, диагностика и лечение заболеваний у детей всех возрастов</p>
+                            <ul class="service-features">
+                                <li>Профилактические осмотры</li>
+                                <li>Вакцинация по календарю</li>
+                                <li>Лечение детских заболеваний</li>
+                                <li>Патронаж новорожденных</li>
+                            </ul>
+                            <div class="service-actions">
+                                <a href="pediatrics.html" class="btn-service">Подробнее</a>
+                                <span class="service-price">от 1 200 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Терапия -->
+                    <div class="service-item" data-category="adults">
+                        <div class="service-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3><a href="therapy.html">Терапия</a></h3>
+                            <p>Диагностика и лечение заболеваний внутренних органов у взрослых</p>
+                            <ul class="service-features">
+                                <li>Консультации терапевта</li>
+                                <li>Лечение ОРВИ, гриппа</li>
+                                <li>Профилактические осмотры</li>
+                                <li>Выдача больничных листов</li>
+                            </ul>
+                            <div class="service-actions">
+                                <a href="therapy.html" class="btn-service">Подробнее</a>
+                                <span class="service-price">от 1 500 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Диагностика -->
+                    <div class="service-item" data-category="diagnostics">
+                        <div class="service-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3><a href="diagnostics.html">Диагностика</a></h3>
+                            <p>Комплексные обследования на современном оборудовании</p>
+                            <ul class="service-features">
+                                <li>Лабораторные анализы</li>
+                                <li>УЗИ всех органов</li>
+                                <li>ЭКГ, Эхо-КГ</li>
+                                <li>Рентген, КТ</li>
+                            </ul>
+                            <div class="service-actions">
+                                <a href="diagnostics.html" class="btn-service">Подробнее</a>
+                                <span class="service-price">от 900 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Хирургия -->
+                    <div class="service-item" data-category="treatment">
+                        <div class="service-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3><a href="surgery.html">Хирургия</a></h3>
+                            <p>Малоинвазивные хирургические вмешательства</p>
+                            <ul class="service-features">
+                                <li>Амбулаторная хирургия</li>
+                                <li>Удаление новообразований</li>
+                                <li>Лечение грыж</li>
+                                <li>Операции на мягких тканях</li>
+                            </ul>
+                            <div class="service-actions">
+                                <a href="surgery.html" class="btn-service">Подробнее</a>
+                                <span class="service-price">от 5 000 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Неврология -->
+                    <div class="service-item" data-category="adults">
+                        <div class="service-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3><a href="neurology.html">Неврология</a></h3>
+                            <p>Диагностика и лечение заболеваний нервной системы</p>
+                            <ul class="service-features">
+                                <li>Лечение головных болей</li>
+                                <li>Диагностика нарушений сна</li>
+                                <li>Реабилитация после инсультов</li>
+                                <li>Лечение остеохондроза</li>
+                            </ul>
+                            <div class="service-actions">
+                                <a href="neurology.html" class="btn-service">Подробнее</a>
+                                <span class="service-price">от 1 800 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Кардиология -->
+                    <div class="service-item" data-category="adults">
+                        <div class="service-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3><a href="cardiology.html">Кардиология</a></h3>
+                            <p>Диагностика и лечение заболеваний сердечно-сосудистой системы</p>
+                            <ul class="service-features">
+                                <li>Диагностика гипертонии</li>
+                                <li>Лечение аритмий</li>
+                                <li>Профилактика инфарктов</li>
+                                <li>Реабилитация кардиопациентов</li>
+                            </ul>
+                            <div class="service-actions">
+                                <a href="cardiology.html" class="btn-service">Подробнее</a>
+                                <span class="service-price">от 2 000 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- УЗИ -->
+                    <div class="service-item" data-category="diagnostics">
+                        <div class="service-icon">
+                            <i class="fas fa-wave-square"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3><a href="ultrasound.html">УЗИ диагностика</a></h3>
+                            <p>Ультразвуковые исследования всех органов и систем</p>
+                            <ul class="service-features">
+                                <li>УЗИ брюшной полости</li>
+                                <li>УЗИ сердца (Эхо-КГ)</li>
+                                <li>УЗИ сосудов</li>
+                                <li>УЗИ суставов</li>
+                            </ul>
+                            <div class="service-actions">
+                                <a href="ultrasound.html" class="btn-service">Подробнее</a>
+                                <span class="service-price">от 1 500 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Физиотерапия -->
+                    <div class="service-item" data-category="treatment">
+                        <div class="service-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3><a href="physical-therapy.html">Физиотерапия</a></h3>
+                            <p>Восстановительное лечение физическими факторами</p>
+                            <ul class="service-features">
+                                <li>Электрофорез</li>
+                                <li>Магнитотерапия</li>
+                                <li>Лазерная терапия</li>
+                                <li>УВЧ-терапия</li>
+                            </ul>
+                            <div class="service-actions">
+                                <a href="physical-therapy.html" class="btn-service">Подробнее</a>
+                                <span class="service-price">от 800 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма записи -->
+    <section class="appointment-section" id="appointment">
+        <div class="container">
+            <div class="appointment-container">
+                <div class="appointment-form">
+                    <h3>Записаться на услугу</h3>
+                    <p>Выберите услугу и оставьте заявку</p>
+                    
+                    <form id="appointmentForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Номер телефона" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="" disabled selected>Выберите услугу</option>
+                                <option value="pediatrics">Педиатрия</option>
+                                <option value="therapy">Терапия</option>
+                                <option value="diagnostics">Диагностика</option>
+                                <option value="surgery">Хирургия</option>
+                                <option value="neurology">Неврология</option>
+                                <option value="cardiology">Кардиология</option>
+                                <option value="ultrasound">УЗИ</option>
+                                <option value="physical-therapy">Физиотерапия</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Сообщение (необязательно)" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large btn-block">
+                            <i class="fas fa-paper-plane"></i> Отправить заявку
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="appointment-info">
+                    <h3>Почему выбирают нас?</h3>
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <i class="fas fa-user-md"></i>
+                            <div>
+                                <h4>Опытные врачи</h4>
+                                <p>Специалисты высшей категории</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-microscope"></i>
+                            <div>
+                                <h4>Современное оборудование</h4>
+                                <p>Аппараты экспертного класса</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-calendar-check"></i>
+                            <div>
+                                <h4>Удобная запись</h4>
+                                <p>Онлайн запись 24/7</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-star"></i>
+                            <div>
+                                <h4>Гарантия качества</h4>
+                                <p>Соблюдение всех стандартов</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="emergency-contact">
+                        <h4>Срочная помощь?</h4>
+                        <a href="tel:+78001234567" class="btn btn-secondary btn-block">
+                            <i class="fas fa-phone-alt"></i> 8 (800) 123-45-67
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <!-- Вставьте footer из index.html с обновленными путями -->
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/forms.js"></script>
+    <script>
+        // Фильтрация услуг
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            const serviceItems = document.querySelectorAll('.service-item');
+            
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Убираем активный класс у всех кнопок
+                    categoryBtns.forEach(b => b.classList.remove('active'));
+                    // Добавляем активный класс текущей кнопке
+                    this.classList.add('active');
+                    
+                    const category = this.dataset.category;
+                    
+                    // Показываем/скрываем услуги
+                    serviceItems.forEach(item => {
+                        if (category === 'all' || item.dataset.category === category) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'translateY(0)';
+                            }, 10);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
