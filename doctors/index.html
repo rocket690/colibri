@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Врачи | Медицинский центр Колибри</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <!-- остальные подключения -->
+</head>
+
+<body>
+    <!-- Header -->
+
+    <!-- Хлебные крошки -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="../index.html">Главная</a>
+                <span class="separator">/</span>
+                <span class="current">Врачи</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Герой секция -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Наши врачи</h1>
+                <p>Квалифицированные специалисты с опытом работы</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Фильтры врачей -->
+    <section class="page-section bg-light">
+        <div class="container">
+            <div class="doctors-filters">
+                <h3>Выберите специализацию:</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Все врачи</button>
+                    <button class="filter-btn" data-filter="pediatrician">Педиатры</button>
+                    <button class="filter-btn" data-filter="therapist">Терапевты</button>
+                    <button class="filter-btn" data-filter="cardiologist">Кардиологи</button>
+                    <button class="filter-btn" data-filter="neurologist">Неврологи</button>
+                    <button class="filter-btn" data-filter="surgeon">Хирурги</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Список врачей -->
+    <section class="page-section">
+        <div class="container">
+            <div class="doctors-grid">
+                <!-- Врач 1 -->
+                <div class="doctor-card" data-category="pediatrician">
+                    <div class="doctor-photo">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Др. Ольга Иванова">
+                        <div class="doctor-experience">15 лет опыта</div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Др. Ольга Иванова</h3>
+                        <p class="doctor-specialty">Педиатр высшей категории</p>
+                        <p class="doctor-education">Казанский государственный медицинский университет</p>
+                        
+                        <div class="doctor-details">
+                            <div class="detail-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Кандидат медицинских наук</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-award"></i>
+                                <span>Врач высшей категории</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-star"></i>
+                                <span>Стаж: 15 лет</span>
+                            </div>
+                        </div>
+                        
+                        <div class="doctor-services">
+                            <span class="service-tag">Консультации</span>
+                            <span class="service-tag">Вакцинация</span>
+                            <span class="service-tag">Профилактика</span>
+                        </div>
+                        
+                        <div class="doctor-actions">
+                            <a href="doctor-ivanova.html" class="btn btn-outline btn-small">
+                                <i class="fas fa-user-md"></i> Подробнее
+                            </a>
+                            <a href="../index.html#appointment" class="btn btn-primary btn-small">
+                                <i class="fas fa-calendar"></i> Запись
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Врач 2 -->
+                <div class="doctor-card" data-category="cardiologist">
+                    <div class="doctor-photo">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Др. Алексей Петров">
+                        <div class="doctor-experience">12 лет опыта</div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Др. Алексей Петров</h3>
+                        <p class="doctor-specialty">Кардиолог, кандидат наук</p>
+                        <p class="doctor-education">Московский государственный медико-стоматологический университет</p>
+                        
+                        <div class="doctor-details">
+                            <div class="detail-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Кандидат медицинских наук</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-award"></i>
+                                <span>Врач высшей категории</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-star"></i>
+                                <span>Стаж: 12 лет</span>
+                            </div>
+                        </div>
+                        
+                        <div class="doctor-services">
+                            <span class="service-tag">Диагностика сердца</span>
+                            <span class="service-tag">Лечение гипертонии</span>
+                            <span class="service-tag">Реабилитация</span>
+                        </div>
+                        
+                        <div class="doctor-actions">
+                            <a href="doctor-petrov.html" class="btn btn-outline btn-small">
+                                <i class="fas fa-user-md"></i> Подробнее
+                            </a>
+                            <a href="../index.html#appointment" class="btn btn-primary btn-small">
+                                <i class="fas fa-calendar"></i> Запись
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Добавить остальных врачей -->
+            </div>
+            
+            <!-- Пагинация -->
+            <div class="pagination">
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+</body>
+</html>
